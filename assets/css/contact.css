@@ -1,26 +1,15 @@
 /*login*/
+
 #contact-form {
-    position: relative;
-    top: 320px;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    width: 430px;
-    height: 630px;
-    padding: 80px 40px;
     background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
 }
+
 .avatar {
-    position: absolute;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
-    top: calc(-80px/2);
-    left: calc(50% - 40px);
 }
 
 #contact-form h2 {
@@ -75,7 +64,8 @@
     outline: none;
     margin-top: 15%;
 }
-#sub6:hover{
+
+#sub6:hover {
     background-color: goldenrod;
     color: black;
     transition: 0.6s;
@@ -84,7 +74,10 @@
 #contact-form label input[type=checkbox] {
     width: 20%;
 }
+
+
 /*Register*/
+
 .bar {
     background-color: goldenrod;
     width: 500px;
@@ -259,13 +252,16 @@ label {
     color: black;
     transition: 0.6s;
 }
-a{
+
+a {
     color: goldenrod;
 }
-a:hover{
+
+a:hover {
     color: black;
     transition: 0.6s;
 }
+
 
 /*Add Promo*/
 
@@ -374,7 +370,6 @@ a:hover{
     /*color of button text White= #fff */
     background: goldenrod;
     height: 39px;
-
 }
 
 #bbutton:hover {
@@ -399,12 +394,13 @@ a:hover{
     /*color of button text White= #fff */
     background: goldenrod;
     height: 39px;
-    
 }
 
 #conf:hover {
     color: black;
 }
+
+*/
 /*Admin*/
 
 .topic3 {
@@ -459,6 +455,7 @@ a:hover{
     height: 150px;
     margin-left: 300px;
 }
+
 .newbutton6 img {
     width: 150px;
     height: 150px;
@@ -469,6 +466,7 @@ a:hover{
     height: 150px;
     margin-left: 305px;
 }
+
 .newbutton8 img {
     width: 150px;
     height: 150px;
@@ -479,6 +477,7 @@ a:hover{
     height: 150px;
     margin-left: 260px;
 }
+
 .newbutton10 img {
     width: 150px;
     height: 150px;
@@ -489,11 +488,14 @@ a:hover{
     height: 150px;
     margin-left: 270px;
 }
+
 .newbutton12 img {
     width: 150px;
     height: 150px;
     margin-left: 300px;
 }
+
+*/
 /*RemovePromo */
 
 #box5 {
@@ -543,9 +545,7 @@ a:hover{
     outline: 0;
     cursor: pointer;
     text-align: center;
-    /*Text middle of the button*/
     color: #fff;
-    /*color of button text White= #fff */
     background: goldenrod;
     height: 39px;
     border: 1px solid gold;
@@ -556,7 +556,7 @@ a:hover{
     color: #000;
 }
 
-#sub5 {
+*/ #sub5 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -569,9 +569,7 @@ a:hover{
     outline: 0;
     cursor: pointer;
     text-align: center;
-    /*Text middle of the button*/
     color: #fff;
-    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -616,7 +614,7 @@ a:hover{
     color: black;
 }
 
-#bbutton2 {
+*/ #bbutton2 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -629,9 +627,7 @@ a:hover{
     outline: 0;
     cursor: pointer;
     text-align: center;
-    /*Text middle of the button*/
     color: #fff;
-    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -642,7 +638,7 @@ a:hover{
     color: #000;
 }
 
-#sub5 {
+*/ #sub5 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -655,9 +651,7 @@ a:hover{
     outline: 0;
     cursor: pointer;
     text-align: center;
-    /*Text middle of the button*/
     color: #fff;
-    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -666,4 +660,15 @@ a:hover{
 #sub5:hover {
     background-color: goldenrod;
     color: #000;
+}
+
+#box3 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 1000px;
+    margin: 0px 0px 0px 160px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
 }

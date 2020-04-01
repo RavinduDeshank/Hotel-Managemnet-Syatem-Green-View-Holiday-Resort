@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Green View Holiday Resort</title>
+        <title>Green View Holiday Resort | Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,7 +49,7 @@
                         <!-- logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                               <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                               <a href="index.php"><img src="assets/img/logo/logo-img.png" alt=""></a>
                             </div>
                         </div>
                     <div class="col-xl-8 col-lg-8">
@@ -57,22 +57,22 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">SignUp</a></li>
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -133,7 +133,7 @@
                             <span> Check In Date:</span>
                         </div>
                         <div class="boking-datepicker">
-                            <input id="datepicker1"  placeholder="10/03/2020" />
+                            <input id="datepicker1"  placeholder="10/03/2020" required/>
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -143,7 +143,7 @@
                             <span>Check OutDate:</span>
                         </div>
                         <div class="boking-datepicker">
-                            <input id="datepicker2"  placeholder="12/03/2020" />
+                            <input id="datepicker2"  placeholder="12/03/2020" required/>
                         </div>
                    </div>
                     <!-- Single Select Box -->
@@ -262,10 +262,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.html"><img src="assets/img/rooms/room1.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.html">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>150 <span>/ par night</span></span>
                                 </div>
@@ -276,10 +276,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.html"><img src="assets/img/rooms/room2.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.html">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>100 <span>/ par night</span></span>
                                 </div>
@@ -290,10 +290,10 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.html"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
+                               <a href="rooms.php"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.html">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
                                 <div class="per-night">
                                     <span><u>$</u>50 <span>/ per-night</span></span>
                                 </div>
@@ -424,7 +424,7 @@
                         <!-- Single Blog -->
                         <div class="single-blog mb-30">
                             <div class="blog-img">
-                                <a href="single-blog.html"><img src="assets/img/our_blog/blog-img1.jpg" alt=""></a>
+                                <a href="###"><img src="assets/img/our_blog/blog-img1.jpg" alt=""></a>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
@@ -432,7 +432,7 @@
                                     <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
-                                    <p><a href="single-blog.html">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
+                                    <p><a href="###">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
                                 </div>
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
@@ -446,7 +446,7 @@
                         <!-- Single Blog -->
                         <div class="single-blog mb-30">
                             <div class="blog-img">
-                               <a href="single-blog.html"> <img src="assets/img/our_blog/blog-img2.jpg" alt=""></a>
+                               <a href="###"> <img src="assets/img/our_blog/blog-img2.jpg" alt=""></a>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
@@ -454,7 +454,7 @@
                                     <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
-                                    <p><a href="single-blog.html">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
+                                    <p><a href="###">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
                                 </div>
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
@@ -468,7 +468,7 @@
                         <!-- Single Blog -->
                         <div class="single-blog mb-30">
                             <div class="blog-img">
-                                <a href="single-blog.html"><img src="assets/img/our_blog/blog-img3.jpg" alt=""></a>
+                                <a href="###"><img src="assets/img/our_blog/blog-img3.jpg" alt=""></a>
                             </div>
                             <div class="blog-caption">
                                 <div class="blog-cap-top d-flex justify-content-between mb-40">
@@ -476,7 +476,7 @@
                                     <ul><li>by<a href="#"> Jhon Guru</a></li></ul>
                                 </div>
                                 <div class="blog-cap-mid">
-                                    <p><a href="single-blog.html">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
+                                    <p><a href="###">5 Simple Tricks for Getting Stellar Hotel Service Wherever You Are</a></p>
                                 </div>
                                 <!-- Comments -->
                                 <div class="blog-cap-bottom d-flex justify-content-between">
@@ -522,11 +522,11 @@
                       <div class="single-footer-caption mb-30">
                          <!-- logo -->
                          <div class="footer-logo">
-                           <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                           <a href="index.html"><img src="assets/img/logo/footer-img.png" alt=""></a>
                          </div>
                          <div class="footer-social footer-social2">
-                             <a href="#"><i class="fab fa-facebook-f"></i></a>
-                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                             <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
                              <a href="#"><i class="fas fa-globe"></i></a>
                              <a href="#"><i class="fab fa-behance"></i></a>
                          </div>
@@ -542,10 +542,10 @@
                            <div class="footer-tittle">
                                <h4>Quick Links</h4>
                                <ul>
-                                   <li><a href="about.html">About Us</a></li>
-                                   <li><a href="rooms.html">Our Best Rooms</a></li>
+                                   <li><a href="about.php">About Us</a></li>
+                                   <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
-                                   <li><a href="services.html">Pool Service</a></li>
+                                   <li><a href="services.php">Pool Service</a></li>
                                </ul>
                            </div>
                        </div>

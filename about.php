@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Green View Holiday Resort | Service</title>
+        <title>Green View Holiday Resort | About</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,7 +51,7 @@
                         <!-- logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                               <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                               <a href="index.php"><img src="assets/img/logo/logo-img.png" alt=""></a>
                             </div>
                         </div>
                     <div class="col-xl-8 col-lg-8">
@@ -59,25 +59,24 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
-                                        <ul id="navigation">                                                                                                                                     
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="services.html">Service</a></li>
-                                            <li><a href="#">Pages</a>
-                                                <ul class="submenu">
-                                                    <li><a href="rooms.html">Rooms</a></li>
-                                                    <li><a href="###">Halls</a></li>
-                                                    <li><a href="Promotion.html">Promotions</a></li>
-                                                    <li><a href="blog.html">Blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            <li><a href="###">Login</a>
-                                                <ul class="submenu">
-                                                    <li><a href="login.html">Login</a></li>
-                                                    <li><a href="register.html">SignUp</a></li>
-                                                </ul>
-                                            </li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
+                                        <li><a href="#">Pages</a>
+                                            <ul class="submenu">
+                                                <li><a href="rooms.php">Rooms</a></li>
+                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="###">Login</a>
+                                            <ul class="submenu">
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -88,6 +87,7 @@
                                 <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
+                      
                         <!-- Mobile Menu -->
                         <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
@@ -102,13 +102,13 @@
 
         <!-- slider Area Start-->
         <div class="slider-area">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/servicespage_hero.jpg" >
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/aboutpage_hero.jpg" >
                 <div class="container">
                     <div class="row ">
                         <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
                             <div class="hero-caption">
-                                <span>Services</span>
-                                <h2>Services</h2>
+                                <span>About</span>
+                                <h2>About</h2>
                             </div>
                         </div>
                     </div>
@@ -117,8 +117,60 @@
         </div>
         <!-- slider Area End-->
 
+        <!-- Make customer Start-->
+        <section class="make-customer-area customar-padding fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                   <div class="col-xl-5 col-lg-6">
+                        <div class="customer-img mb-120">
+                            <img src="assets/img/customer/customar1.png" class="customar-img1" alt="">
+                            <img src="assets/img/customer/customar2.png" class="customar-img2" alt="">
+                            <div class="service-experience heartbeat">
+                                <h3>10 Years of Service<br>Experience</h3>
+                            </div>
+                        </div>
+                   </div>
+                    <div class=" col-xl-4 col-lg-4">
+                        <div class="customer-caption">
+                            <span>About our company</span>
+                            <h2>Make the customer the hero of your story</h2>
+                            <div class="caption-details">
+                                <p class="pera-dtails">We are the leading hotel company in our area </p>
+                                <p>Green View Holiday Resort is a newly situated hotel in homagama area it have luxsary rooms facing a iconic paddy field. Since its launch in 2010, it has grown from strength to strength gaining international acclaim </p>
+                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Make customer End-->
+
+
+        <!-- Gallery img Start-->
+        <div class="gallery-area g-padding fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="gallery-active owl-carousel">
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery img End-->
+
         <!-- Dining Start -->
-        <div class="dining-area dining-padding-top">
+        <div class="dining-area d-padding">
             <!-- Single Left img -->
             <div class="single-dining-area left-img">
                 <div class="container">
@@ -127,7 +179,7 @@
                             <div class="dining-caption">
                                 <span>Our resturent</span>
                                 <h3>Dining & Drinks</h3>
-                                <p>Find just what you’re craving across our seven dining options. We have fresh seafood and outdoor dining, global cuisine from open kitchens, and the relaxed yet sophisticated Queens lounge. The pool bar serves casual cuisine, Stella Karaoke Bar offers light bites, and room service is available.<br></p>
+                                <p>Find just what you’re craving across our seven dining options. We have fresh seafood and outdoor dining, global cuisine from open kitchens, and the relaxed yet sophisticated Queens lounge. The pool bar serves casual cuisine, Stella Karaoke Bar offers light bites, and room service is available.</p>
                                 <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
@@ -152,93 +204,10 @@
         </div>
         <!-- Dining End -->
 
-        <!-- Testimonial Start -->
-        <div class="testimonial-area t-padding">
-            <div class="container">
-               <div class="row justify-content-center">
-                    <div class="col-xl-9 col-lg-9 col-md-9">
-                        <div class="h1-testimonial-active">
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial pt-65">
-                                <!-- Testimonial tittle -->
-                                <div class="font-back-tittle mb-105">
-                                    <div class="archivment-front">
-                                        <img src="assets/img/logo/testimonial.png" alt="">
-                                    </div>
-                                    <h3 class="archivment-back">Testimonial</h3>
-                                </div>
-                                 <!-- Testimonial Content -->
-                                <div class="testimonial-caption text-center">
-                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                    </p>
-                                    <!-- Rattion -->
-                                    <div class="testimonial-ratting">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <div class="rattiong-caption">
-                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Single Testimonial -->
-                            <div class="single-testimonial  pt-65">
-                                <!-- Testimonial tittle -->
-                                <div class="font-back-tittle mb-105">
-                                    <div class="archivment-front">
-                                        <img src="assets/img/logo/testimonial.png" alt="">
-                                    </div>
-                                    <h3 class="archivment-back">Testimonial</h3>
-                                </div>
-                                <!-- Testimonial Content -->
-                                <div class="testimonial-caption text-center">
-                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                    </p>
-                                    <div class="testimonial-ratting">
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                        <a href="#"><i class="fas fa-star"></i></a>
-                                    </div>
-                                    <div class="rattiong-caption">
-                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-               </div>
-            </div>
-        </div>
-        <!-- Testimonial End -->
-
-        <!-- Gallery img Start-->
-        <div class="gallery-area fix">
-            <div class="container-fluid p-0">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="gallery-active owl-carousel">
-                            <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
-                            </div>
-                            <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Gallery img End-->
     </main>
-
+    <br>
+    <br>
+    <br>
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">
@@ -248,7 +217,7 @@
                        <div class="single-footer-caption mb-30">
                           <!-- logo -->
                           <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/footer-img.png" alt=""></a>
                           </div>
                           <div class="footer-social footer-social2">
                               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -268,10 +237,10 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="rooms.html">Our Best Rooms</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="services.html">Pool Service</a></li>
+                                    <li><a href="services.php">Pool Service</a></li>
                                 </ul>
                             </div>
                         </div>

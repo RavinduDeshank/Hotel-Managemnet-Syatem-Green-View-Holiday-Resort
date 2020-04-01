@@ -3,93 +3,93 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Green View Holiday Resort | Add Promotion</title>
+        <title>Green View Holiday Resort | Rooms</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="manifest" href="site.webmanifest">
 		<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+        <!-- Place favicon.ico in the root directory -->
 
 		<!-- CSS here -->
-            <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-            <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-            <link rel="stylesheet" href="assets/css/gijgo.css">
-            <link rel="stylesheet" href="assets/css/slicknav.css">
-            <link rel="stylesheet" href="assets/css/animate.min.css">
-            <link rel="stylesheet" href="assets/css/magnific-popup.css">
-            <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-            <link rel="stylesheet" href="assets/css/themify-icons.css">
-            <link rel="stylesheet" href="assets/css/slick.css">
-            <link rel="stylesheet" href="assets/css/nice-select.css">
-            <link rel="stylesheet" href="assets/css/style.css">
-            <link rel="stylesheet" href="assets/css/responsive.css">
-            <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/gijgo.css">
+        <link rel="stylesheet" href="assets/css/slicknav.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
    </head>
 
-    <body>
+   <body>
        
-        <!-- Preloader Start -->
-        <div id="preloader-active">
-            <div class="preloader d-flex align-items-center justify-content-center">
-             <div class="preloader-inner position-relative">
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
                     <strong>Green View Holiday</b>
                 </div>
-             </div>
             </div>
         </div>
-        <!-- Preloader Start -->
+    </div>
+    <!-- Preloader Start -->
 
-        <header>
-            <!-- Header Start -->
-            <div class="header-area header-sticky">
-                <div class="main-header ">
-                    <div class="container">
-                        <div class="row align-items-center">
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-sticky">
+            <div class="main-header ">
+                <div class="container">
+                    <div class="row align-items-center">
                         <!-- logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                               <a href="index.php"><img src="assets/img/logo/logo-img.png" alt=""></a>
                             </div>
-                        <div class="col-xl-8 col-lg-8">
+                        </div>
+                    <div class="col-xl-8 col-lg-8">
                             <!-- main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">SignUp</a></li>
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
-                         </div>             
-                         <div class="col-xl-2 col-lg-2">
+                        </div>             
+                        <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
                                 <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
-                         </div>
-                        
-                         <!-- Mobile Menu -->
+                        </div>
+                        <!-- Mobile Menu -->
                         <div class="col-12">
-                             <div class="mobile_menu d-block d-lg-none"></div>
+                            <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
                     </div>
                 </div>
@@ -97,47 +97,110 @@
        </div>
         <!-- Header End -->
     </header>
-<br>
-<br>
-<br>
-<br>
-<br>
-    <div>
-        <!--Topic-->
-        <div id="box">
-            <div class="retopic">
-                <h2>Add Promotions</h2>
-            </div><br><br>
+    <main>
 
-            <form id="a" name="myform" action="###" method="POST">
-                <label> Promotion / Discount Name  </label>
-                <input type="text" name="pname" id="pname"></br>
-                </br>
-        
-                <label> Title  </label>
-                <input type="text" name="title" id="ptitle"></br>
-                </br>
-                <label> Validity  </label>
-                <input type="date" name="promostart" id="sdate">
-                <label> to </label>
-                <input type="date" name="promoend" id="edate"></br>
-                </br>
-
-                <label> Discription  </label><br>
-                <textarea name="description" rows="10" cols="30" placeholder="Write discription..." id="pdes"></textarea></br><br>
-                </br>
-                </br>
-
-
-                <a href="index.html"> <button type="button" id="bbutton">Back</button> </a>
-                <button type="submit" onclick="myFunction()" id="conf" name="addpromo"> Confirm </button>
-
-            </form>
+        <!-- slider Area Start-->
+        <div class="slider-area">
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/roomspage_hero.jpg" >
+                <div class="container">
+                    <div class="row ">
+                        <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
+                            <div class="hero-caption">
+                                <span>Rooms</span>
+                                <h2>Our Rooms</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <br>
-    <br>
-    <br>
+        <!-- slider Area End-->
+
+        <!-- Room Start -->
+        <section class="room-area r-padding1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <!--font-back-tittle  -->
+                        <div class="font-back-tittle mb-45">
+                            <div class="archivment-front">
+                                <h3>Our Rooms</h3>
+                            </div>
+                            <h3 class="archivment-back">Our Rooms</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                               <a href="rooms.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>150 <span>/ per night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                               <a href="rooms.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>100 <span>/ per night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                               <a href="rooms.php"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <div class="per-night">
+                                    <span><u>$</u>50 <span>/ per night</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Room End -->
+
+        <!-- Gallery img Start-->
+        <div class="gallery-area fix">
+            <div class="container-fluid p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="gallery-active owl-carousel">
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery img End-->
+    </main>
+
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">
@@ -147,7 +210,7 @@
                        <div class="single-footer-caption mb-30">
                           <!-- logo -->
                           <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/footer-img.png" alt=""></a>
                           </div>
                           <div class="footer-social footer-social2">
                               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -167,10 +230,10 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="rooms.html">Our Best Rooms</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="services.html">Pool Service</a></li>
+                                    <li><a href="services.php">Pool Service</a></li>
                                 </ul>
                             </div>
                         </div>

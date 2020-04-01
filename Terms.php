@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Green View Holiday Resort | User Panel</title>
+        <title>Green View Holiday Resort | Terms & Condition</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,70 +26,70 @@
             <link rel="stylesheet" href="assets/css/contact.css">
    </head>
 
-    <body>
+   <body>
        
-        <!-- Preloader Start -->
-        <div id="preloader-active">
-            <div class="preloader d-flex align-items-center justify-content-center">
-             <div class="preloader-inner position-relative">
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
                     <strong>Green View Holiday</b>
                 </div>
-             </div>
             </div>
         </div>
-        <!-- Preloader Start -->
+    </div>
+    <!-- Preloader Start -->
 
-        <header>
-            <!-- Header Start -->
-            <div class="header-area header-sticky">
-                <div class="main-header ">
-                    <div class="container">
-                        <div class="row align-items-center">
+    <header>
+        <!-- Header Start -->
+       <div class="header-area header-sticky">
+            <div class="main-header ">
+                <div class="container">
+                    <div class="row align-items-center">
                         <!-- logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                                </div>
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo">
+                               <a href="index.php"><img src="assets/img/logo/logo-img.png" alt=""></a>
                             </div>
-                        <div class="col-xl-8 col-lg-8">
+                        </div>
+                    <div class="col-xl-8 col-lg-8">
                             <!-- main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">SignUp</a></li>
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
-                         </div>             
-                         <div class="col-xl-2 col-lg-2">
+                        </div>             
+                        <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
                                 <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
-                         </div>
+                        </div>
                         
-                         <!-- Mobile Menu -->
+                        <!-- Mobile Menu -->
                         <div class="col-12">
-                             <div class="mobile_menu d-block d-lg-none"></div>
+                            <div class="mobile_menu d-block d-lg-none"></div>
                         </div>
                     </div>
                 </div>
@@ -99,44 +99,43 @@
     </header>
     <br>
     <br>
-
-    <div id="box6">
-        <div class="topic4">
-            <h2>User Panel</h2>
+    <div id="box3">
+        <div id="bar2">
+            <h3 class="title1"> <u>TERMS & CONDITIONS</u> </h3>
         </div>
+        <p id="para">
+            The following terms & condition will apply if you book train tickets through Book My Train website. No user can register more than once. If a user violates the terms and conditions of use by registering more than one user name or booking tickets on such
+            multiple user names, Book My Train team has the right to deactivate all such user accounts and cancel any or all ticket booked using those accounts without any notice. Invalid details in profile may lead to deactivation.</br>
+            </br>
+            </br>
+            </br>
+            </br>
+            1) An individual user can book a maximum of four rooms in a one day.</br>
+            </br>
+            2) Using one credit/ debit/ amex card number or paypal account user can book rooms.</br>
+            </br>
+            3) Booking cancellation facility (Booking can be cancelled at counter).</br>
+            </br>
+            4) Booking cancellation request should be made before 15 days(only for hall reservations), from given date of reservation.</br>
+            </br>
+            5) Booking cancellation request should be made before 5 days(only for room reservations), from given date of reservation.</br>
+            </br>
+            6) Booking cancellation request should be made before 2 days(only for taxi reservations), from given date of reservation.</br>
+            </br>
+            7) Refunding will be done within three days.</br>
+            </br>
+            8) You must check your reservation email for any error is noticed and the mail does not comply with the information set out in the reservation page, you must inform us same day immediately.</br>
+            </br>
+            7) We are sending E-reservation mail to customers through E-mails,Customer is responsible for check the mail has been received. We are sending E-reseravation mail to customers within 2 hours.</br>
+            </br>
+            8) The reservation must be done before at least 5 hours before arival for online payment,but not more than 365 days before.
+            </br>
+            </br>
+            9) We are respects and protects the privacy of the individuals who use our sysytem. We are not provide your personal information to any #rd parties.</br>
 
-        <a href="#" class="newbutton"> <img src="Logo/user.png"> Edit Your Details</a>
-        <a href="Booking History.php" class="newbutton1"> <img src="Logo/history.png"> Booking History</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
 
-        <a href="BooikingCancellation.php" class="newbutton2"><img src="Logo/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="Refund details.php" class="newbutton3"> <img src="Logo/refund.png"> Refund Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-
+        </p>
     </div>
-    <div>
-
-        <div id="but">
-            <a href="Reservation.php"><button type="button"  class="button3">Reserve Your Ticket</button></a>
-        </div>
-
-        <div id="but">
-            <a href="findnewlocations.php"><button type="button"  class="button2"> Find New Location</button></a>
-        </div>
-
-
-
-    </div>
-
     <br>
     <br>
 
@@ -149,7 +148,7 @@
                        <div class="single-footer-caption mb-30">
                           <!-- logo -->
                           <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/logo/footer-img.png" alt=""></a>
                           </div>
                           <div class="footer-social footer-social2">
                               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -169,10 +168,10 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="rooms.html">Our Best Rooms</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="services.html">Pool Service</a></li>
+                                    <li><a href="services.php">Pool Service</a></li>
                                 </ul>
                             </div>
                         </div>
