@@ -106,8 +106,9 @@ $result = mysqli_query($db, $sql);
         <!-- Header End -->
     </header>
     <br>
-  
- 
+    <br>
+    <br>
+    <br>
     <div class="blog-area blog-padding">
         <div class="container">
             <div class="row justify-content-center">
@@ -216,11 +217,9 @@ $result = mysqli_query($db, $sql);
                     </div>
                 </div>
             </div> -->
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="container-fluid">
+            <!--<div class="container">-->
+            <div class="container-fluid">
             <div class="card">
                 <div class="card-header">
                     <div class="card-title"> Promotion List</div>
@@ -266,6 +265,10 @@ $result = mysqli_query($db, $sql);
         </div>
 
     </div>
+        </div>
+    </div>
+
+    
 
 
 

@@ -121,25 +121,10 @@
         </br>
         </br>
         </br>
+        
 
 
     </div>
-    <div>
-
-        <div id="but">
-            <a href="reservation.php"><button type="button" class="button3">Reserve Your Ticket</button></a>
-        </div>
-
-        <div id="but">
-            <a href="###"><button type="button" class="button2"> Find New Location</button></a>
-        </div>
-
-
-
-    </div>
-
-    <br>
-    <br>
 
     <footer>
         <!-- Footer Start-->
