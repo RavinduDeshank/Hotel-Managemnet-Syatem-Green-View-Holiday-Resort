@@ -106,8 +106,10 @@ $result = mysqli_query($db, $sql);
         </div>
         <!-- Header End -->
     </header>
+
     <br>
     <br>
+    
     <div id="box5">
         
         <h3 class="title1 mt-2"> <u>REMOVE PROMOTIONS</u> </h3>

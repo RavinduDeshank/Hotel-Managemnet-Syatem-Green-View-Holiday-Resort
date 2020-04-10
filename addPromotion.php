@@ -159,7 +159,7 @@ include 'Backend/addpromotion.inc.php';
             </form>
         </div>
     </div>
-    <br>
+    </br>
     <br>
     <br>
     <footer>

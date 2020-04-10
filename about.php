@@ -207,7 +207,7 @@
     </main>
     <br>
     <br>
-    <br>
+    </br>
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">

@@ -105,10 +105,12 @@ $result = mysqli_query($db, $sql);
         </div>
         <!-- Header End -->
     </header>
+
     <br>
     <br>
     <br>
     <br>
+    
     <div class="blog-area blog-padding">
         <div class="container">
             <div class="row justify-content-center">

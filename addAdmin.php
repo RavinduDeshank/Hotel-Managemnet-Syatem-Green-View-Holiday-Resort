@@ -150,7 +150,7 @@ include 'Backend/registeradmin.inc.php';
     </div>
 
     <br>
-    <br>
+    </br>
 
     <footer>
         <!-- Footer Start-->
