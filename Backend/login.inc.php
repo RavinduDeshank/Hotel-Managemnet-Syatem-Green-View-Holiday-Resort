@@ -1,5 +1,4 @@
 <?php
-
 include 'dbconnection.php';
 if(isset($_POST['login'])){
     $errors = array();
@@ -7,27 +6,27 @@ if(isset($_POST['login'])){
     $uname = mysqli_real_escape_string($db,$_POST['name']);
     $pass = mysqli_real_escape_string($db, $_POST['pwd']);
 
-    $sql = "SELECT * FROM users WHERE uname='$uname' AND upass='$pass'";
+    $sql = "SELECT * FROM taxicustomer WHERE username='$uname' AND password='$pass'";
     $result = mysqli_query($db,$sql);
 
     if($result){
         if (mysqli_num_rows($result) > 0) {
 
             $row = mysqli_fetch_assoc($result);
-            $usertype = $row['utype'];
+            $usertype = $row['user_type'];
             if ($usertype == "Admin") {
                 session_start();
-                $_SESSION['userid'] = $row['uId'];
-                $_SESSION['username'] = $row['uname'];
+                $_SESSION['user_id'] = $row['user_id'];
+                $_SESSION['username'] = $row['username'];
                 header("Location: admin.php");
                 exit();
             }
 
             if ($usertype == "Customer") {
                 session_start();
-                $_SESSION['userid'] = $row['uId'];
-                $_SESSION['username'] = $row['uname'];
-                header("Location: userPanel.php");
+                $_SESSION['user_id'] = $row['user_id'];
+                $_SESSION['username'] = $row['username'];
+                header("Location: viewtaxi.php");
                 exit();
             } 
             

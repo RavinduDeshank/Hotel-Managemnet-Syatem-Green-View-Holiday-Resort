@@ -438,7 +438,6 @@
             </div>
         </div>
     </section>
-    <br>
     <!--================Blog Area =================-->
     <footer>
         <!-- Footer Start-->

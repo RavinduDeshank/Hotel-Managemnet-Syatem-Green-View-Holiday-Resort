@@ -97,7 +97,6 @@
        </div>
         <!-- Header End -->
     </header>
-    
     <main>
 
         <!-- slider Area Start-->

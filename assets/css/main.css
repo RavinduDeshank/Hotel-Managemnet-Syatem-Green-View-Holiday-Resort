@@ -407,6 +407,12 @@ label {
   color: #fff;
 }
 
+/* line 196, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn:hover {
+  background: #f1b233;
+  color: #fff;
+}
+
 /* line 201, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
 .border-btn {
   background: none;
