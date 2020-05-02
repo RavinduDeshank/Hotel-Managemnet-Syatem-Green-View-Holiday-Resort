@@ -72,6 +72,9 @@ INSERT INTO `users` (`uId`, `uname`, `fname`, `lname`, `ugender`, `umail`, `unat
 (1, 'test', 'test', 'test', 'male', 'test@gmail.com', 'test', 'sdnfalncljkajkl/cnka/lclkan/lkcnac', 201010110, 'test', 'Customer'),
 (2, 'testing', '', '', '', '', '', '', 0, 'testing', 'Admin');
 
+-- --------------------------------------------------------
+
+
 --
 -- Indexes for dumped tables
 --
@@ -88,6 +91,9 @@ ALTER TABLE `promotion`
 ALTER TABLE `users`
   ADD PRIMARY KEY (`uId`);
 
+
+
+
 --
 -- AUTO_INCREMENT for dumped tables
 --
@@ -103,9 +109,10 @@ ALTER TABLE `promotion`
 --
 ALTER TABLE `users`
   MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
-

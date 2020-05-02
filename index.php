@@ -66,6 +66,7 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -96,7 +97,6 @@
        </div>
         <!-- Header End -->
     </header>
-    
     <main>
 
         <!-- slider Area Start-->
@@ -547,6 +547,7 @@
                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
                                    <li><a href="services.php">Pool Service</a></li>
+                                   <li><a href="taxi.php">Taxi Service</a></li>
                                </ul>
                            </div>
                        </div>

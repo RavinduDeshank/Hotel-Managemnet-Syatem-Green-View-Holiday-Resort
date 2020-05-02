@@ -68,6 +68,7 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservations</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -106,27 +107,40 @@
             <h2>User Panel</h2>
         </div>
 
-        <a href="#" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
+        <a href="#" class="newbutton"> <img src="Logo/user.png"> Edit Your Details</a>
+        <a href="##" class="newbutton1"> <img src="Logo/history.png"> Booking History</a>
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
+        <a href="###" class="newbutton2"><img src="Logo/Booking Cancel.png"> Booking Cancellation</a>
+        <a href="###" class="newbutton3"> <img src="Logo/refund.png"> Refund Details</a>
         </br>
         </br>
         </br>
         </br>
         </br>
+
 
     </div>
-    
-<br>
-<br>
-<br>
+    <div>
+
+        <div id="but">
+            <a href="reservation.php"><button type="button" class="button3">Reserve Your Ticket</button></a>
+        </div>
+
+        <div id="but">
+            <a href="###"><button type="button" class="button2"> Find New Location</button></a>
+        </div>
+
+
+
+    </div>
+
+    <br>
+    <br>
 
     <footer>
         <!-- Footer Start-->

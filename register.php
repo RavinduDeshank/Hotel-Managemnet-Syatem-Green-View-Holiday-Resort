@@ -101,7 +101,6 @@ include 'Backend/register.inc.php';
         </div>
         <!-- Header End -->
     </header>
-    
     <br>
     <br>
 
