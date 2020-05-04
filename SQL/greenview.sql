@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 02, 2020 at 02:12 PM
+-- Generation Time: May 04, 2020 at 11:29 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -37,13 +37,6 @@ CREATE TABLE `promotion` (
   `Descrip` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `promotion`
---
-
-INSERT INTO `promotion` (`pid`, `pname`, `pTitle`, `pStartDate`, `pEndDate`, `Descrip`) VALUES
-(5, 'ddada', 'scsv', '2020-03-09', '2020-03-17', '');
-
 -- --------------------------------------------------------
 
 --
@@ -71,7 +64,6 @@ CREATE TABLE `taxicustomer` (
 --
 
 INSERT INTO `taxicustomer` (`user_id`, `username`, `password`, `user_type`, `full_name`, `email`, `tel_number`, `reserved_room_no`, `time`, `date`, `location`, `vehicle_type`, `is_deleted`) VALUES
-(1, 'taximanager', 'taximanager', 'admin', '', '', 0, 0, '00:00:00', '0000-00-00', '', '', 1),
 (44, 'Isuru', '123456', 'Customer', 'Isuru sahan', 'isuru@gmail.com', 779055222, 5, '10:30:00', '2020-04-04', 'Malabe', 'Van', 0),
 (50, 'chalaka5', '12345', 'Customer', 'chalaka jayasinghe', 'nbachalaka@gmail.com', 779066933, 7, '11:30:00', '2020-04-05', 'Malabe', 'Car', 1),
 (51, 'fredy', 'fredy1234', 'Customer', 'fredy madushan', 'fredy@gmail.com', 779066922, 12, '14:30:00', '2020-05-15', 'Kurunegala', 'Car', 1);
