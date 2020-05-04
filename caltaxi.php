@@ -157,10 +157,10 @@
 					$bill = $distance  * $tax;
 					echo "
 						<tr>
-							<td>".implode("-", $range)."</td>
-							<td>$tax</td>
-							<td>$distance</td>
-							<td>LKR $bill</td>
+							<td><h6>".implode("-", $range)."</h6></td>
+							<td><h6>$tax</h6></td>
+							<td><h6>$distance</h6></td>
+							<td><h6>LKR $bill</h6></td>
 						</tr>
 						";
 					return array($distance-$xdistance, $bill);
@@ -186,10 +186,10 @@
 			echo "<table class=\"table table-hover\">
 			<thead>
 				<tr>
-					<th>Distance Range(KM)</th>
-					<th>Tax per 1KM</th>
-					<th>Distance</th>
-					<th>Bill</th>
+					<th><h4>Distance Range(KM)</h4></th>
+					<th><h4>Tax per 1KM</h4></th>
+					<th><h4>Distance</h4></th>
+					<th><h4>Bill</h4></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -237,33 +237,33 @@
                 <tr>
 					<th></th>
 					<th></th>
-					<th>Charge per 1KM</th>
-					<th>LKR $meter</th>
+					<th><h6>Charge per 1KM</h6></th>
+					<th><h6>LKR $meter</h6></th>
                 </tr>
                 
 				<tr>
 					<th></th>
 					<th></th>
-					<th>Taxi Fee</th>
-					<th>LKR $newTotal</th>
+					<th><h6>Taxi Fee</h6></th>
+					<th><h6>LKR $newTotal</h6></th>
 				</tr>
 		        <tr>
 					<th></th>
 					<th></th>
-					<th>Driver Tip</th>
-					<th>LKR $drivertip</th>
+					<th><h6>Driver Tip</h6></th>
+					<th><h6>LKR $drivertip</h6></th>
                 </tr>
                 <tr>
 					<th></th>
 					<th></th>
-					<th>Customer Discount</th>
-					<th>LKR $customerdiscount</th>
+					<th><h6>Customer Discount</h6></th>
+					<th><h6>LKR $customerdiscount</h6></th>
 				</tr>
 				<tr>
 					<th></th>
 					<th></th>
-					<th>Total Taxi Fee</th>
-					<th>LKR $gTotal</th>
+					<th><h6>Total Taxi Fee</h6></th>
+					<th><h6>LKR $gTotal</h6></th>
 				</tr>
 
 			</tfoot>
