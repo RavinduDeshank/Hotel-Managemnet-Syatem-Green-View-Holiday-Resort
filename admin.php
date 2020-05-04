@@ -132,8 +132,8 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton6"> <img src="assets/img/taxi.png"> Add Taxi</a>
-        <a href="####" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi</a>
+       
+        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
 
         </br>
         </br>
