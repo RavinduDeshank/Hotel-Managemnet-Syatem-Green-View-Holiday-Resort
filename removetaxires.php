@@ -154,7 +154,7 @@ $result = mysqli_query($db, $sql);
     <script>
         function myfunction() {
             var txt;
-            if (confirm("Do you want to remove this promotion?")) {
+            if (confirm("Do you want to remove this Reservation?")) {
                 txt = "removed";
             } else {
                 txt = "";
