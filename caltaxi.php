@@ -1,6 +1,4 @@
-<?php require_once('Backend/session.php'); ?>
-<?php require_once('Backend/taxiconnection.php'); ?>
-<?php require_once('Backend/taxifunctions.php'); ?>
+<?php require_once('Backend/dbconnection.php'); ?>
 <?php
    
 ?>
@@ -85,7 +83,7 @@
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                            <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                            <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -271,8 +269,9 @@
       
 		}
 		?>
-         <div>
-				<button class="btn"> <a href="taxi.php">Go to main page</a></button>
+         <div><center>
+				<button class="btn"> <a href="taxi.php">Finalize</a></button>
+                </center>
 		</div>
     </main>
     <footer>

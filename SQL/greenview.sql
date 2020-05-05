@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 04, 2020 at 11:29 AM
+-- Generation Time: May 05, 2020 at 06:30 PM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.3
 
@@ -50,23 +50,15 @@ CREATE TABLE `taxicustomer` (
   `user_type` varchar(50) NOT NULL,
   `full_name` varchar(200) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `tel_number` int(20) NOT NULL,
+  `tel_num` int(20) NOT NULL,
   `reserved_room_no` int(10) NOT NULL,
   `time` time NOT NULL,
   `date` date NOT NULL,
   `location` varchar(50) NOT NULL,
-  `vehicle_type` varchar(20) NOT NULL,
+  `taxi_fee` float NOT NULL,
+  `vehicle_type` varchar(50) NOT NULL,
   `is_deleted` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `taxicustomer`
---
-
-INSERT INTO `taxicustomer` (`user_id`, `username`, `password`, `user_type`, `full_name`, `email`, `tel_number`, `reserved_room_no`, `time`, `date`, `location`, `vehicle_type`, `is_deleted`) VALUES
-(44, 'Isuru', '123456', 'Customer', 'Isuru sahan', 'isuru@gmail.com', 779055222, 5, '10:30:00', '2020-04-04', 'Malabe', 'Van', 0),
-(50, 'chalaka5', '12345', 'Customer', 'chalaka jayasinghe', 'nbachalaka@gmail.com', 779066933, 7, '11:30:00', '2020-04-05', 'Malabe', 'Car', 1),
-(51, 'fredy', 'fredy1234', 'Customer', 'fredy madushan', 'fredy@gmail.com', 779066922, 12, '14:30:00', '2020-05-15', 'Kurunegala', 'Car', 1);
 
 -- --------------------------------------------------------
 
@@ -127,13 +119,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `promotion`
 --
 ALTER TABLE `promotion`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `taxicustomer`
 --
 ALTER TABLE `taxicustomer`
-  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
+  MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
