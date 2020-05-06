@@ -1,7 +1,7 @@
 <?php
 include 'Backend/dbconnection.php';
 
-$sql = "SELECT * FROM promotion";
+$sql = "SELECT * FROM taxicustomer";
 $result = mysqli_query($db, $sql);
 
 ?>
@@ -12,7 +12,7 @@ $result = mysqli_query($db, $sql);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | Remove Promotion</title>
+    <title>Green View Holiday Resort | Remove Taxi Reservation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -111,32 +111,31 @@ $result = mysqli_query($db, $sql);
     <br>
     <div id="box5">
         
-        <h3 class="title1 mt-2"> <u>REMOVE PROMOTIONS</u> </h3>
+        <h3 class="title1 mt-2"> <u>REMOVE TAXI RESERVATIONS</u> </h3>
 
         <table id="removepromotable" class="mt-5">
             <tr>
-
-                <th> Promotion Name </th>
-                <th> Promotion Title </th>
-                <th>Start Date</th>
-                <th>End Date</th>
+                <th>Full Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
                 <th> Remove </th>
             </tr>
             <?php
             while ($row = mysqli_fetch_assoc($result)) {
-                $id = $row['pid'];
-                $pname = $row['pname'];
-                $ptitle = $row['pTitle'];
-                $start = $row['pStartDate'];
-                $end = $row['pEndDate'];
+                $id = $row['user_id'];
+                $uname = $row['username'];
+                $date = $row['date'];
+                $time = $row['time'];
+                $location = $row['location'];
 
             ?>
                 <tr>
-                    <td><?php echo $pname ?></td>
-                    <td><?php echo $ptitle ?></td>
-                    <td><?php echo $start ?></td>
-                    <td><?php echo $end ?></td>
-                    <td><a href="Backend/removepromotion.inc.php?id=<?php echo $id ?>"><button onclick="myFunction()"> Remove </button></a></td>
+                    <td><?php echo $uname ?></td>
+                    <td><?php echo $date ?></td>
+                    <td><?php echo $time ?></td>
+                    <td><?php echo $location ?></td>
+                    <td><a href="Backend/removetaxires.inc.php?id=<?php echo $id ?>"><button onclick="myFunction()"> Remove </button></a></td>
                 <?php
             }
                 ?>
@@ -155,7 +154,7 @@ $result = mysqli_query($db, $sql);
     <script>
         function myfunction() {
             var txt;
-            if (confirm("Do you want to remove this promotion?")) {
+            if (confirm("Do you want to remove this Reservation?")) {
                 txt = "removed";
             } else {
                 txt = "";
@@ -164,7 +163,7 @@ $result = mysqli_query($db, $sql);
         }
 
         function myFunction() {
-            alert("Promotion removed successfully");
+            alert("Taxi Reservation removed successfully");
         }
     </script>
     <br>
