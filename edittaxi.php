@@ -132,28 +132,7 @@
 				<link rel="stylesheet" href="assets/css/style.css">
 				<link rel="stylesheet" href="assets/css/responsive.css">
 				<link rel="stylesheet" href="assets/css/taxi.css">
-				<style>
-.alerttaxi {
-  padding: 20px;
-  background-color: #f44336;
-  color: white;
-}
 
-.closebtntaxi {
-  margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.closebtntaxi:hover {
-  color: black;
-}
-</style>
 
 	   </head>
 	
@@ -233,7 +212,8 @@
 	<h1>Change your Reservation<span><a href="taxi.php"> Go To Main Page </a><span></h1>
 	<div class="alerttaxi">
   	<span class="closebtntaxi" onclick="this.parentElement.style.display='none';">&times;</span> 
-  	<strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+	  <strong>Please Note !</strong> You can't change the location, taxi fee and vehicle type.
+	   If you want, please delete this reservation and make a new one. Thank you...
 	</div>
 	
 	<?php
