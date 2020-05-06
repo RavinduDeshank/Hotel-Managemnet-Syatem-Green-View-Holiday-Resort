@@ -209,7 +209,7 @@
 			<!-- Header End -->
 		</header>
 <main>
-	<h1>Change your Reservation<span><a href="taxi.php"> Go To Main Page </a><span></h1>
+	<h1>Change your Reservation<button class="btn"><a href="viewtaxi.php">Back</a></button></h1>
 	<div class="alerttaxi">
   	<span class="closebtntaxi" onclick="this.parentElement.style.display='none';">&times;</span> 
 	  <strong>Please Note !</strong> You can't change the location, taxi fee and vehicle type.
@@ -264,9 +264,12 @@
 	</p>
 
 	<p>
+		
 		<label for="">&nbsp;</label>
 		<button class="btn" type="submit" name="submit">modify</button>
 	</p>
+	
+
 
 	</form>
 </main>
