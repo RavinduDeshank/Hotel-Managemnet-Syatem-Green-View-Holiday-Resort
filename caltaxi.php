@@ -114,10 +114,12 @@
 		<h1><img src="assets/img/taxi/taxi6.jpg" alt=""></h1>
 		<form action="" method="POST" role="form">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-5">
 				<div class="form-group">
 					<label for="">Total Distance / KM</label>
-					<input type="text" class="form-control" name="distance" placeholder="Input total Distance">
+                    <h5><input type="number" class="form-control" name="distance" placeholder="Input the Distance in nearest KM">
+                    <span><a href="https://www.google.com/maps/dir///@7.120554,79.8956596,10z" target="_blank"> You can find the distance using google maps. </a></span>
+                    </h5>
 				</div>
 			</div>
 
@@ -270,7 +272,7 @@
 		}
 		?>
          <div><center>
-				<button class="btn"> <a href="taxi.php">Finalize</a></button>
+				<button class="btn"> <a href="reservetaxi.php">Make the Reservation</a></button>
                 </center>
 		</div>
     </main>

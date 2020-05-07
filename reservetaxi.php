@@ -54,7 +54,7 @@
 			$query = "INSERT INTO taxicustomer ( ";
 			$query .= "username, password, user_type, full_name, email, tel_number, reserved_room_no, time, date, location, taxi_fee, vehicle_type, is_deleted";
 			$query .= ") VALUES (";
-			$query .= "'{$username}', '{$password}', 'Customer', '{$full_name}', '{$email}', '{$tel_number}', {$reserved_room_no}, '{$time}', '{$date}', '{$location}', '{$taxi_fee}', '{$vehicle_type}', 0";
+			$query .= "'{$username}', '{$password}', 'taxiCustomer', '{$full_name}', '{$email}', '{$tel_number}', {$reserved_room_no}, '{$time}', '{$date}', '{$location}', '{$taxi_fee}', '{$vehicle_type}', 0";
 			$query .= ")";
 
 			$result = mysqli_query($db, $query);
@@ -239,7 +239,8 @@
 
     <p>
 		<label for="">Total Taxi Fee:</label>
-		<input type="price" placeholder="Enter the calculated fee" name="taxi_fee" <?php echo 'value="' . $taxi_fee .'"';  ?>>
+        <input type="price" placeholder="Enter the calculated fee" name="taxi_fee" <?php echo 'value="' . $taxi_fee .'"';  ?>><br>
+        <span><a href="caltaxi.php" target="_blank">Click here, to findout the taxi fee.</a></span>
 	</p>
 
 	<p class="form-inline">
