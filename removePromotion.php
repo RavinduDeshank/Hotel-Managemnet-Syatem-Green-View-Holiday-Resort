@@ -76,6 +76,7 @@ $result = mysqli_query($db, $sql);
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -106,10 +107,8 @@ $result = mysqli_query($db, $sql);
         </div>
         <!-- Header End -->
     </header>
-
     <br>
     <br>
-    
     <div id="box5">
         
         <h3 class="title1 mt-2"> <u>REMOVE PROMOTIONS</u> </h3>

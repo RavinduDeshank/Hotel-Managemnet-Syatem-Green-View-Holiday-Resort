@@ -68,6 +68,7 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -131,8 +132,8 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton6"> <img src="assets/img/taxi.png"> Add Taxi</a>
-        <a href="####" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi</a>
+       
+        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
 
         </br>
         </br>
@@ -156,12 +157,12 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton12"> <img src="assets/img/sales.png"> Finace</a>
-        <a href="addAdmin.php" class="newbutton13"> <img src="assets/img/officer.png"> Add New Admin</a>
+        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
+        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
     </div>
 
-    </br>
+    <br>
     <br>
     <br>
     <br>
@@ -201,6 +202,7 @@
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>

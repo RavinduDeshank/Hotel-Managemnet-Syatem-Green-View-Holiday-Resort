@@ -66,6 +66,7 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -73,6 +74,7 @@
                                             <ul class="submenu">
                                                 <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
+                                                
                                             </ul>
                                         </li>
                                     </ul>
@@ -82,7 +84,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -96,7 +98,6 @@
        </div>
         <!-- Header End -->
     </header>
-    
     <main>
 
         <!-- slider Area Start-->
@@ -203,7 +204,7 @@
                    </div>
                     <!-- Single Select Box -->
                     <div class="single-select-box pt-45 mb-30">
-                        <a href="#" class="btn select-btn">Book Now</a>
+                        <a href="login.php" class="btn select-btn">Book Now</a>
                    </div>
                
 
@@ -547,6 +548,7 @@
                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
                                    <li><a href="services.php">Pool Service</a></li>
+                                   <li><a href="taxi.php">Taxi Service</a></li>
                                </ul>
                            </div>
                        </div>

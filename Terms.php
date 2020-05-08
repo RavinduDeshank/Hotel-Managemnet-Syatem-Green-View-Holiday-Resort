@@ -97,10 +97,8 @@
        </div>
         <!-- Header End -->
     </header>
-
     <br>
     <br>
-   
     <div id="box3">
         <div id="bar2">
             <h3 class="title1"> <u>TERMS & CONDITIONS</u> </h3>

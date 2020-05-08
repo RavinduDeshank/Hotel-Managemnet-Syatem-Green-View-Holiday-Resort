@@ -1,4 +1,11 @@
 /*login*/
+#empmngLink{
+    border:1px solid black !important; 
+    border-radius:5px;
+}
+#empmngLink:hover{
+    border:1px solid #dca73a !important;
+  }
 
 #contact-form {
     background: rgba(0, 0, 0, 0.6);
@@ -400,7 +407,7 @@ a:hover {
     color: black;
 }
 
-
+*/
 /*Admin*/
 
 .topic3 {
@@ -492,11 +499,7 @@ a:hover {
 .newbutton12 img {
     width: 150px;
     height: 150px;
-}
-.newbutton13 img {
-    width: 150px;
-    height: 150px;
-    margin-left: 325px;
+    margin-left: 300px;
 }
 
 */
@@ -642,6 +645,8 @@ a:hover {
     color: #000;
 }
 
+
+
 */ #sub5 {
     width: 100px;
     padding: 7px;
@@ -676,6 +681,7 @@ a:hover {
     border-radius: 20px;
     margin-top: -20px;
 }
+<<<<<<< HEAD
 /*User Panel*/
 
 .topic4 {
@@ -734,3 +740,5 @@ a:hover {
     height: 150px;
     margin-left: 305px;
 }
+=======
+>>>>>>> c40e5e125e9f504514724e005f90d44158104467
