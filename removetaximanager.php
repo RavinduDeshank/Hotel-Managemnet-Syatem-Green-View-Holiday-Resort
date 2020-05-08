@@ -1,10 +1,18 @@
+<?php
+include 'Backend/dbconnection.php';
+
+$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiManager'";
+$result = mysqli_query($db, $sql);
+
+?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | admin</title>
+    <title>Green View Holiday Resort | Remove Taxi Manager</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -101,68 +109,54 @@
     </header>
     <br>
     <br>
-    <br>
+    <div id="box5">
+        
+        <h3 class="title1 mt-2"> <u>REMOVE TAXI MANAGERS</u> </h3>
 
-    <div id="box3">
-        <div class="topic3">
-            <h2>Admin</h2>
-        </div><br>
+        <table id="removepromotable" class="mt-5">
+            <tr>
+                <th>Full Name</th>
+                <th> Remove </th>
+            </tr>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                $id = $row['user_id'];
+                $uname = $row['username'];
 
-        <a href="addPromotion.php" class="newbutton"> <img src="assets/img/promo.jpg"> Add Promotions</a>
-        <a href="removePromotion.php" class="newbutton1"> <img src="assets/img/promo.jpg"> Remove Promotions</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton4"> <img src="assets/img/hall.jpg"> Add Halls</a>
-        <a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
-        <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="####" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
+            ?>
+                <tr>
+                    <td><?php echo $uname ?></td>
+                    <td><a href="Backend/removetaximgr.inc.php?id=<?php echo $id ?>"><button onclick="myFunction()"> Remove </button></a></td>
+                <?php
+            }
+                ?>
+        </table>
 
         </br>
         </br>
-        </br>
-        </br>
-        </br>
 
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
+        <a href="admin.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
 
+        <button type="submit" onclick="myfunction()" id="sub5"> Confirm </button>
     </div>
 
-    <br>
-    <br>
+
+
+    <script>
+        function myfunction() {
+            var txt;
+            if (confirm("Do you want to remove this Reservation?")) {
+                txt = "removed";
+            } else {
+                txt = "";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function myFunction() {
+            alert("Taxi Reservation removed successfully");
+        }
+    </script>
     <br>
     <br>
 
@@ -201,7 +195,6 @@
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
-                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>

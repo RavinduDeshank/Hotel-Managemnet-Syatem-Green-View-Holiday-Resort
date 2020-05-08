@@ -103,20 +103,27 @@
     <br>
     <br>
 
-    <div id="box2">
+    <div id="box3">
         <div class="topic3">
-            <h2>Taxi Manager</h2>
+            <h2><center>Taxi Manager</center></h2>
         </div><br>
+        <a href="viewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View Taxi Reservations</a>
 
-        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br> 
+        
+        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi/removetaxi.png"> Remove Taxi Reservations</a>
 
         </br>
         </br>
         </br>
         </br>
-        </br>
+        </br>  
 
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
+        <a href="addTaximgr.php" class="newbutton11"> <img src="assets/img/taxi/addtaximanager.png">Add New Taxi Manager</a>
 
     </div>
 

@@ -3,7 +3,7 @@
     $reserved_list = ''; 
 
     //getting the list of reservations
-    $query = "SELECT * FROM taxicustomer WHERE is_deleted=0 ORDER BY full_name";
+    $query = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
     if($users) {
