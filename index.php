@@ -84,7 +84,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -204,7 +204,7 @@
                    </div>
                     <!-- Single Select Box -->
                     <div class="single-select-box pt-45 mb-30">
-                        <a href="#" class="btn select-btn">Book Now</a>
+                        <a href="login.php" class="btn select-btn">Book Now</a>
                    </div>
                
 
