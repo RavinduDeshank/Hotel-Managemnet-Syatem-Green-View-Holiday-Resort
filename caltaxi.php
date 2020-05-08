@@ -1,6 +1,4 @@
-<?php require_once('Backend/session.php'); ?>
-<?php require_once('Backend/taxiconnection.php'); ?>
-<?php require_once('Backend/taxifunctions.php'); ?>
+<?php require_once('Backend/dbconnection.php'); ?>
 <?php
    
 ?>
@@ -85,7 +83,7 @@
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                            <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                            <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -116,10 +114,12 @@
 		<h1><img src="assets/img/taxi/taxi6.jpg" alt=""></h1>
 		<form action="" method="POST" role="form">
 		<div class="row">
-			<div class="col-lg-6">
+			<div class="col-lg-5">
 				<div class="form-group">
 					<label for="">Total Distance / KM</label>
-					<input type="text" class="form-control" name="distance" placeholder="Input total Distance">
+                    <h5><input type="number" class="form-control" name="distance" placeholder="Input the Distance in nearest KM">
+                    <span><a href="https://www.google.com/maps/dir///@7.120554,79.8956596,10z" target="_blank"> You can find the distance using google maps. </a></span>
+                    </h5>
 				</div>
 			</div>
 
@@ -157,10 +157,10 @@
 					$bill = $distance  * $tax;
 					echo "
 						<tr>
-							<td>".implode("-", $range)."</td>
-							<td>$tax</td>
-							<td>$distance</td>
-							<td>LKR $bill</td>
+							<td><h6>".implode("-", $range)."</h6></td>
+							<td><h6>$tax</h6></td>
+							<td><h6>$distance</h6></td>
+							<td><h6>LKR $bill</h6></td>
 						</tr>
 						";
 					return array($distance-$xdistance, $bill);
@@ -186,10 +186,10 @@
 			echo "<table class=\"table table-hover\">
 			<thead>
 				<tr>
-					<th>Distance Range(KM)</th>
-					<th>Tax per 1KM</th>
-					<th>Distance</th>
-					<th>Bill</th>
+					<th><h4>Distance Range(KM)</h4></th>
+					<th><h4>Tax per 1KM</h4></th>
+					<th><h4>Distance</h4></th>
+					<th><h4>Bill</h4></th>
 				</tr>
 			</thead>
 			<tbody>
@@ -237,33 +237,33 @@
                 <tr>
 					<th></th>
 					<th></th>
-					<th>Charge per 1KM</th>
-					<th>LKR $meter</th>
+					<th><h6>Charge per 1KM</h6></th>
+					<th><h6>LKR $meter</h6></th>
                 </tr>
                 
 				<tr>
 					<th></th>
 					<th></th>
-					<th>Taxi Fee</th>
-					<th>LKR $newTotal</th>
+					<th><h6>Taxi Fee</h6></th>
+					<th><h6>LKR $newTotal</h6></th>
 				</tr>
 		        <tr>
 					<th></th>
 					<th></th>
-					<th>Driver Tip</th>
-					<th>LKR $drivertip</th>
+					<th><h6>Driver Tip</h6></th>
+					<th><h6>LKR $drivertip</h6></th>
                 </tr>
                 <tr>
 					<th></th>
 					<th></th>
-					<th>Customer Discount</th>
-					<th>LKR $customerdiscount</th>
+					<th><h6>Customer Discount</h6></th>
+					<th><h6>LKR $customerdiscount</h6></th>
 				</tr>
 				<tr>
 					<th></th>
 					<th></th>
-					<th>Total Taxi Fee</th>
-					<th>LKR $gTotal</th>
+					<th><h6>Total Taxi Fee</h6></th>
+					<th><h6>LKR $gTotal</h6></th>
 				</tr>
 
 			</tfoot>
@@ -271,8 +271,9 @@
       
 		}
 		?>
-         <div>
-				<button class="btn"> <a href="taxi.php">Go to main page</a></button>
+         <div><center>
+				<button class="btn"> <a href="reservetaxi.php">Make the Reservation</a></button>
+                </center>
 		</div>
     </main>
     <footer>

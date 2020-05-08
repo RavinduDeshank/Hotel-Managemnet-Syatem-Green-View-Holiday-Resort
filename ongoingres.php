@@ -13,6 +13,7 @@
             $reserved_list .= "<td>{$user['tel_number']}</td>";
             $reserved_list .= "<td>{$user['date']}</td>";
             $reserved_list .= "<td>{$user['time']}</td>";
+            $reserved_list .= "<td>{$user['vehicle_type']}</td>";
             $reserved_list .= "<td>{$user['location']}</td>";
             $reserved_list .= "</tr>";
         } 
@@ -133,6 +134,7 @@
                 <th>Contact Number</th>
                 <th>Date</th>
                 <th>Time</th>
+                <th>Vehicle type</th>
                 <th>Location</th>
             </tr>
 
