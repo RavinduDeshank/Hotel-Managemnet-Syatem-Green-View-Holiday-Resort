@@ -1,7 +1,7 @@
 <?php
 include 'Backend/dbconnection.php';
 
-$sql = "SELECT * FROM taxicustomer";
+$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer'";
 $result = mysqli_query($db, $sql);
 
 ?>
@@ -80,9 +80,9 @@ $result = mysqli_query($db, $sql);
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -144,7 +144,7 @@ $result = mysqli_query($db, $sql);
         </br>
         </br>
 
-        <a href="admin.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+        <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
 
         <button type="submit" onclick="myfunction()" id="sub5"> Confirm </button>
     </div>

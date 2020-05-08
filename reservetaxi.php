@@ -213,7 +213,7 @@
 
 	<p>
 		<label for="">Phone:</label>
-		<input type="tel" placeholder="Enter your phone number" name="tel_number" pattern="[0-9]{10}" >
+		<input type="tel" placeholder="Enter your phone number" name="tel_number" pattern="^\d{3}\d{7}$" >
 		<small>0123456789</small>
 	</p>
 

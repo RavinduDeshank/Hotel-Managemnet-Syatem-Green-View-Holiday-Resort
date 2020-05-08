@@ -1,10 +1,13 @@
+<?php
+include 'Backend/registertaximgr.inc.php';
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | admin</title>
+    <title>Green View Holiday Resort | Register</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,9 +75,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -101,68 +104,52 @@
     </header>
     <br>
     <br>
-    <br>
 
-    <div id="box2">
-        <div class="topic3">
-            <h2>Admin</h2>
-        </div><br>
+    <div class="register">
+        <div class="bar">
+            <h4>Register</h4>
+        </div>
+        <br>
+        <div>
+            <?php
+            if (!empty($errors)) {
+                echo '<div class="alert alert-danger" role="alert">';
+                foreach ($errors as $error) {
+                    echo $error;
+                    echo '<br>';
+                }
+                echo '</div>';
+            }
 
-        <a href="addPromotion.php" class="newbutton"> <img src="assets/img/promo.jpg"> Add Promotions</a>
-        <a href="removePromotion.php" class="newbutton1"> <img src="assets/img/promo.jpg"> Remove Promotions</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+            if (!empty($success)) {
+                echo '<div class="alert alert-success" role="alert">';
+                foreach ($success as $succ) {
+                    echo $succ;
+                }
+                echo '</div>';
+            }
+            ?>
+        </div>
+        <form action="" method="POST" id="form">
 
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
 
-        <a href="####" class="newbutton4"> <img src="assets/img/hall.jpg"> Add Halls</a>
-        <a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+            <label>User Name</label><br>
+            <input type="text" name="uname" id="usrName" placeholder="Enter User Name"><br><br>
 
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
-        <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+            <label>Password</label><br>
+            <input type="password" name="password" id="pass" placeholder="Enter Your Password"><br><br>
 
-        <a href="####" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="####" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+            <label>Confirm Password</label><br>
+            <input type="password" name="repassword" id="pass1" placeholder="Re-Enter Your Password"><br><br>
 
-        <a href="removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+            <input type="submit" value="Add" class="btn" name="signup">
+            <a href="taximanager.php"><button type="button" value="reset" class="btn"> Back to Taxi Manager Panel </button></a>
 
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
+        </form>
     </div>
 
-    <br>
-    <br>
     <br>
     <br>
 

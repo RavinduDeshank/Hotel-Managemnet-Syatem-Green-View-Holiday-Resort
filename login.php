@@ -1,11 +1,8 @@
 <?php
 include 'Backend/login.inc.php';
+include 'Backend/taxilogin.inc.php'; ?>
 
-?>
-<?php
-include 'Backend/taxilogin.inc.php';
 
-?>
 
 
 <!doctype html>
@@ -78,6 +75,7 @@ include 'Backend/taxilogin.inc.php';
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>

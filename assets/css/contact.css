@@ -422,6 +422,16 @@ a:hover {
     border-radius: 20px;
     margin-top: -20px;
 }
+#box2 {
+    background: rgba(100, 150, 20, 0.6);
+    width: 950px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
 
 .newbutton img {
     width: 150px;
