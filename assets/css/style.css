@@ -5026,6 +5026,7 @@ h6 {
 .switch-wrap {
   margin-bottom: 10px; }
 
+
 .alerttaxi {
     padding: 20px;
     background-color: #f44336;
@@ -5043,3 +5044,12 @@ h6 {
   
 .closebtntaxi:hover {
     color: black; }
+
+#empmngLink:hover{
+  border:1px solid #dca73a;
+}
+#empmngLink{
+  border:1px solid black; 
+  border-radius:5px;
+}
+
