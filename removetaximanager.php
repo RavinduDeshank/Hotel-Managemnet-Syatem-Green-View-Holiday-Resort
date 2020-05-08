@@ -135,7 +135,7 @@ $result = mysqli_query($db, $sql);
         </br>
         </br>
 
-        <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+        <a href="admin.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
 
         <button type="submit" onclick="myfunction()" id="sub5"> Confirm </button>
     </div>

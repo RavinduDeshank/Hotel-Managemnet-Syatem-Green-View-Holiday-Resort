@@ -1,5 +1,4 @@
 <?php require_once('Backend/dbconnection.php'); ?>
-<?php require_once('Backend/taxifunctions.php'); ?>
 <?php
     $errors = array();
     $username = '';

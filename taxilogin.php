@@ -1,10 +1,19 @@
+<?php
+include 'Backend/taxilogin.inc.php';
+
+
+?>
+
+
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | admin</title>
+    <title>Green View Holiday Resort | Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -72,10 +81,11 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
+                                                <!-- <li><a href="elogin.html">Employ management</a></li> -->
                                             </ul>
                                         </li>
                                     </ul>
@@ -101,68 +111,63 @@
     </header>
     <br>
     <br>
-    <br>
+    <main>
+        <div class="form-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="form-row">
+                    <div class="col-md-2"></div>
+                    <div>
+                        <img src="assets/img/officer.png" alt="" class="avatar ml-4">
+                    </div>
+                </div>
+                <div class="col-md-6 p-md-4" id="contact-form">
 
-    <div id="box3">
-        <div class="topic3">
-            <h2>Admin</h2>
-        </div><br>
+                    <div class="form-row">
+                        <div class="col-md-4"></div>
+                        <div class="ml-4">
+                            <h3>Taxi Login</h3>
+                            
+                        </div>
+                    </div>
 
-        <a href="addPromotion.php" class="newbutton"> <img src="assets/img/promo.jpg"> Add Promotions</a>
-        <a href="removePromotion.php" class="newbutton1"> <img src="assets/img/promo.jpg"> Remove Promotions</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                    <div>
+                        <?php
+                        if (!empty($errors)) {
+                            echo '<div class="alert alert-danger" role="alert">';
+                            foreach ($errors as $error) {
+                                echo $error;
+                                echo '<br>';
+                            }
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
 
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                    <div class="form-group">
+                        <form action="" method="POST">
 
-        <a href="####" class="newbutton4"> <img src="assets/img/hall.jpg"> Add Halls</a>
-        <a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                            <div class="form-group">
+                                <label style="color:black;"> Username </label>
+                                <input type="text" name="name" placeholder="Enter User Name" required id="username2" class="form-control"><br>
+                            </div>
+                            <div class="form-group">
+                                <label style="color:black;"> Password </label>
+                                <input type="password" name="pwd" class="form-control" pattern="^(?=.*\d)(?=.*[a-z](?=.[A-Z](?=.*\s).*$" required id="password2" placeholder="Enter Password">
+                            </div>
 
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
-        <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                            <div class="form-group">
+                                <input type="submit" name="login" value="Login" class="btn btn-warning">
+                            </div>
+                           
 
-        <a href="####" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="####" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-        <a href="removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
-
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
-
-    </div>
-
-    <br>
-    <br>
     <br>
     <br>
 
@@ -201,7 +206,6 @@
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
-                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>
