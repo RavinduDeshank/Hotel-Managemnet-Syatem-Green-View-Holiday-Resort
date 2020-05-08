@@ -9,8 +9,6 @@
 	$reserved_room_no = '';
 	$time = '';
 	$date = '';
-	$location = '';
-    $vehicle_type = '';
     
     if(isset($_GET['reservation_id'])) {
         //getting user information
@@ -29,8 +27,6 @@
 	           $reserved_room_no = $result['reserved_room_no'];
 	           $time = $result['time'];
 	           $date = $result['date'];
-	           $location = $result['location'];
-               $vehicle_type = $result['vehicle_type'];
                   
            } else {
                //user not found
@@ -53,11 +49,9 @@
 		$reserved_room_no = $_POST['reserved_room_no'];
 		$time = $_POST['time'];
 		$date = $_POST['date'];
-		$location = $_POST['location'];
-		$vehicle_type = $_POST['vehicle_type'];
 
 		//checking required fields
-		$req_fields = array('full_name','email','tel_number','reserved_room_no','time','date','location','vehicle_type');
+		$req_fields = array('full_name','email','tel_number','reserved_room_no','time','date');
 
 		foreach ($req_fields as $field) {
 			if (empty(trim($_POST[$field]))) {
@@ -82,8 +76,6 @@
 			$reserved_room_no = mysqli_real_escape_string($db, $_POST['reserved_room_no']);
 			$time = mysqli_real_escape_string($db, $_POST['time']);
 			$date = mysqli_real_escape_string($db, $_POST['date']);
-			$location = mysqli_real_escape_string($db, $_POST['location']);
-			$vehicle_type = mysqli_real_escape_string($db, $_POST['vehicle_type']);
 			 
 			$query = "UPDATE taxicustomer SET ";
 			$query .= "`full_name` = '{$full_name}', ";
@@ -91,9 +83,7 @@
 			$query .= "tel_number = '{$tel_number}', ";
             $query .= "reserved_room_no = '{$reserved_room_no}', ";
             $query .= "time = '{$time}', ";
-            $query .= "date = '{$date}', ";
-            $query .= "location = '{$location}', ";
-			$query .= "vehicle_type = '{$vehicle_type}' ";
+            $query .= "date = '{$date}' ";
 			$query .= "WHERE user_id = {$reservation_id} LIMIT 1";
             
             
@@ -128,7 +118,7 @@
 			<link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 	
 			<!-- CSS here -->
-				<link rel="stylesheet" href="assets/css/taxi.css">
+				
 				<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 				<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 				<link rel="stylesheet" href="assets/css/gijgo.css">
@@ -141,6 +131,9 @@
 				<link rel="stylesheet" href="assets/css/nice-select.css">
 				<link rel="stylesheet" href="assets/css/style.css">
 				<link rel="stylesheet" href="assets/css/responsive.css">
+				<link rel="stylesheet" href="assets/css/taxi.css">
+
+
 	   </head>
 	
 	   <body>
@@ -188,9 +181,9 @@
 												</ul>
 											</li>
 											<li><a href="contact.php">Contact</a></li>
-											<li><a href="###">Login</a>
-												<ul class="submenu">
-												<li><a href="Backend/logout.inc.php">Logout</a></li>
+											<li><a href="">Logout</a>
+                                            <ul class="submenu">
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
 													<li><a href="register.php">SignUp</a></li>
 												</ul>
 											</li>
@@ -216,7 +209,12 @@
 			<!-- Header End -->
 		</header>
 <main>
-	<h1>Change your Reservation<span><a href="taxi.php"> Go To Main Page </a><span></h1>
+	<h1>Change your Reservation<button class="btn"><a href="viewtaxi.php">Back</a></button></h1>
+	<div class="alerttaxi">
+  	<span class="closebtntaxi" onclick="this.parentElement.style.display='none';">&times;</span> 
+	  <strong>Please Note !</strong> You can't change the location, taxi fee and vehicle type.
+	   If you want, please delete this reservation and make a new one. Thank you...
+	</div>
 	
 	<?php
 		if(!empty($errors)) {
@@ -266,24 +264,12 @@
 	</p>
 
 	<p>
-		<label for="">Location:</label>
-		<input type="text" placeholder="Enter ZIP/Location" name="location" <?php echo 'value="' . $location .'"';  ?>>
-	</p>
-
-	<p class="form-inline">
-	<label class="form-label">Vehicle Type:</label>
-	<select id="cars" name="vehicle_type" <?php echo 'value="' . $vehicle_type .'"';  ?>>
-		<option value="" selected hidden >Select Vehicle type</option>
-		<option label="Car">Car</option>
-  		<option label="Van">Van</option>
-  		<option label="Budget Car">Budget Car</option>
-	</select>
-	</p>
-
-	<p>
+		
 		<label for="">&nbsp;</label>
 		<button class="btn" type="submit" name="submit">modify</button>
 	</p>
+	
+
 
 	</form>
 </main>

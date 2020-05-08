@@ -1,20 +1,10 @@
-<?php
-include 'Backend/login.inc.php';
-
-?>
-<?php
-include 'Backend/taxilogin.inc.php';
-
-?>
-
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | Login</title>
+    <title>Green View Holiday Resort | admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -78,14 +68,14 @@ include 'Backend/taxilogin.inc.php';
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
-                                                <!-- <li><a href="elogin.html">Employ management</a></li> -->
                                             </ul>
                                         </li>
                                     </ul>
@@ -111,73 +101,27 @@ include 'Backend/taxilogin.inc.php';
     </header>
     <br>
     <br>
-    <main>
-        <div class="form-row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-                <div class="form-row">
-                    <div class="col-md-2"></div>
-                    <div>
-                        <img src="assets/img/officer.png" alt="" class="avatar ml-4">
-                    </div>
-                </div>
-                <div class="col-md-6 p-md-4" id="contact-form">
+    <br>
 
-                    <div class="form-row">
-                        <div class="col-md-4"></div>
-                        <div class="ml-4">
-                            <h2>Login</h2>
-                        </div>
-                    </div>
+    <div id="box2">
+        <div class="topic3">
+            <h2>Taxi Manager</h2>
+        </div><br>
 
-                    <div>
-                        <?php
-                        if (!empty($errors)) {
-                            echo '<div class="alert alert-danger" role="alert">';
-                            foreach ($errors as $error) {
-                                echo $error;
-                                echo '<br>';
-                            }
-                            echo '</div>';
-                        }
-                        ?>
-                    </div>
+        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
 
-                    <div class="form-group">
-                        <form action="" method="POST">
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
 
-                            <div class="form-group">
-                                <label style="color:black;"> Username </label>
-                                <input type="text" name="name" placeholder="Enter User Name" required id="username2" class="form-control"><br>
-                            </div>
-                            <div class="form-group">
-                                <label style="color:black;"> Password </label>
-                                <input type="password" name="pwd" class="form-control" pattern="^(?=.*\d)(?=.*[a-z](?=.[A-Z](?=.*\s).*$" required id="password2" placeholder="Enter Password">
-                            </div>
+        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
-                            <div class="form-group">
-                                <input type="submit" name="login" value="Login" class="btn btn-warning">
-                            </div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                <label class="custom-control-label" for="customCheck1" name="remember" style="color:black;">Remember Me</label>
-                            </div>
-                            <div>
-                                <p style="color:black;">Create an Account &nbsp;<a href="register.php" class="a2">Sign Up </a></p>
-                            </div>
-                            <div class="row col-12 pl-5 justify-content-center">
-                            <div style="border:1px solid #dca73a; border-radius:5px;" class="pt-2 pl-4 mt-5 row col-12" id="empmngLink">
-                                <p style="color:black; text-align:center;"><a href="elogin.html" class="a2">Employee management login</a></p>
-                            </div>
-                            </div>
+    </div>
 
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
+    <br>
+    <br>
     <br>
     <br>
 
@@ -216,6 +160,7 @@ include 'Backend/taxilogin.inc.php';
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>

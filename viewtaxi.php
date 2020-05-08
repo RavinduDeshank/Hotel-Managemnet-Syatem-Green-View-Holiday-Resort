@@ -13,7 +13,6 @@
             $reserved_list .= "<td>{$user['tel_number']}</td>";
             $reserved_list .= "<td>{$user['date']}</td>";
             $reserved_list .= "<td>{$user['time']}</td>";
-            $reserved_list .= "<td>{$user['location']}</td>";
             $reserved_list .= "<td><a href=\"edittaxi.php?reservation_id={$user['user_id']}\">Change</a></td>";
             $reserved_list .= "<td><a href=\"deletetaxi.php?reservation_id={$user['user_id']}\">Delete</a></td>";
             $reserved_list .= "</tr>";
@@ -97,9 +96,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                            <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -135,7 +134,6 @@
                 <th>Contact Number</th>
                 <th>Date</th>
                 <th>Time</th>
-                <th>Location</th>
                 <th>Change</th>
                 <th>Delete</th>
             </tr>
