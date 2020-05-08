@@ -71,9 +71,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                            <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -107,7 +107,7 @@
                     <div class="row ">
                         <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
                             <div class="hero-caption">
-                           <h1><span>Your Reservation is Successfull</span><h2>
+                           <h1><a href="taxi.php"><span>Your Reservation is Successfull</span><h2>
                                 <h2>Thank you for connect with us.</h2>
                                 
                         </div>
@@ -117,22 +117,6 @@
         </div>
         <!-- slider Area1 End-->
 
-          <!-- slider Area1 Start-->
-      <div class="slider-area">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center"data-background="assets/img/taxi/taxi7.jpg" >
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
-                            <div class="hero-caption">
-                            <a href="caltaxi.php"><span>Calculate your Taxi Fare</span>
-                            </a>
-                                
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- slider Area1 End-->
 
     </main>
 <footer>
