@@ -1,3 +1,10 @@
+<?php
+  SESSION_START();
+
+  if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
+    header("Location: login.php");
+  }
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -106,7 +113,7 @@
             <h2>User Panel</h2>
         </div>
 
-        <a href="#" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
+        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
         <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
         </br>
         </br>
@@ -121,7 +128,17 @@
         </br>
         </br>
         </br>
-
+        <a href="###" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
+        <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
+        <br>
+        <br>
+        </br>
+        </br>
+        </br>
+        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
+        <br>
+        <br>
+        
     </div>
     
 <br>
