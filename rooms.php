@@ -135,7 +135,7 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="superior_room.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
+                               <a href="superior_room.php"><img src="assets/img/rooms/101080a_hb_ro_030.jpg" height="120%" alt=""></a>
                             </div>
                             <div class="room-caption">
                                 <h3><a href="superior_room.php">SUPERIOR ROOM</a></h3>
@@ -149,7 +149,7 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="deluxe_room.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
+                               <a href="deluxe_room.php"> <img src="assets/img/rooms/Deluxe-Sea-View-With-Private-Balcony_03-1000x667.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
                                 <h3><a href="deluxe_room.php">DELUXE ROOM</a></h3>
@@ -163,7 +163,7 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="guest_room.php"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
+                               <a href="guest_room.php"> <img src="assets/img/rooms/Budget_Non_Sea_View_03.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
                                 <h3><a href="guest_room.php">GUEST ROOM</a></h3>
@@ -185,13 +185,13 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/delux-garden-5.jpg"  height="100%" width="100%" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/GettyImages-200375642-001.jpg" height="120%" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/delux-balcony1.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>

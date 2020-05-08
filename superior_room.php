@@ -24,7 +24,7 @@
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
             <link rel="stylesheet" href="assets/css/contact.css">
-			<link rel="stylesheet" href="assets/css/hall_effects.css">
+			<link rel="stylesheet" href="assets/css/room_effects.css">
 			
 		
    </head>
