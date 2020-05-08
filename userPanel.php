@@ -114,28 +114,22 @@
             <h2>User Panel</h2>
         </div>
 
-<<<<<<< HEAD
         <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
         <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
-=======
-        <a href="#" class="newbutton"> <img src="Logo/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="Logo/history.png"> Booking History</a>
->>>>>>> c40e5e125e9f504514724e005f90d44158104467
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="Logo/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="Logo/refund.png"> Refund Details</a>
+        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
+        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
         </br>
         </br>
         </br>
         </br>
         </br>
-<<<<<<< HEAD
-        <a href="###" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
+        <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
         <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
         <br>
         <br>
@@ -146,23 +140,6 @@
         <br>
         <br>
         
-=======
-
-
-    </div>
-    <div>
-
-        <div id="but">
-            <a href="reservation.php"><button type="button" class="button3">Reserve Your Ticket</button></a>
-        </div>
-
-        <div id="but">
-            <a href="###"><button type="button" class="button2"> Find New Location</button></a>
-        </div>
-
-
-
->>>>>>> c40e5e125e9f504514724e005f90d44158104467
     </div>
 
     <br>
