@@ -116,8 +116,8 @@
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
+        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
+        <a href="admin/room_admin_login.php" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
         </br>
         </br>
         </br>
