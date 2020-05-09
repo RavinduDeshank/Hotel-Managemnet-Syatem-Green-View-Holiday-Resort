@@ -291,23 +291,23 @@ tr:hover .cut { opacity: 1; }
 					<tr>
 						<td><span ><?php echo $troom; ?></span></td>
 						<td><span ><?php echo $days; ?> </span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_room;?></span></td>
+						<td><span data-prefix>LKR</span><span ><?php  echo $type_of_room;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $ttot; ?></span></td>
+						<td><span data-prefix>LKR</span><span><?php echo $ttot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $bed; ?>  Bed </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_bed;?></span></td>
+						<td><span data-prefix>LKR</span><span ><?php  echo $type_of_bed;?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $btot; ?></span></td>
+						<td><span data-prefix>LKR</span><span><?php echo $btot; ?></span></td>
 					</tr>
 					<tr>
 						<td><span ><?php echo $meal; ?>  </span></td>
 						<td><span ><?php echo $days; ?></span></td>
-						<td><span data-prefix>$</span><span ><?php  echo $type_of_meal?></span></td>
+						<td><span data-prefix>LKR</span><span ><?php  echo $type_of_meal?></span></td>
 						<td><span ><?php echo $nroom;?> </span></td>
-						<td><span data-prefix>$</span><span><?php echo $mepr; ?></span></td>
+						<td><span data-prefix>LKR</span><span><?php echo $mepr; ?></span></td>
 					</tr>
 				</tbody>
 			</table>
@@ -315,15 +315,15 @@ tr:hover .cut { opacity: 1; }
 			<table class="balance">
 				<tr>
 					<th><span >Total</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix>LKR</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 				<tr>
 					<th><span >Amount Paid</span></th>
-					<td><span data-prefix>$</span><span >0.00</span></td>
+					<td><span data-prefix>LKR</span><span >0.00</span></td>
 				</tr>
 				<tr>
 					<th><span >Balance Due</span></th>
-					<td><span data-prefix>$</span><span><?php echo $fintot; ?></span></td>
+					<td><span data-prefix>LKR</span><span><?php echo $fintot; ?></span></td>
 				</tr>
 			</table>
 		</article>
