@@ -1,3 +1,4 @@
+<?php require_once('Backend/taxisession.php'); ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -254,3 +255,4 @@
 </body>
 
 </html>
+<?php mysqli_close($db); ?>

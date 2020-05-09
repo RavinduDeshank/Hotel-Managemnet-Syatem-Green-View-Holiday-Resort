@@ -513,7 +513,7 @@ a:hover {
 }
 
 */
-/*RemovePromo */
+/*Tables */
 
 #box5 {
     background: rgba(0, 0, 0, 0.6);
@@ -530,8 +530,20 @@ a:hover {
     width: 80%;
     margin-bottom: 100px;
 }
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
 
 #removepromotable th {
+    text-align: left;
+    background-color: gold;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+#taxitable th {
     text-align: left;
     background-color: gold;
     color: black;
@@ -544,7 +556,18 @@ a:hover {
     color: black;
 }
 
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
 #removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
@@ -613,7 +636,21 @@ a:hover {
     margin-bottom: 100px;
 }
 
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
 #removepromotable th {
+    text-align: left;
+    background-color: goldenrod;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+
+#taxitable th {
     text-align: left;
     background-color: goldenrod;
     color: black;
@@ -626,7 +663,18 @@ a:hover {
     color: black;
 }
 
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
 #removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
