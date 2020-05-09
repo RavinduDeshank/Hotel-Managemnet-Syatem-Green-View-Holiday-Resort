@@ -156,7 +156,7 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
+        <a href="indexTaxi.php" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
         <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
     </div>
