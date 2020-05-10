@@ -116,7 +116,7 @@
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
+        <a href="###" class="newbutton2"> <img src="assets/img/rooms.png"> Add Rooms </a>
         <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
         </br>
         </br>
@@ -132,32 +132,23 @@
         </br>
         </br>
 
-       
-        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
-
+        <a href="removetaxires.php" class="newbutton4"> <img src="assets/img/taxi.png"> Remove Taxi Reservations</a>
+        <a href="InventoryManagement/login.php" class="newbutton7"> <img src="assets/img/inventory.jpg"> Inventory</a>
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
-        <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
+        <a href="####" class="newbutton8"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
+        <a href="####" class="newbutton9"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="####" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="####" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
+        <a href="####" class="newbutton10"> <img src="assets/img/finance.jpg"> Finace</a>
         <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
     </div>

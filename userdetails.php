@@ -2,7 +2,7 @@
   SESSION_START();
 
   if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: login.php");
+    header("Location: userPanel.php");
   }
   
 include '../SQL/dbconnection.php';

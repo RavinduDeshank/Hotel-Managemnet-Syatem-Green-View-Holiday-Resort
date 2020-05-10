@@ -165,9 +165,9 @@ include 'Backend/taxilogin.inc.php';
                             <div>
                                 <p style="color:black;">Create an Account &nbsp;<a href="register.php" class="a2">Sign Up </a></p>
                             </div>
-                            <div class="row col-12 pl-5 justify-content-center">
-                            <div style="border:1px solid #dca73a; border-radius:5px;" class="pt-2 pl-4 mt-5 row col-12" id="empmngLink">
-                                <p style="color:black; text-align:center;"><a href="elogin.html" class="a2">Employee management login</a></p>
+                            
+                            <div>
+                                <p style="color:black;">Employee &nbsp;<a href="elogin.html" class="a2"> login</a></p>
                             </div>
                             </div>
 
