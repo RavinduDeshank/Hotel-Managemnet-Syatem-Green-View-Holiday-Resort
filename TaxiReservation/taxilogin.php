@@ -1,17 +1,19 @@
 <?php
-  SESSION_START();
+include 'Backend/taxilogin.inc.php';
 
-  if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: login.php");
-  }
+
 ?>
+
+
+
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | User Panel</title>
+    <title>Green View Holiday Resort | Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,14 +77,15 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservations</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="./login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
+                                                <!-- <li><a href="elogin.html">Employ management</a></li> -->
                                             </ul>
                                         </li>
                                     </ul>
@@ -108,39 +111,62 @@
     </header>
     <br>
     <br>
+    <main>
+        <div class="form-row">
+            <div class="col-md-4"></div>
+            <div class="col-md-8">
+                <div class="form-row">
+                    <div class="col-md-2"></div>
+                    <div>
+                        <img src="assets/img/officer.png" alt="" class="avatar ml-4">
+                    </div>
+                </div>
+                <div class="col-md-6 p-md-4" id="contact-form">
 
-    <div id="box6">
-        <div class="topic4">
-            <h2>User Panel</h2>
+                    <div class="form-row">
+                        <div class="col-md-4"></div>
+                        <div class="ml-4">
+                            <h3>Taxi Login</h3>
+                            
+                        </div>
+                    </div>
+
+                    <div>
+                        <?php
+                        if (!empty($errors)) {
+                            echo '<div class="alert alert-danger" role="alert">';
+                            foreach ($errors as $error) {
+                                echo $error;
+                                echo '<br>';
+                            }
+                            echo '</div>';
+                        }
+                        ?>
+                    </div>
+
+                    <div class="form-group">
+                        <form action="" method="POST">
+
+                            <div class="form-group">
+                                <label style="color:black;"> Username </label>
+                                <input type="text" name="name" placeholder="Enter User Name" required id="username2" class="form-control"><br>
+                            </div>
+                            <div class="form-group">
+                                <label style="color:black;"> Password </label>
+                                <input type="password" name="pwd" class="form-control" pattern="^(?=.*\d)(?=.*[a-z](?=.[A-Z](?=.*\s).*$" required id="password2" placeholder="Enter Password">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="submit" name="login" value="Login" class="btn btn-warning">
+                            </div>
+                           
+
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
-        <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
-        <br>
-        <br>
-        </br>
-        </br>
-        </br>
-        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
-        <br>
-        <br>
-        
-    </div>
+    </main>
 
     <br>
     <br>

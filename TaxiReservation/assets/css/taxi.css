@@ -1,0 +1,182 @@
+body{
+    font-size: 16px;
+}
+
+main {
+ width: 1000px;
+ margin: 30px auto;
+}
+
+main h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+main h1 span {
+    font-size: 20px;
+}
+
+table.masterlist{
+    width: 100%;
+    border-collapse: collapse;
+} 
+
+table.masterlist th {
+    background: rgb(167, 204, 63);
+    text-align: left;
+}
+
+table.masterlist th, table.masterlist td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(204, 183, 65);
+}
+
+form.userform label {
+    width: 30%;
+    float: left;
+}
+
+form.userform input {
+    width: 60%;
+}
+
+form.userform button {
+    width: 200px;
+}
+
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+   
+  }
+
+.form-inline label {
+    float: left; 
+    margin-left: -7.5em;
+    margin-right: 7.5em;
+}
+
+.errmsg {
+    margin: 20px 0;
+    color: red;
+}
+
+.btn {
+    background-color: #f4511e;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+  }
+  
+.btn:hover {opacity: 0.6}
+
+/* button style */
+/* line 175, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn {
+  -moz-user-select: none;
+  background: #dca73a;
+  border: medium none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 0;
+  margin-bottom: 0;
+  padding: 25px 39px;
+  text-align: center;
+  text-transform: capitalize;
+  touch-action: manipulation;
+  transition: all 0.3s ease 0s;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 196, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn:hover {
+  background: #f1b233;
+  color: #fff;
+}
+
+/* line 196, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn:hover {
+  background: #f1b233;
+  color: #fff;
+}
+
+/* line 201, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.border-btn {
+  background: none;
+  border: 2px solid #dca73a;
+  color: #dca73a;
+}
+
+/* line 206, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.border-btn i {
+  color: #dca73a !important;
+  position: relative;
+  left: 0;
+}
+
+/* line 211, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.view-btn1 i {
+  position: relative;
+  left: 0;
+}
+
+/* line 215, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.more-btn1 i {
+  position: relative;
+  left: 0;
+}
+
+/* line 220, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+/* line 224, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.btn:hover i {
+  left: 7px;
+}
+
+/* line 227, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.border-btn:hover i {
+  color: #fff !important;
+}
+
+/* line 230, C:/Users/SPN Graphics/Desktop/hotel_up/Hotel_HTML/assets/scss/_common.scss */
+.border-btn:hover {
+  border: 2px solid transparent;
+}
+
+
+.alerttaxi {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtntaxi {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtntaxi:hover {
+  color: black;
+}

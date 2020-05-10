@@ -1,17 +1,11 @@
-<?php
-  SESSION_START();
-
-  if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: login.php");
-  }
-?>
+<?php require_once('Backend/taxisession.php'); ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | User Panel</title>
+    <title>Green View Holiday Resort | admin</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,13 +69,13 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservations</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -108,40 +102,34 @@
     </header>
     <br>
     <br>
+    <br>
 
-    <div id="box6">
-        <div class="topic4">
-            <h2>User Panel</h2>
-        </div>
+    <div id="box3">
+        <div class="topic3">
+            <h2><center>Taxi Manager</center></h2>
+        </div><br>
+        <a href="viewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View Taxi Reservations</a>
 
-        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
         </br>
         </br>
         </br>
         </br>
-        </br>
-
-        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
-        <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
-        <br>
-        <br>
-        </br>
-        </br>
-        </br>
-        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
-        <br>
-        <br>
+        </br> 
         
+        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi/removetaxi.png"> Remove Taxi Reservations</a>
+
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>  
+
+        <a href="addTaximgr.php" class="newbutton11"> <img src="assets/img/taxi/addtaximanager.png">Add New Taxi Manager</a>
+
     </div>
 
+    <br>
+    <br>
     <br>
     <br>
 
@@ -180,6 +168,7 @@
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -266,3 +255,4 @@
 </body>
 
 </html>
+<?php mysqli_close($db); ?>

@@ -1,17 +1,18 @@
 <?php
-  SESSION_START();
+include 'Backend/dbconnection.php';
 
-  if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: login.php");
-  }
+$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer'";
+$result = mysqli_query($db, $sql);
+
 ?>
+
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | User Panel</title>
+    <title>Green View Holiday Resort | Remove Taxi Reservation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -75,13 +76,13 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservations</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -108,40 +109,63 @@
     </header>
     <br>
     <br>
-
-    <div id="box6">
-        <div class="topic4">
-            <h2>User Panel</h2>
-        </div>
-
-        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
-        <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
-        <br>
-        <br>
-        </br>
-        </br>
-        </br>
-        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
-        <br>
-        <br>
+    <div id="box5">
         
+        <h3 class="title1 mt-2"> <u>REMOVE TAXI RESERVATIONS</u> </h3>
+
+        <table id="removepromotable" class="mt-5">
+            <tr>
+                <th>Full Name</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Location</th>
+                <th> Remove </th>
+            </tr>
+            <?php
+            while ($row = mysqli_fetch_assoc($result)) {
+                $id = $row['user_id'];
+                $uname = $row['username'];
+                $date = $row['date'];
+                $time = $row['time'];
+                $location = $row['location'];
+
+            ?>
+                <tr>
+                    <td><?php echo $uname ?></td>
+                    <td><?php echo $date ?></td>
+                    <td><?php echo $time ?></td>
+                    <td><?php echo $location ?></td>
+                    <td><a href="Backend/removetaxires.inc.php?id=<?php echo $id ?>"><button onclick="myFunction()"> Remove </button></a></td>
+                <?php
+            }
+                ?>
+        </table>
+
+        </br>
+        </br>
+
+        <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+
+        <button type="submit" onclick="myfunction()" id="sub5"> Confirm </button>
     </div>
 
+
+
+    <script>
+        function myfunction() {
+            var txt;
+            if (confirm("Do you want to remove this Reservation?")) {
+                txt = "removed";
+            } else {
+                txt = "";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function myFunction() {
+            alert("Taxi Reservation removed successfully");
+        }
+    </script>
     <br>
     <br>
 
