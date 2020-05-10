@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | User Panel</title>
+    <title>Green View Holiday Resort Laundry | Login</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -29,13 +29,15 @@
 
 <body>
 
+
+
     <!-- Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <strong>Green View Holiday</b>
+                    <strong><b>Green View Holiday</b></strong>
                 </div>
             </div>
         </div>
@@ -51,7 +53,8 @@
                         <!-- logo -->
                         <div class="col-xl-2 col-lg-2">
                             <div class="logo">
-                                <a href="index.php"><img src="assets/img/logo/logo-img.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/new.png.png" alt=""></a>
+                    
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8">
@@ -59,23 +62,22 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About</a></li>
-                                        <li><a href="services.php">Service</a></li>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="services.html">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.php">Rooms</a></li>
+                                                <li><a href="rooms.html">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.php">Promotions</a></li>
-                                                <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservations</a></li>
+                                                <li><a href="Promotion.html">Promotions</a></li>
+                                                <li><a href="blog.html">Blog</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
-                                                <li><a href="register.php">SignUp</a></li>
+                                                <li><a href="login.html">Login</a></li>
+                                                <li><a href="register.html">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -101,48 +103,20 @@
     </header>
     <br>
     <br>
+    <main>
+        <div id="contact-form">
+            <img src="assets/img/officer.png" alt="" class="avatar">
+            <h2>Green View Laundry</h2>
 
-    <div id="box6">
-        <div class="topic4">
-            <h2>User Panel</h2>
+            <form name="myForm" autocomplete="off" action="Server/logserver.php" method="POST">
+
+
+                <a href="add_Details.php"><input type="button" name="Enter" value="Enter" onclick="myFunction()" id="sub6"><br></a>
+
+            </form>
+
         </div>
-
-        <a href="#" class="newbutton"> <img src="Logo/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="Logo/history.png"> Booking History</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="###" class="newbutton2"><img src="Logo/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="Logo/refund.png"> Refund Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <a href="add_details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="Laundry_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-    </div>
-    <div>
-
-        <div id="but">
-            <a href="reservation.php"><button type="button" class="button3">Reserve Your Ticket</button></a>
-        </div>
-
-        <div id="but">
-            <a href="###"><button type="button" class="button2"> Find New Location</button></a>
-        </div>
-
-
-
-    </div>
+    </main>
 
     <br>
     <br>
@@ -156,7 +130,7 @@
                         <div class="single-footer-caption mb-30">
                             <!-- logo -->
                             <div class="footer-logo">
-                                <a href="index.php"><img src="assets/img/logo/footer-img.png" alt=""></a>
+                                <a href="index.html"><img src="assets/img/logo/.png" alt=""></a>
                             </div>
                             <div class="footer-social footer-social2">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -166,7 +140,8 @@
                             </div>
                             <div class="footer-pera">
                                 <p>
-                                    Copyright &copy;<script>
+                                    Copyright &copy;
+                                    <script>
                                         document.write(new Date().getFullYear());
                                     </script> All rights reserved by <a href="###" target="_blank">Green View Holiday Resort</a>
                                 </p>
@@ -178,10 +153,10 @@
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="rooms.php">Our Best Rooms</a></li>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="rooms.html">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="services.html">Pool Service</a></li>
                                 </ul>
                             </div>
                         </div>
