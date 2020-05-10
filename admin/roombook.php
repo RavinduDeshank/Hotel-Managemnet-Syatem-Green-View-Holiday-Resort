@@ -2,7 +2,7 @@
 session_start();  
 if(!isset($_SESSION["user"]))
 {
- header("location:index.php");
+ header("location:room_admin_login.php");
 }
 ?> 
 
@@ -10,7 +10,7 @@ if(!isset($_SESSION["user"]))
 		if(!isset($_GET["rid"]))
 		{
 				
-			 header("location:index.php");
+			 header("location:room_admin_login.php");
 		}
 		else {
 				$curdate=date("Y/m/d");
@@ -491,20 +491,20 @@ if(!isset($_SESSION["user"]))
 												 $type_of_room = 0;       
 														if($troom=="Superior Room")
 														{
-															$type_of_room = 320;
+															$type_of_room = 8000;
 														
 														}
 														else if($troom=="Deluxe Room")
 														{
-															$type_of_room = 220;
+															$type_of_room = 5000;
 														}
 														else if($troom=="Guest House")
 														{
-															$type_of_room = 180;
+															$type_of_room = 3000;
 														}
 														else if($troom=="Single Room")
 														{
-															$type_of_room = 150;
+															$type_of_room = 2000;
 														}
 														
 														
@@ -538,7 +538,7 @@ if(!isset($_SESSION["user"]))
 														}
 														else if($meal=="Breakfast")
 														{
-															$type_of_meal=$type_of_bed * 2;
+															$type_of_meal=$type_of_bed * 1;
 														}else if($meal=="Half Board")
 														{
 															$type_of_meal=$type_of_bed * 3;

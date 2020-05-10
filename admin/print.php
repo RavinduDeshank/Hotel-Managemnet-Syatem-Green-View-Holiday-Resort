@@ -198,20 +198,20 @@ tr:hover .cut { opacity: 1; }
 									$type_of_room = 0;       
 									if($troom=="Superior Room")
 									{
-										$type_of_room = 8000;
+										$type_of_room = 320;
 									
 									}
 									else if($troom=="Deluxe Room")
 									{
-										$type_of_room = 5000;
+										$type_of_room = 220;
 									}
 									else if($troom=="Guest House")
 									{
-										$type_of_room = 3000;
+										$type_of_room = 180;
 									}
 									else if($troom=="Single Room")
 									{
-										$type_of_room = 2000;
+										$type_of_room = 150;
 									}
 									
 									if($bed=="Single")
@@ -241,14 +241,14 @@ tr:hover .cut { opacity: 1; }
 									}
 									else if($meal=="Breakfast")
 									{
-										$type_of_meal=$type_of_bed + 400;
+										$type_of_meal=$type_of_bed * 2;
 									}else if($meal=="Half Board")
 									{
-										$type_of_meal=$type_of_bed * 1000;
+										$type_of_meal=$type_of_bed * 3;
 									
 									}else if($meal=="Full Board")
 									{
-										$type_of_meal=$type_of_bed * 2000;
+										$type_of_meal=$type_of_bed * 4;
 									}
 	
 	?>
@@ -256,7 +256,7 @@ tr:hover .cut { opacity: 1; }
 			<h1>Invoice</h1>
 			<address >
 				<p>GREEN VIEW HOLIDAY RESORT,</p>
-				<p>221/3,Ranala Road,Hoabarakada,<br>Homagama<br>Sri Lanka.</p>
+				<p>221/3,Ranala Road,Hoabarakada,<br>Homagama,<br>Sri Lanka.</p>
 				<p>(+94) 78 893 38 67</p>
 			</address>
 			<span><img alt="" src="assets/img/footer-img.png"></span>

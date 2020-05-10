@@ -2,7 +2,7 @@
 session_start();  
 if(!isset($_SESSION["user"]))
 {
- header("location:index.php");
+ header("location:room_admin_login.php");
 }
 ?> 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ if(!isset($_SESSION["user"]))
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SUNRISE HOTEL</title>
+    <title>GREEN VIEW HOLIDAY RESORT</title>
 	<!-- Bootstrap Styles-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FontAwesome Styles-->

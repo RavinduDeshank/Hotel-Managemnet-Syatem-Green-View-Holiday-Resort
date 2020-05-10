@@ -116,8 +116,8 @@
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="###" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
+        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
+        <a href="admin/room_admin_login.php" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
         </br>
         </br>
         </br>
@@ -156,7 +156,7 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
+        <a href="indexTaxi.php" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
         <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
     </div>
