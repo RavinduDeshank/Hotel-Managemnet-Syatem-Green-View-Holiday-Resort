@@ -89,22 +89,30 @@
             
             <div class = "row justify-content-center">
                 <div class = "info">
+
+                <?php
+                    
+                    if(!empty($errors)){
+                        echo 'There were errors on your form';
+                    }
+                ?>
+
                     <form action="" method = "POST">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name">
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email">
+                            class = "form-control" placeholder = "Email" required>
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-                            class = "form-control" placeholder = "Payment">
+                            class = "form-control" placeholder = "Payment" required>
                         </div>
                         <div class="form-group">
                             <?php

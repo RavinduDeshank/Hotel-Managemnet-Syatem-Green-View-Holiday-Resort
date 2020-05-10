@@ -23,6 +23,8 @@
         $hpay = $_POST['hall_outdoor_income'];
         $tot = $_POST['total_bill'];
 
+        $tot = $name + $email + $tpay + $rpay + $lpay + $hpay;
+
         $mysqli->query("INSERT INTO customer_full_payment (customer_name,email,taxi_income,room_income,
         laundry_income,hall_outdoor_income,total_bill) VALUES ('$name','$email','$tpay','$rpay','$lpay','$hpay','$tot')") or
         die($mysqli->error);
@@ -55,7 +57,6 @@
             $rpay = $row['room_income'];
             $lpay = $row['laundry_income'];
             $hpay = $row['hall_outdoor_income'];
-            $tot = $row['total_bill'];
         }
     }
 
@@ -68,6 +69,8 @@
         $lpay = $_POST['laundry_income'];
         $hpay = $_POST['hall_outdoor_income'];
         $tot = $_POST['total_bill'];
+
+        $tot = $name + $email + $tpay + $rpay + $lpay + $hpay;
 
         $mysqli->query("UPDATE customer_full_payment SET customer_name = '$name', email = '$email', taxi_income = '$tpay', room_income = '$rpay', laundry_income = '$lpay',
         hall_outdoor_income = '$hpay', total_bill = '$tot' WHERE customer_id = $id") or

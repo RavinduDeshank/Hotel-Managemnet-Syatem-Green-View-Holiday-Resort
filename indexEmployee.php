@@ -94,17 +94,17 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name">
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email">
+                            class = "form-control" placeholder = "Email" required>
                         </div>
                         <div class="form-group">
                             <lable>Salary</lable>
                             <input type="number" name = "sal" value ="<?php echo $sal; ?>"
-                            class = "form-control" placeholder = "Salary">
+                            class = "form-control" placeholder = "Salary" required>
                         </div>
                         <div class="form-group">
                             <?php

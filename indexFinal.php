@@ -94,25 +94,25 @@
                     <form action="" method = "POST">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
-                            <lable>Customer Name</lable>
+                            <lable>Year</lable>
                             <input type="text" name = "year" 
-                            value ="<?php echo $year; ?>" class = "form-control" placeholder = "Enter Customer Name">
+                            value ="<?php echo $year; ?>" class = "form-control" placeholder = "Year" required>
                         </div>
                         <div class="form-group">
                             <lable>All Incomes</lable>
                             <input type="number" name = "all_incomes" value ="<?php echo $income; ?>" 
-                            class = "form-control" placeholder = "All Incomes">
+                            class = "form-control" placeholder = "All Incomes" required>
                         </div>
                         <div class="form-group">
                             <lable>All Expenses</lable>
                             <input type="number" name = "all_expences" value ="<?php echo $expenses; ?>"
-                            class = "form-control" placeholder = "All Expenses">
+                            class = "form-control" placeholder = "All Expenses" required>
                         </div>
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <lable>Total Profit</lable>
                             <input type="number" name = "total_profit" value ="<?php echo $profit; ?>"
-                            class = "form-control" placeholder = "Total Profit">
-                        </div>
+                            class = "form-control" placeholder = "Total Profit" required>
+                        </div> -->
                         <div class="form-group">
                             <?php
                             if($update == true):

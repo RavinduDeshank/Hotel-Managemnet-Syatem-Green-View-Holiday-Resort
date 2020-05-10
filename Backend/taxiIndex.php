@@ -15,6 +15,7 @@
         $email = $_POST['email'];
         $pay = $_POST['payment'];
 
+        
         $mysqli->query("INSERT INTO taxi_payment (customer_name,email,payment) VALUES ('$name','$email','$pay')") or
         die($mysqli->error);
 

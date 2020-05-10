@@ -42,6 +42,7 @@
 
         <?php require_once 'Backend/billCustomer.php'; ?>
 
+
         <?php
             if(isset($_SESSION['message'])): ?>
             <div class="alert alert-<?=$_SESSION['msg_type']?>">
@@ -102,37 +103,32 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name">
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email">
+                            class = "form-control" placeholder = "Email" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
                             <input type="number" name = "taxi_income" value ="<?php echo $tpay; ?>"
-                            class = "form-control" placeholder = "Taxi bill">
+                            class = "form-control" placeholder = "Taxi bill" required>
                         </div>
                         <div class="form-group">
                             <lable>Room Bill</lable>
                             <input type="number" name = "room_income" value ="<?php echo $rpay; ?>"
-                            class = "form-control" placeholder = "Room bill">
+                            class = "form-control" placeholder = "Room bill" required>
                         </div>
                         <div class="form-group">
                             <lable>Laundry Bill</lable>
                             <input type="number" name = "laundry_income" value ="<?php echo $lpay; ?>"
-                            class = "form-control" placeholder = "Laundry bill">
+                            class = "form-control" placeholder = "Laundry bill" required>
                         </div>
                         <div class="form-group">
                             <lable>Hall Bill</lable>
                             <input type="number" name = "hall_outdoor_income" value ="<?php echo $hpay; ?>"
-                            class = "form-control" placeholder = "Hall bill">
-                        </div>
-                        <div class="form-group">
-                            <lable>Total Bill</lable>
-                            <input type="number" name = "total_bill" value ="<?php echo $tot; ?>"
-                            class = "form-control" placeholder = "Total Bill">
+                            class = "form-control" placeholder = "Hall bill" required>
                         </div>
                         <div class="form-group">
                             <?php

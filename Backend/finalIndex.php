@@ -17,6 +17,7 @@
         $expenses = $_POST['all_expences'];
         $profit = $_POST['total_profit'];
 
+        $profit = $income - $expenses;
         $mysqli->query("INSERT INTO final_report (year,all_incomes,all_expences,total_profit) VALUES ('$year','$income','$expenses','$profit')") or
         die($mysqli->error);
 
@@ -45,7 +46,6 @@
             $year = $row['year'];
             $income = $row['all_incomes'];
             $expenses = $row['all_expences'];
-            $profit = $row['total_profit'];
         }
     }
 
@@ -55,6 +55,8 @@
         $income = $_POST['all_incomes'];
         $expenses = $_POST['all_expences'];
         $profit = $_POST['total_profit'];
+
+        $profit = $income - $expenses;
 
         $mysqli->query("UPDATE final_report SET year = '$year', all_incomes = '$income', all_expences = '$expenses' ,  total_profit = '$profit'  WHERE year = $id") or
         die ($mysqli->error);
