@@ -1,5 +1,4 @@
 <?php require_once('Backend/dbconnection.php'); ?>
-<?php require_once('Backend/taxifunctions.php'); ?>
 <?php
     $errors = array();
     $username = '';
@@ -10,7 +9,8 @@
 	$reserved_room_no = '';
 	$time = '';
 	$date = '';
-	$location = '';
+    $location = '';
+    $taxi_fee = '';
 	$vehicle_type = '';
 
 	
@@ -23,11 +23,12 @@
 		$reserved_room_no = $_POST['reserved_room_no'];
 		$time = $_POST['time'];
 		$date = $_POST['date'];
-		$location = $_POST['location'];
+        $location = $_POST['location'];
+        $taxi_fee = $_POST['taxi_fee'];
 		$vehicle_type = $_POST['vehicle_type'];
         
 		//checking required fields
-		$req_fields = array('username','password','full_name','email','tel_number','reserved_room_no','time','date','location','vehicle_type');
+		$req_fields = array('username','password','full_name','email','tel_number','reserved_room_no','time','date','location', 'taxi_fee','vehicle_type');
 
 		foreach ($req_fields as $field) {
 			if (empty(trim($_POST[$field]))) {
@@ -45,13 +46,14 @@
 			$reserved_room_no = mysqli_real_escape_string($db, $_POST['reserved_room_no']);
 			$time = mysqli_real_escape_string($db, $_POST['time']);
 			$date = mysqli_real_escape_string($db, $_POST['date']);
-			$location = mysqli_real_escape_string($db, $_POST['location']);
+            $location = mysqli_real_escape_string($db, $_POST['location']);
+            $taxi_fee = mysqli_real_escape_string($db, $_POST['taxi_fee']);
 			$vehicle_type = mysqli_real_escape_string($db, $_POST['vehicle_type']);
 			 
 			$query = "INSERT INTO taxicustomer ( ";
-			$query .= "username, password, user_type, full_name, email, tel_number, reserved_room_no, time, date, location, vehicle_type, is_deleted";
+			$query .= "username, password, user_type, full_name, email, tel_number, reserved_room_no, time, date, location, taxi_fee, vehicle_type, is_deleted";
 			$query .= ") VALUES (";
-			$query .= "'{$username}', '{$password}', 'Customer', '{$full_name}', '{$email}', '{$tel_number}', {$reserved_room_no}, '{$time}', '{$date}', '{$location}', '{$vehicle_type}', 0";
+			$query .= "'{$username}', '{$password}', 'taxiCustomer', '{$full_name}', '{$email}', '{$tel_number}', {$reserved_room_no}, '{$time}', '{$date}', '{$location}', '{$taxi_fee}', '{$vehicle_type}', 0";
 			$query .= ")";
 
 			$result = mysqli_query($db, $query);
@@ -97,6 +99,7 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
+            
    </head>
 
    <body>
@@ -209,7 +212,7 @@
 
 	<p>
 		<label for="">Phone:</label>
-		<input type="tel" placeholder="Enter your phone number" name="tel_number" pattern="[0-9]{10}" >
+		<input type="tel" placeholder="Enter your phone number" name="tel_number" pattern="^\d{3}\d{7}$" >
 		<small>0123456789</small>
 	</p>
 
@@ -231,6 +234,12 @@
 	<p>
 		<label for="">Location:</label>
 		<input type="text" placeholder="Enter ZIP/Location" name="location" <?php echo 'value="' . $location .'"';  ?>>
+	</p>
+
+    <p>
+		<label for="">Total Taxi Fee:</label>
+        <input type="price" placeholder="Enter the calculated fee" name="taxi_fee" <?php echo 'value="' . $taxi_fee .'"';  ?>><br>
+        <span><a href="caltaxi.php" target="_blank">Click here, to findout the taxi fee.</a></span>
 	</p>
 
 	<p class="form-inline">

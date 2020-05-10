@@ -3,7 +3,7 @@
     $reserved_list = ''; 
 
     //getting the list of reservations
-    $query = "SELECT * FROM taxicustomer WHERE is_deleted=0 ORDER BY full_name";
+    $query = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
     if($users) {
@@ -13,6 +13,7 @@
             $reserved_list .= "<td>{$user['tel_number']}</td>";
             $reserved_list .= "<td>{$user['date']}</td>";
             $reserved_list .= "<td>{$user['time']}</td>";
+            $reserved_list .= "<td>{$user['vehicle_type']}</td>";
             $reserved_list .= "<td>{$user['location']}</td>";
             $reserved_list .= "</tr>";
         } 
@@ -133,6 +134,7 @@
                 <th>Contact Number</th>
                 <th>Date</th>
                 <th>Time</th>
+                <th>Vehicle type</th>
                 <th>Location</th>
             </tr>
 

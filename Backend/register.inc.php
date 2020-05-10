@@ -1,4 +1,5 @@
 <?php
+
     include 'dbconnection.php';
 
     $errors = array();

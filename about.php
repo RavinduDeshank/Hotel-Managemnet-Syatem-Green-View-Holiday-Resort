@@ -99,6 +99,7 @@
        </div>
         <!-- Header End -->
     </header>
+    
     <main>
 
         <!-- slider Area Start-->
@@ -208,7 +209,12 @@
     </main>
     <br>
     <br>
+<<<<<<< HEAD
+    </br>
+    
+=======
     <br>
+>>>>>>> c40e5e125e9f504514724e005f90d44158104467
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">

@@ -1,3 +1,10 @@
+<?php
+  SESSION_START();
+
+  if(!isset($_SESSION['userid']) && !isset($_SESSION['username'])){
+    header("Location: login.php");
+  }
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -65,7 +72,7 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservations</a></li>
@@ -107,21 +114,22 @@
             <h2>User Panel</h2>
         </div>
 
-        <a href="#" class="newbutton"> <img src="Logo/user.png"> Edit Your Details</a>
-        <a href="##" class="newbutton1"> <img src="Logo/history.png"> Booking History</a>
+        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
+        <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="###" class="newbutton2"><img src="Logo/Booking Cancel.png"> Booking Cancellation</a>
-        <a href="###" class="newbutton3"> <img src="Logo/refund.png"> Refund Details</a>
+        <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
+        <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
         </br>
         </br>
         </br>
         </br>
         </br>
+<<<<<<< HEAD
         <a href="add_details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
         <a href="Laundry_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
         </br>
@@ -142,6 +150,19 @@
 
 
 
+=======
+        <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
+        <a href="hall_reserve.php" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
+        <br>
+        <br>
+        </br>
+        </br>
+        </br>
+        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
+        <br>
+        <br>
+        
+>>>>>>> da023315a6a2d793d38d6291511fdb79a0507970
     </div>
 
     <br>
