@@ -68,23 +68,23 @@ include 'Backend/taxilogin.inc.php';
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About</a></li>
-                                        <li><a href="services.php">Service</a></li>
+                                        <li><a href="../index.php">Home</a></li>
+                                        <li><a href="../about.php">About</a></li>
+                                        <li><a href="../services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.php">Rooms</a></li>
+                                                <li><a href="../rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.php">Promotions</a></li>
-                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="../Promotion.php">Promotions</a></li>
+                                                <li><a href="../blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="./login.php">Login</a></li>
-                                                <li><a href="register.php">SignUp</a></li>
+                                                <li><a href="../login.php">Login</a></li>
+                                                <li><a href="../register.php">SignUp</a></li>
                                                 <!-- <li><a href="elogin.html">Employ management</a></li> -->
                                             </ul>
                                         </li>
