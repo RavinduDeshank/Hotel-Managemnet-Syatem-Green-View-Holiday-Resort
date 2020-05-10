@@ -1,0 +1,72 @@
+.all{
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.feature{
+	background-color: bisque;
+	padding-top: 1px;
+}
+
+.column {
+	float: none;
+	width: 50%;
+	padding-top: 1px;
+}
+
+.hedding{
+	color: rgb(122, 90, 9);
+	font-style: initial;
+}
+
+.points{
+	color: rgb(122, 90, 9);
+	padding-left: 20px;
+}
+
+.feature_regal{
+	float: left;
+	width: 50%;
+	background-color: bisque;
+	padding-top: 1px;
+
+} 
+
+ .column_regal {
+	float: right;
+	width: 40%;
+	padding-top: 10%;
+  }
+
+a.hall_booking_btn{
+ 	display:inline-block;
+	padding:0.3em 1.2em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:2em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'Roboto',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color: rgb(196, 144, 13);
+	text-align:center;
+	text-size-adjust: 20px;
+	transition: all 0.2s;
+}
+
+a.hall_booking_btn :hover{
+	background-repeat: rgb(122, 90, 9);
+}
+
+@media all and (max-width:30em){
+	 a.hall_booking_btn{
+		display:block;
+		margin-left:0.2em auto;
+	}
+}
+
