@@ -1,7 +1,7 @@
 <?php
 
     $dbhost = 'localhost';
-    $dbuser = 'root';
+    $dbuser = '';
     $dbpass = '';
     $dbname = 'greenview';
 

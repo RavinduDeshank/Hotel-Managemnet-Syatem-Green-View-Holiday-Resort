@@ -65,7 +65,7 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
@@ -124,8 +124,8 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton4"> <img src="assets/img/hall.jpg"> Add Halls</a>
-        <a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>
+        <center><a href="hall_adminpanal.php" class="newbutton4"> <img src="assets/img/hall.jpg"> View Hall Bookings</a></center>
+        <!--<a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>-->
         </br>
         </br>
         </br>

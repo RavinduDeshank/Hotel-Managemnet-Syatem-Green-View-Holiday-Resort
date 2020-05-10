@@ -63,7 +63,7 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
