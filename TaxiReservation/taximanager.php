@@ -124,7 +124,7 @@
         </br>
         </br>  
 
-        <a href="taxidrivermngment.php" class="newbutton7"> <img src="assets/img/taxi/taxidriver.png"> Taxi Driver Management</a>
+        <a href="taxidrivermngment.php" class="newbutton7"> <img src="assets/img/taxi/adddriver.png"> Taxi Driver Management</a>
 
         </br>
         </br>

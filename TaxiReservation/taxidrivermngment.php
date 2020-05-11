@@ -109,7 +109,7 @@
         </div>
 
         <a href="viewtaxidrivers.php" class="newbutton"> <img src="assets/img/taxi/viewdriver.png"> Details of Taxi Drivers</a>
-        <a href="addtaxidriver.php" class="newbutton1"> <img src="assets/img/taxi/adddriver.png"> Add New Taxi Driver</a>
+        <a href="addtaxidriver.php" class="newbutton1"> <img src="assets/img/taxi/taxidriver.png"> Add New Taxi Driver</a>
         </br>
         </br>
         </br>
