@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | admin</title>
+    <title>Green View Holiday Resort | Taxi Driver Management</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,13 +69,13 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservation</a></li>
+                                                <li><a href="taxi.php">Taxi Reservations</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -102,42 +102,25 @@
     </header>
     <br>
     <br>
-    <br>
 
     <div id="box3">
-        <div class="topic3">
-            <h2><center>Taxi Manager</center></h2>
-        </div><br>
-        <a href="viewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View Taxi Reservations</a>
+        <div class="topic4">
+            <h2>User Panel</h2>
+        </div>
 
+        <a href="viewtaxidrivers.php" class="newbutton"> <img src="assets/img/taxi/viewdriver.png"> Details of Taxi Drivers</a>
+        <a href="addtaxidriver.php" class="newbutton1"> <img src="assets/img/taxi/adddriver.png"> Add New Taxi Driver</a>
         </br>
         </br>
         </br>
         </br>
-        </br> 
+        </br>
+
+        <a href="removetaxidriver.php" class="newbutton11"> <img src="assets/img/taxi/adddriver1.png">Remove Taxi Driver</a>
+     
         
-        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi/removetaxi.png"> Remove Taxi Reservations</a>
-
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>  
-
-        <a href="taxidrivermngment.php" class="newbutton7"> <img src="assets/img/taxi/taxidriver.png"> Taxi Driver Management</a>
-
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>  
-
-        <a href="addTaximgr.php" class="newbutton11"> <img src="assets/img/taxi/addtaximanager.png">Add New Taxi Manager</a>
-
     </div>
 
-    <br>
-    <br>
     <br>
     <br>
 
@@ -176,7 +159,6 @@
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
-                                    <li><a href="taxi.php">Taxi Service</a></li>
                                 </ul>
                             </div>
                         </div>

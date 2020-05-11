@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Invoice</title>
+		<title>Taxi Reservation</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="license" href="https://www.opensource.org/licenses/mit-license/">
 		<script src="script.js"></script>
@@ -11,9 +11,9 @@
 
 *
 {
-	border: 0;
+	border: 2;
 	box-sizing: content-box;
-	color: inherit;
+	color: 090016;
 	font-family: inherit;
 	font-size: inherit;
 	font-style: inherit;
@@ -38,7 +38,7 @@ span[contenteditable] { display: inline-block; }
 
 /* heading */
 
-h2 { font: bold 50% ; color:black; letter-spacing: 0.5em; text-align: center; text-transform: uppercase; }
+h2 { font: bold 100% ; color:1A003C; letter-spacing: 0.5em; text-align: center; text-transform: uppercase; }
 
 /* table */
 
@@ -46,8 +46,8 @@ table { font-size: 75%; table-layout: fixed; width: 100%; }
 table { border-collapse: separate; border-spacing: 2px; }
 th, td { border-width: 1px; padding: 0.5em; position: relative; text-align: left; }
 th, td { border-radius: 0.25em; border-style: solid; }
-th { background: #EEE; border-color: #BBB; }
-td { border-color: #DDD; }
+th { background: #787CB5; border-color: #05000B; }
+td { background: #C1DCFF; border-color: #05000B; }
 
 /* page */
 
@@ -62,8 +62,8 @@ body { background: #FFF; border-radius: 1px; box-shadow: 0 0 1in -0.25in rgba(0,
 header { margin: 0 0 3em; }
 header:after { clear: both; content: ""; display: table; }
 
-header h1 { background: #000; border-radius: 0.25em; color: #FFF; margin: 0 0 1em; padding: 0.5em 0; }
-header address { float: left; font-size: 75%; font-style: normal; line-height: 1.25; margin: 0 1em 1em 0; }
+header h2 { background: #1E0046; border-radius: 0.5em; color: #FFF; margin: 0 0 1em; padding: 0.5em 0; font:monospace; }
+header address { float: left; font-size: 50%; font-style:italic; line-height: 1.25; margin: 0 1em 1em 0; }
 header address p { margin: 0 0 0.25em; }
 header span, header img { display: block; float: right; }
 header span { margin: 0 0 1em 1em; max-height: 25%; max-width: 60%; position: relative; }
@@ -74,9 +74,9 @@ header input { cursor: pointer; -ms-filter:"progid:DXImageTransform.Microsoft.Al
 
 article, article address, table.meta, table.inventory { margin: 0 0 3em; }
 article:after { clear: both; content: ""; display: table; }
-article h1 { clip: rect(0 0 0 0); position: absolute; }
+article h2 { clip: rect(0 0 0 0); position: absolute; }
 
-article address { float: left; font-size: 125%; font-weight: bold; }
+article address { float: left; font-size: 125%; font-weight: bold; font-style:oblique; }
 
 /* table meta & balance */
 
@@ -90,14 +90,14 @@ table.meta td { width: 60%; }
 
 /* table items */
 
-table.inventory { clear: both; width: 100%; }
-table.inventory th { font-weight: bold; text-align: center; }
+table.taxitable { clear: both; width: 100%; }
+table.taxitable th { font-weight: bold; text-align: center; }
 
-table.inventory td:nth-child(1) { width: 26%; }
-table.inventory td:nth-child(2) { width: 38%; }
-table.inventory td:nth-child(3) { text-align: right; width: 12%; }
-table.inventory td:nth-child(4) { text-align: right; width: 12%; }
-table.inventory td:nth-child(5) { text-align: right; width: 12%; }
+table.taxitable td:nth-child(1) { width: 26%; }
+table.taxitable td:nth-child(2) { width: 38%; }
+table.taxitable td:nth-child(3) { text-align: right; width: 12%; }
+table.taxitable td:nth-child(4) { text-align: right; width: 12%; }
+table.taxitable td:nth-child(5) { text-align: right; width: 12%; }
 
 /* table balance */
 
@@ -106,8 +106,8 @@ table.balance td { text-align: right; }
 
 /* aside */
 
-aside h1 { border: none; border-width: 0 0 1px; margin: 0 0 1em; }
-aside h1 { border-color: #999; border-bottom-style: solid; }
+aside h2 { border: none; border-width: 0 0 1px; margin: 0 0 1em; }
+aside h2 { border-color: #999; border-bottom-style: solid; }
 
 /* javascript */
 
@@ -124,6 +124,7 @@ aside h1 { border-color: #999; border-bottom-style: solid; }
 
 .add, .cut
 {
+
 	background: #9AF;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 	background-image: -moz-linear-gradient(#00ADEE 5%, #0078A5 100%);
@@ -158,6 +159,8 @@ tr:hover .cut { opacity: 1; }
 		
 	</head>
 	<body>
+	<img src="assets/img/logo/logo-img.png" alt=""></a>
+	
 	
 	
 	
@@ -195,34 +198,44 @@ tr:hover .cut { opacity: 1; }
 	
 	?>
 		<header>
-        <center>
+        
 			<h2>Taxi Reservation</h2>
-        </center>   
+			
 		</header>
+		
         <address >
 				<p>GREEN VIEW HOLIDAY RESORT,</p>
 				<p>221/3,Ranala Road,Hoabarakada,<br>Homagama,<br>Sri Lanka.</p>
 				<p>(+94) 78 893 38 67</p>
 			</address>
             
-			<span><img alt="" src="assets/img/green_View.jpeg"></span>
+		
 		<article>
-			<h1>Recipient</h1>
+			
 			<address >
 				<p><?php echo $full_name ?> <br></p>
 			</address>
 			<table class="meta">
-				<tr>
-					<th><span >Invoice </span></th>
+			<tr>
+					<th><span >Reservation ID </span></th>
 					<td><span ><?php echo $user_id; ?></span></td>
 				</tr>
 				<tr>
-					<th><span >Date</span></th>
-					<td><span ><?php echo $date; ?> </span></td>
+					<th><span >Username</span></th>
+					<td><span ><?php echo $uname; ?> </span></td>
+				</tr>
+				<tr>
+					<th><span >Contact Number</span></th>
+					<td><span ><?php echo $tel_number; ?> </span></td>
+				</tr>
+				<tr>
+					<th><span >Email</span></th>
+					<td><span ><?php echo $email; ?> </span></td>
 				</tr>
 				
 			</table>
-			<table class="inventory">
+			<span> <center><img alt="" src="assets/img/taxi/taxipng.png"></center></span>
+			<table class="taxitable">
 				<thead>
 					<tr>
 						<th><span >Vehicle type</span></th>
@@ -247,11 +260,14 @@ tr:hover .cut { opacity: 1; }
 			
 		</article>
 		<aside>
-			<h1><span >Contact us</span></h1>
+			<h2><span >Contact Taxi Manager</span></h2>
 			<div >
-				<p align="center">Email:-Reservations@greenviewholiday.com || Skype:-Green View Holiday || Phone:- +94 78 893 38 67 </p>
+				<p align="center">Email:-TaxiManager@greenviewholiday.com </p> 
+				<p align="center"> Facebook:-Green View Holiday </p> 
+				<p align="center">Phone:- +94 77 906 69 33 </p>
 			</div>
 		</aside>
+		
 	</body>
 </html>
 

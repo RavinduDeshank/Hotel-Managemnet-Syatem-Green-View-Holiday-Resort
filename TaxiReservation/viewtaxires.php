@@ -122,11 +122,6 @@ $result = mysqli_query($db, $sql);
                 <th>Email</th>
                 <th>Telephone Number</th>
                 <th>Reserved Room Number</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Location</th>
-                <th>Taxi Fee</th>
-                <th>Vehicle Type</th>
                 <th> Print </th>
             </tr>
            
@@ -137,31 +132,19 @@ $result = mysqli_query($db, $sql);
             
                 
                 $user_id = $row['user_id'];
-                $uname = $row['username'];
+                $full_name = $row['full_name'];
                 $email = $row['email'];
                 $tel_number = $row['tel_number'];
                 $reserved_room_no = $row['reserved_room_no'];
-                $date = $row['date'];
-                $time = $row['time'];
-                $location = $row['location'];
-                $taxi_fee = $row['taxi_fee'];
-                $vehicle_type = $row['vehicle_type'];
-
-
-
-            ?>
+               
+                ?>
                 <tr>
                     
-                    <td><?php echo $uname ?></td>
+                    <td><?php echo $full_name ?></td>
                     <td><?php echo $email ?></td>
                     <td><?php echo $tel_number ?></td>
                     <td><?php echo $reserved_room_no ?></td>
-                    <td><?php echo $date ?></td>
-                    <td><?php echo $time ?></td>
-                    <td><?php echo $location ?></td>
-                    <td><?php echo $taxi_fee ?></td>
-                    <td><?php echo $vehicle_type ?></td>
-                    <td><a href=printtaxi.php?user_id=".$user_id." <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+                    <td><a href=printtaxi.php?user_id=<?php echo $user_id?> <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
                 <?php
             }
                 ?>

@@ -1,11 +1,13 @@
-<?php require_once('Backend/taxisession.php'); ?>
+<?php
+include 'Backend/addtaxidriver.inc.php';
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | admin</title>
+    <title>Green View Holiday Resort | Register</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -73,9 +75,9 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
+                                                <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -102,42 +104,60 @@
     </header>
     <br>
     <br>
-    <br>
 
-    <div id="box3">
-        <div class="topic3">
-            <h2><center>Taxi Manager</center></h2>
-        </div><br>
-        <a href="viewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View Taxi Reservations</a>
+    <div class="register">
+        <div class="bar">
+            <h4>Add Taxi Driver</h4>
+        </div>
+        <br>
+        <div>
+            <?php
+            if (!empty($errors)) {
+                echo '<div class="alert alert-danger" role="alert">';
+                foreach ($errors as $error) {
+                    echo $error;
+                    echo '<br>';
+                }
+                echo '</div>';
+            }
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br> 
-        
-        <a href="removetaxires.php" class="newbutton7"> <img src="assets/img/taxi/removetaxi.png"> Remove Taxi Reservations</a>
+            if (!empty($success)) {
+                echo '<div class="alert alert-success" role="alert">';
+                foreach ($success as $succ) {
+                    echo $succ;
+                }
+                echo '</div>';
+            }
+            ?>
+        </div>
+        <form action="" method="POST" id="form">
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>  
+            <label>Licence Number</label><br>
+            <input type="text" name="licence_num" id="usrName" placeholder="Enter Licence Number"><br><br>
 
-        <a href="taxidrivermngment.php" class="newbutton7"> <img src="assets/img/taxi/taxidriver.png"> Taxi Driver Management</a>
+            <label>Full Name</label><br>
+            <input type="text" name="full_name" id="usrName" placeholder="Enter Full Name"><br><br>
 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>  
+            <label>Email</label><br>
+            <input type="email" name="email" id="usrName" placeholder="Enter Email"><br><br>
 
-        <a href="addTaximgr.php" class="newbutton11"> <img src="assets/img/taxi/addtaximanager.png">Add New Taxi Manager</a>
+            <label>Contact Number</label><br>
+            <input type="tel" name="tel_num" id="usrName"  pattern="^\d{3}\d{7}$" placeholder="Enter Contact Number"><br><br>
 
+            <label>NIC (National Identity Card) Number</label><br>
+            <input type="text" name="NIC" id="usrName" placeholder="Enter NIC"><br><br>
+
+            <label>Address</label><br>
+            <input type="text" name="address" id="usrName" placeholder="Enter Address"><br><br>
+
+
+            <input type="submit" value="Add" class="btn" name="signup">
+            <a href="taxidrivermngment.php"><button type="button" value="reset" class="btn"> Taxi Driver Management </button></a>
+
+
+        </form>
     </div>
 
-    <br>
-    <br>
     <br>
     <br>
 
@@ -263,4 +283,3 @@
 </body>
 
 </html>
-<?php mysqli_close($db); ?>
