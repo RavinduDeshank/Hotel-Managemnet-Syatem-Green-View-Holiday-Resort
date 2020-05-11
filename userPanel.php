@@ -72,7 +72,7 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservations</a></li>
@@ -130,7 +130,7 @@
         </br>
         </br>
         <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
-        <a href="###" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
+        <a href="hall_reserve.php" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
         <br>
         <br>
         </br>
