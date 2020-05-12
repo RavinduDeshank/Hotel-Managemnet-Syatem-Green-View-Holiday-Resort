@@ -103,21 +103,26 @@
     <br>
     <br>
 
-    <div id="box3">
+    <div id="box5">
         <div class="topic4">
-            <h2>User Panel</h2>
+        
+            <center><h2>Taxi Driver Management</h2></center>
+            
         </div>
-
-        <a href="viewtaxidrivers.php" class="newbutton"> <img src="assets/img/taxi/viewdriver.png"> Details of Taxi Drivers</a>
-        <a href="addtaxidriver.php" class="newbutton1"> <img src="assets/img/taxi/taxidriver.png"> Add New Taxi Driver</a>
-        </br>
-        </br>
-        </br>
         </br>
         </br>
 
-        <a href="removetaxidriver.php" class="newbutton11"> <img src="assets/img/taxi/adddriver1.png">Remove Taxi Driver</a>
-     
+        <a href="viewtaxidrivers.php" class="newbutton"> <img src="assets/img/taxi/viewdriver.png"> Details</a>
+        <a href="addtaxidriver.php" class="newbutton1"> <img src="assets/img/taxi/taxidriver.png"> Add </a>
+        <a href="removetaxidriver.php" class="newbutton11"> <img src="assets/img/taxi/removemanager.png">Remove </a>
+        </br>
+        </br>
+        </br>
+        </br>
+        </br>
+        <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+        
+        
         
     </div>
 

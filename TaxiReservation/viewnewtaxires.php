@@ -2,7 +2,7 @@
 <?php
 include 'Backend/dbconnection.php';
 
-$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer'";
+$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=0";
 $result = mysqli_query($db, $sql);
 
 ?>
@@ -113,15 +113,14 @@ $result = mysqli_query($db, $sql);
     <br>
     <div id="box5">
         
-        <h3 class="title1 mt-2"> <center><u>TAXI RESERVATIONS</u></center> </h3>
+        <h3 class="title1 mt-2"> <center><u>NEW TAXI RESERVATIONS</u></center> </h3>
 
-        <table id="removepromotable" class="mt-5">
+        <table id="removepromotable" class="mt-4">
             <tr>
                 
                 <th>Full Name</th>
                 <th>Email</th>
                 <th>Telephone Number</th>
-                <th>Reserved Room Number</th>
                 <th> Print </th>
             </tr>
            
@@ -135,7 +134,6 @@ $result = mysqli_query($db, $sql);
                 $full_name = $row['full_name'];
                 $email = $row['email'];
                 $tel_number = $row['tel_number'];
-                $reserved_room_no = $row['reserved_room_no'];
                
                 ?>
                 <tr>
@@ -143,38 +141,23 @@ $result = mysqli_query($db, $sql);
                     <td><?php echo $full_name ?></td>
                     <td><?php echo $email ?></td>
                     <td><?php echo $tel_number ?></td>
-                    <td><?php echo $reserved_room_no ?></td>
                     <td><a href=printtaxi.php?user_id=<?php echo $user_id?> <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
                 <?php
             }
                 ?>
         </table>
 
-        </br>
-        </br>
+       
+      
 
         <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
 
-        <button type="submit" onclick="myfunction()" id="sub5"> Confirm </button>
+        
     </div>
 
 
 
-    <script>
-        function myfunction() {
-            var txt;
-            if (confirm("Do you want to remove this Reservation?")) {
-                txt = "removed";
-            } else {
-                txt = "";
-            }
-            document.getElementById("demo").innerHTML = txt;
-        }
-
-        function myFunction() {
-            alert("Taxi Reservation removed successfully");
-        }
-    </script>
+    
     <br>
     <br>
 

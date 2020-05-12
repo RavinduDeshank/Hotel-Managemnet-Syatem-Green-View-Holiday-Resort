@@ -108,7 +108,7 @@
         <div class="topic3">
             <h2><center>Taxi Manager</center></h2>
         </div><br>
-        <a href="viewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View Taxi Reservations</a>
+        <a href="viewnewtaxires.php" class="newbutton7"> <img src="assets/img/taxi/viewtaxi.png"> View New Taxi Reservations</a>
 
         </br>
         </br>
@@ -122,7 +122,15 @@
         </br>
         </br>
         </br>
-        </br>  
+        </br> 
+        
+        <a href="totaltaxiincome.php" class="newbutton7"> <img src="assets/img/taxi/income.png"> Total Taxi Income</a>
+
+        </br>
+        </br>
+        </br>
+        </br>
+        </br> 
 
         <a href="taxidrivermngment.php" class="newbutton7"> <img src="assets/img/taxi/adddriver.png"> Taxi Driver Management</a>
 
@@ -132,14 +140,16 @@
         </br>
         </br>  
 
-        <a href="addTaximgr.php" class="newbutton11"> <img src="assets/img/taxi/addtaximanager.png">Add New Taxi Manager</a>
+        <a href="addTaximgr.php" class="newbutton7"> <img src="assets/img/taxi/addmng.png"> Add New Taxi Manager</a>
 
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>  
+
+   
     </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
 
     <footer>
         <!-- Footer Start-->

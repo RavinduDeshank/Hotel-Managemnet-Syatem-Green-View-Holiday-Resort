@@ -8,7 +8,7 @@
         $username = mysqli_real_escape_string($db,$_POST['uname']);
         $password1 = mysqli_real_escape_string($db,$_POST['password']);
         $password2 = mysqli_real_escape_string($db, $_POST['repassword']);
-        $utype = 'taxiManager';
+        $utype = 'taxiDriver';
 
     if (empty($username) || empty($password1) || empty($password2)) {
         $errors[] = 'Empty Fields';

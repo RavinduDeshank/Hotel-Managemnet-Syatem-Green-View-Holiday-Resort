@@ -75,9 +75,9 @@ include 'Backend/addtaxidriver.inc.php';
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -131,6 +131,15 @@ include 'Backend/addtaxidriver.inc.php';
             ?>
         </div>
         <form action="" method="POST" id="form">
+
+            <label>User Name</label><br>
+            <input type="text" name="uname" id="usrName" placeholder="Enter User Name"><br><br>
+
+            <label>Password</label><br>
+            <input type="password" name="password" id="pass" placeholder="Enter Your Password"><br><br>
+
+            <label>Confirm Password</label><br>
+            <input type="password" name="repassword" id="pass1" placeholder="Re-Enter Your Password"><br><br>
 
             <label>Licence Number</label><br>
             <input type="text" name="licence_num" id="usrName" placeholder="Enter Licence Number"><br><br>

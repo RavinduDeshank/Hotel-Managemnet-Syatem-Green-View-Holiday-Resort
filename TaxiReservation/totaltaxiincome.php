@@ -1,16 +1,13 @@
+<?php require_once('Backend/taxisession.php'); ?>
 <?php
-include 'Backend/taxilogin.inc.php';
+include 'Backend/dbconnection.php';
 
+$sql = "SELECT *, (SELECT SUM(taxi_fee)) AS Total ,
+                  (SELECT COUNT(user_id)) AS Reservations 
+        FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=1";
+$result = mysqli_query($db, $sql);
 
 ?>
-<?php
-include 'Backend/taxidriverlogin.inc.php';
-
-
-?>
-
-
-
 
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -18,7 +15,7 @@ include 'Backend/taxidriverlogin.inc.php';
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | Login</title>
+    <title>Green View Holiday Resort | Remove Taxi Reservation</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,6 +36,7 @@ include 'Backend/taxidriverlogin.inc.php';
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/contact.css">
+    
 </head>
 
 <body>
@@ -73,24 +71,23 @@ include 'Backend/taxidriverlogin.inc.php';
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="../index.php">Home</a></li>
-                                        <li><a href="../about.php">About</a></li>
-                                        <li><a href="../services.php">Service</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="../rooms.php">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="../Promotion.php">Promotions</a></li>
-                                                <li><a href="../blog.php">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="###">Login</a>
+                                        <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="../login.php">Login</a></li>
-                                                <li><a href="../register.php">SignUp</a></li>
-                                                <!-- <li><a href="elogin.html">Employ management</a></li> -->
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -116,67 +113,41 @@ include 'Backend/taxidriverlogin.inc.php';
     </header>
     <br>
     <br>
-    <main>
-        <div class="form-row">
-            <div class="col-md-4"></div>
-            <div class="col-md-8">
-                <div class="form-row">
-                    <div class="col-md-2"></div>
-                    <div>
-                        <img src="assets/img/officer.png" alt="" class="avatar ml-4">
-                    </div>
-                </div>
-                <div class="col-md-6 p-md-4" id="contact-form">
+    <div id="box5">
 
-                    <div class="form-row">
-                        <div class="col-md-4"></div>
-                        <div class="ml-4">
-                            <h3>Taxi Login</h3>
-                            
-                        </div>
-                    </div>
+<h3 class="title1 mt-2"> <center><u>Summary of Taxi Reservations</u></center> </h3>
+<a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+        <table id="removepromotable" class="mt-5">
+            <tr>
+                <th>No of Reservations Completed</th>
+                <th>Total Taxi Income</th>
+            </tr>
+           
+            <?php
+           
+            while($row = mysqli_fetch_array($result))
+            {
+            
+                $Reservations = $row['Reservations'];
+                $Total = $row['Total'];
+                
+               
+                ?>
+                <tr>
+                    
+                    <td><?php echo $Reservations ?></td>
+                    <td>LKR <?php echo $Total ?></td>
+                    
+                   
+                <?php
+            }
+                ?>
+               
+        </table>
+        
+        
 
-                    <div>
-                        <?php
-                        if (!empty($errors)) {
-                            echo '<div class="alert alert-danger" role="alert">';
-                            foreach ($errors as $error) {
-                                echo $error;
-                                echo '<br>';
-                            }
-                            echo '</div>';
-                        }
-                        ?>
-                    </div>
-
-                    <div class="form-group">
-                        <form action="" method="POST">
-
-                            <div class="form-group">
-                                <label style="color:black;"> Username </label>
-                                <input type="text" name="name" placeholder="Enter User Name" required id="username2" class="form-control"><br>
-                            </div>
-                            <div class="form-group">
-                                <label style="color:black;"> Password </label>
-                                <input type="password" name="pwd" class="form-control" pattern="^(?=.*\d)(?=.*[a-z](?=.[A-Z](?=.*\s).*$" required id="password2" placeholder="Enter Password">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="submit" name="login" value="Login" class="btn btn-warning">
-                            </div>
-                           
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <br>
-    <br>
-
-    <footer>
+        <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">
             <div class="container">
@@ -297,3 +268,4 @@ include 'Backend/taxidriverlogin.inc.php';
 </body>
 
 </html>
+<?php mysqli_close($db); ?>

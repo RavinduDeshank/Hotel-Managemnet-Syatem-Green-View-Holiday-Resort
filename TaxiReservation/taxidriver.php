@@ -1,26 +1,28 @@
-<?php require_once('Backend/taxisession.php'); ?>
+<?php require_once('Backend/dbconnection.php'); ?>
+
 <?php
     $reserved_list = ''; 
 
-    //getting the list of all taxi drivers
-    $query = "SELECT * FROM taxidriver ORDER BY full_name";
+    //getting the list of reservations
+    $query = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
     if($users) {
         while ($user = mysqli_fetch_assoc($users)) {
             $reserved_list .= "<tr>";
             $reserved_list .= "<td>{$user['full_name']}</td>";
-            $reserved_list .= "<td>{$user['licence_num']}</td>";
-            $reserved_list .= "<td>{$user['NIC']}</td>";
-            $reserved_list .= "<td>{$user['tel_num']}</td>";
-            $reserved_list .= "<td>{$user['email']}</td>";
-            $reserved_list .= "<td>{$user['address']}</td>";
-            $reserved_list .= "<td><a href=\"edittaxidriver.php?<?php echo $driver_id?>={$user['user_id']}\">Change</a></td>";
+            $reserved_list .= "<td>{$user['tel_number']}</td>";
+            $reserved_list .= "<td>{$user['date']}</td>";
+            $reserved_list .= "<td>{$user['time']}</td>";
+            $reserved_list .= "<td>{$user['vehicle_type']}</td>";
+            $reserved_list .= "<td>{$user['location']}</td>";
+            $reserved_list .= "<td><a href=\"completetaxi.php?reservation_id={$user['user_id']}\">Done</a></td>";
             $reserved_list .= "</tr>";
         } 
 
     }else{
          echo "Database query failed";
+         
     }
 
 ?>
@@ -50,6 +52,12 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
+            <style>
+            .alerttaxi1 {
+            padding: 20px;
+            background-color: #23FF22;
+            color: black;   }
+            </style>
    </head>
 
    <body>
@@ -97,7 +105,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="###">Logout</a>
                                             <ul class="submenu">
                                                 <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
@@ -126,23 +134,28 @@
     </header>
 
 <main>
-    <h1>Details of Taxi Drivers
-    <button class="btn"><a href="taxidrivermngment.php">Back</a></button></h1>
+    <h1 align="center"> Taxi Reservations </h1>
+    <div class="alerttaxi1">
+  	<span class="closebtntaxi" onclick="this.parentElement.style.display='none';">&times;</span> 
+	  <strong>Please Note !</strong> If you have already completed the trip please click on done button
+	</div>
 
         <table class="masterlist">
             <tr>
                 <th>Full Name</th>
-                <th>Licence Number</th>
-                <th>NIC</th>
-                <th>Telephone Number</th>
-                <th>Email</th>
-                <th>Address</th>
+                <th>Contact Number</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Vehicle type</th>
+                <th>Location</th>
+                <th>Status</th>
+
             </tr>
 
             <?php echo $reserved_list; ?>
 
         </table>        
-</div>	
+	
 </main>
 <footer>
        <!-- Footer Start-->
