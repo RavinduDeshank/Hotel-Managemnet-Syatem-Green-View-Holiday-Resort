@@ -5,7 +5,6 @@
 	$full_name = '';
 	$email = '';
 	$tel_number = '';
-	$reserved_room_no = '';
 	$time = '';
 	$date = '';
     
@@ -23,7 +22,6 @@
                $full_name = $result['full_name'];
 	           $email = $result['email'];
 	           $tel_number = $result['tel_number'];
-	           $reserved_room_no = $result['reserved_room_no'];
 	           $time = $result['time'];
 	           $date = $result['date'];
                   
@@ -45,12 +43,11 @@
 		$full_name = $_POST['full_name'];
 		$email = $_POST['email'];
 		$tel_number = $_POST['tel_number'];
-		$reserved_room_no = $_POST['reserved_room_no'];
 		$time = $_POST['time'];
 		$date = $_POST['date'];
 
 		//checking required fields
-		$req_fields = array('full_name','email','tel_number','reserved_room_no','time','date');
+		$req_fields = array('full_name','email','tel_number','time','date');
 
 		foreach ($req_fields as $field) {
 			if (empty(trim($_POST[$field]))) {
@@ -72,7 +69,6 @@
 			$full_name = mysqli_real_escape_string($db, $_POST['full_name']);
 			$email = mysqli_real_escape_string($db, $_POST['email']);
 			$tel_number = mysqli_real_escape_string($db, $_POST['tel_number']);
-			$reserved_room_no = mysqli_real_escape_string($db, $_POST['reserved_room_no']);
 			$time = mysqli_real_escape_string($db, $_POST['time']);
 			$date = mysqli_real_escape_string($db, $_POST['date']);
 			 
@@ -80,7 +76,6 @@
 			$query .= "`full_name` = '{$full_name}', ";
 			$query .= "email = '{$email}', ";
 			$query .= "tel_number = '{$tel_number}', ";
-            $query .= "reserved_room_no = '{$reserved_room_no}', ";
             $query .= "time = '{$time}', ";
             $query .= "date = '{$date}' ";
 			$query .= "WHERE user_id = {$reservation_id} LIMIT 1";
@@ -245,11 +240,6 @@
 		<label for="">Phone:</label>
 		<input type="tel" placeholder="Enter your phone number" name="tel_number" pattern="[0-9]{3}-[0-9]{7 }" <?php echo 'value="' . $tel_number .'"';  ?>>
 		<small>012-3456789</small>
-	</p>
-
-	<p>
-		<label for="">Reserved Room No:</label>
-		<input type="number" name="reserved_room_no" placeholder="Enter your room number" <?php echo 'value="' . $reserved_room_no .'"';  ?>>
 	</p>
 
 	<p>

@@ -6,7 +6,6 @@
 	$full_name = '';
 	$email = '';
 	$tel_number = '';
-	$reserved_room_no = '';
 	$time = '';
 	$date = '';
     $location = '';
@@ -20,7 +19,6 @@
 		$full_name = $_POST['full_name'];
 		$email = $_POST['email'];
 		$tel_number = $_POST['tel_number'];
-		$reserved_room_no = $_POST['reserved_room_no'];
 		$time = $_POST['time'];
 		$date = $_POST['date'];
         $location = $_POST['location'];
@@ -43,7 +41,6 @@
 			$full_name = mysqli_real_escape_string($db, $_POST['full_name']);
 			$email = mysqli_real_escape_string($db, $_POST['email']);
 			$tel_number = mysqli_real_escape_string($db, $_POST['tel_number']);
-			$reserved_room_no = mysqli_real_escape_string($db, $_POST['reserved_room_no']);
 			$time = mysqli_real_escape_string($db, $_POST['time']);
 			$date = mysqli_real_escape_string($db, $_POST['date']);
             $location = mysqli_real_escape_string($db, $_POST['location']);
@@ -51,9 +48,9 @@
 			$vehicle_type = mysqli_real_escape_string($db, $_POST['vehicle_type']);
 			 
 			$query = "INSERT INTO taxicustomer ( ";
-			$query .= "username, password, user_type, full_name, email, tel_number, reserved_room_no, time, date, location, taxi_fee, vehicle_type, is_deleted";
+			$query .= "username, password, user_type, full_name, email, tel_number, time, date, location, taxi_fee, vehicle_type, is_deleted";
 			$query .= ") VALUES (";
-			$query .= "'{$username}', '{$password}', 'taxiCustomer', '{$full_name}', '{$email}', '{$tel_number}', {$reserved_room_no}, '{$time}', '{$date}', '{$location}', '{$taxi_fee}', '{$vehicle_type}', 0";
+			$query .= "'{$username}', '{$password}', 'taxiCustomer', '{$full_name}', '{$email}', '{$tel_number}', '{$time}', '{$date}', '{$location}', '{$taxi_fee}', '{$vehicle_type}', 0";
 			$query .= ")";
 
 			$result = mysqli_query($db, $query);
@@ -217,11 +214,6 @@
 	</p>
 
 	<p>
-		<label for="">Reserved Room No:</label>
-		<input type="number" name="reserved_room_no" placeholder="Enter your room number" <?php echo 'value="' . $reserved_room_no .'"';  ?>>
-	</p>
-
-	<p>
 	<label for="">Time:</label>
 	<input type="time" name="time" <?php echo 'value="' . $time .'"';  ?>>
 	</p>
@@ -250,6 +242,7 @@
   		<option label="Van">Van</option>
   		<option label="Budget Car">Budget Car</option>
 	</select>
+    <span>Select vehicle type which used in calculating the taxifee</span>
 	</p>
 
 	<p>

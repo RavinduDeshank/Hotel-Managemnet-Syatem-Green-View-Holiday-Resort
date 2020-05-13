@@ -3,7 +3,7 @@
     $reserved_list = ''; 
 
     //getting the list of reservations
-    $query = "SELECT * FROM taxicustomer WHERE username='{$_SESSION['username']}' AND is_deleted=0 ORDER BY full_name";
+    $query = "SELECT * FROM taxicustomer WHERE user_id='{$_SESSION['user_id']}' AND is_deleted=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
     if($users) {
@@ -125,7 +125,7 @@
     </header>
 
 <main>
-    <h1>New Taxi Reservation<button class="btn"><a href="thanktaxi.php">Finish the Reservation</a></button>
+    <h1>New Taxi Reservation<button class="btn"><a href="thanktaxi.php">Finalize the Reservation</a></button>
     <button class="btn"><a href="reservetaxi.php">Make a new Reservation</a></button></h1>
 
         <table class="masterlist">
