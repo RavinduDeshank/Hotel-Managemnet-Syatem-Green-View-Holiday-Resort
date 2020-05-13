@@ -10,6 +10,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src = "https://kit.fontawesome.com/b99e675b6e.js"></script>
+<script src = "js/validate.js"></script>
 
 <title>Employee Salary</title>
 
@@ -56,14 +57,14 @@
         <div class ="container">
         <?php
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
-            $result = $mysqli->query("SELECT * FROM salary") or die($mysqli->error);
+            $result = $mysqli->query("SELECT * FROM employee_salary") or die($mysqli->error);
         ?>
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
                     <thead>
                         <tr class = "trow">
-                            <th>Customer Name</th>
+                            <th>Employee Name</th>
                             <th>Email</th>
                             <th>Salary</th>
                             <th colspan = "2">Action</th>
@@ -72,13 +73,13 @@
                     <?php
                         while($row = $result->fetch_assoc()): ?>
                             <tr>
-                                <td><?php echo $row['customer_name']; ?></td>
+                                <td><?php echo $row['employee_name']; ?></td>
                                 <td><?php echo $row['email']; ?></td>
                                 <td><?php echo $row['sal']; ?></td>
                                 <td>
-                                    <a href = "indexEmployee.php?edit=<?php echo $row['customer_id']; ?>"
+                                    <a href = "indexEmployee.php?edit=<?php echo $row['employee_id']; ?>"
                                     class = "btn btn-info">Edit</a>
-                                    <a href = "indexEmployee.php?delete=<?php echo $row['customer_id']; ?>"
+                                    <a href = "indexEmployee.php?delete=<?php echo $row['employee_id']; ?>"
                                     class = "btn btn-danger">Delete</a>
                                 </td>
                             </tr>
@@ -89,12 +90,12 @@
             
             <div class = "row justify-content-center">
                 <div class = "info">
-                    <form action="" method = "POST">
+                    <form action="" method = "POST" name = "myForm" onsubmit = "return validate();">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
-                            <lable>Customer Name</lable>
-                            <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+                            <lable>Employee Name</lable>
+                            <input type="text" name = "employee_name" 
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
@@ -104,7 +105,7 @@
                         <div class="form-group">
                             <lable>Salary</lable>
                             <input type="number" name = "sal" value ="<?php echo $sal; ?>"
-                            class = "form-control" placeholder = "Salary" required>
+                            class = "form-control" placeholder = "Salary" required><span id = "prc"></span>
                         </div>
                         <div class="form-group">
                             <?php
