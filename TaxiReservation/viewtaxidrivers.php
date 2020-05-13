@@ -15,7 +15,7 @@
             $reserved_list .= "<td>{$user['tel_num']}</td>";
             $reserved_list .= "<td>{$user['email']}</td>";
             $reserved_list .= "<td>{$user['address']}</td>";
-            $reserved_list .= "<td><a href=\"edittaxidriver.php?<?php echo $driver_id?>={$user['user_id']}\">Change</a></td>";
+          
             $reserved_list .= "</tr>";
         } 
 
@@ -50,6 +50,7 @@
             <link rel="stylesheet" href="assets/css/nice-select.css">
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
+            <link rel="stylesheet" href="assets/css/contact.css">
    </head>
 
    <body>
@@ -126,9 +127,10 @@
     </header>
 
 <main>
+<div id="box5">
     <h1>Details of Taxi Drivers
     <button class="btn"><a href="taxidrivermngment.php">Back</a></button></h1>
-
+    
         <table class="masterlist">
             <tr>
                 <th>Full Name</th>
@@ -141,7 +143,8 @@
 
             <?php echo $reserved_list; ?>
 
-        </table>        
+        </table> 
+    </div>       
 </div>	
 </main>
 <footer>

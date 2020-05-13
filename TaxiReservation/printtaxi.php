@@ -185,7 +185,6 @@ tr:hover .cut { opacity: 1; }
         $full_name = $row['full_name'];
         $email = $row['email'];
         $tel_number = $row['tel_number'];
-        $reserved_room_no = $row['reserved_room_no'];
         $date = $row['date'];
         $time = $row['time'];
         $location = $row['location'];

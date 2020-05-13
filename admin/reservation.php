@@ -23,7 +23,7 @@ include('db.php')
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="../room_admin_login.php"><i class="fa fa-home"></i> Homepage</a>
+                        <a  href="../index.php"><i class="fa fa-home"></i> Homepage</a>
                     </li>
                     
 					</ul>

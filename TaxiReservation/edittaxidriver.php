@@ -1,7 +1,5 @@
 <?php require_once('Backend/taxisession.php'); ?>
 <?php
-include 'Backend/dbconnection.php';
-
 	$errors = array();
 	$driver_id = '';
     $licence_num = '';
@@ -21,7 +19,8 @@ include 'Backend/dbconnection.php';
        if($result_set) {
            if (mysqli_num_rows($result_set) == 1) {
                //driver found
-               $result = mysqli_fetch_assoc($result_set);
+			   $result = mysqli_fetch_assoc($result_set);
+			   $driver_id = $result['user_id'];
                $licence_num = $result['licence_num'];
                $full_name = $result['full_name'];
                $email = $result['email'];
@@ -93,7 +92,7 @@ include 'Backend/dbconnection.php';
 
 			if ($result){
 				//query successfull
-				header('Location: viewtaxidrivers.php?reservation_changed=true');
+				header('Location: viewtaxidrivers.php?driver_changed=true');
 			}else{
 				$errors[] = 'Failed to modify the record.';
 				
