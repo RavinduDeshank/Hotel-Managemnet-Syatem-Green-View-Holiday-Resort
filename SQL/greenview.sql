@@ -1,16 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
-
--- Generation Time: May 06, 2020 at 04:42 AM
--- Server version: 10.4.8-MariaDB
--- PHP Version: 7.1.33
+-- Generation Time: May 06, 2020 at 06:37 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.5
 
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -42,6 +40,33 @@ CREATE TABLE `alogin` (
 
 INSERT INTO `alogin` (`id`, `email`, `password`) VALUES
 (1, 'admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `catagory`
+--
+
+CREATE TABLE `catagory` (
+  `catagory_id` int(20) NOT NULL,
+  `catagory_name` varchar(30) NOT NULL,
+  `description` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `contact`
+--
+
+CREATE TABLE `contact` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `fullname` varchar(100) DEFAULT NULL,
+  `phoneno` int(10) DEFAULT NULL,
+  `email` text DEFAULT NULL,
+  `cdate` date DEFAULT NULL,
+  `approval` varchar(12) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -113,6 +138,96 @@ INSERT INTO `employee_leave` (`id`, `token`, `start`, `end`, `reason`, `status`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `login`
+--
+
+CREATE TABLE `login` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `usname` varchar(30) DEFAULT NULL,
+  `pass` varchar(30) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `login`
+--
+
+INSERT INTO `login` (`id`, `usname`, `pass`) VALUES
+(1, 'Admin', '1234'),
+(2, 'Prasath', '12345');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `newsletterlog`
+--
+
+CREATE TABLE `newsletterlog` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `title` varchar(52) DEFAULT NULL,
+  `subject` varchar(100) DEFAULT NULL,
+  `news` text DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order`
+--
+
+CREATE TABLE `order` (
+  `order_id` int(20) NOT NULL,
+  `quantity` int(10) NOT NULL,
+  `order_date` date NOT NULL,
+  `order_price` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `payment`
+--
+
+CREATE TABLE `payment` (
+  `id` int(11) DEFAULT NULL,
+  `title` varchar(5) DEFAULT NULL,
+  `fname` varchar(30) DEFAULT NULL,
+  `lname` varchar(30) DEFAULT NULL,
+  `troom` varchar(30) DEFAULT NULL,
+  `tbed` varchar(30) DEFAULT NULL,
+  `nroom` int(11) DEFAULT NULL,
+  `cin` date DEFAULT NULL,
+  `cout` date DEFAULT NULL,
+  `ttot` double(8,2) DEFAULT NULL,
+  `fintot` double(8,2) DEFAULT NULL,
+  `mepr` double(8,2) DEFAULT NULL,
+  `meal` varchar(30) DEFAULT NULL,
+  `btot` double(8,2) DEFAULT NULL,
+  `noofdays` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `product_id` int(20) NOT NULL,
+  `product_name` varchar(30) NOT NULL,
+  `price` float NOT NULL,
+  `quantity` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`product_id`, `product_name`, `price`, `quantity`) VALUES
+(4, 'lux', 12, 3);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `project`
 --
 
@@ -145,49 +260,6 @@ INSERT INTO `project` (`pid`, `eid`, `pname`, `duedate`, `subdate`, `mark`, `sta
 (224, 107, 'Security Check', '2019-04-26', '2019-04-05', 9, 'Submitted'),
 (225, 109, 'ML', '2019-04-03', '2019-04-04', 6, 'Submitted');
 
--- Table structure for table `catagory`
---
-
-CREATE TABLE `catagory` (
-  `catagory_id` int(20) NOT NULL,
-  `catagory_name` varchar(30) NOT NULL,
-  `description` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `order`
---
-
-CREATE TABLE `order` (
-  `order_id` int(20) NOT NULL,
-  `quantity` int(10) NOT NULL,
-  `order_date` date NOT NULL,
-  `order_price` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `product_id` int(20) NOT NULL,
-  `product_name` varchar(30) NOT NULL,
-  `price` float NOT NULL,
-  `quantity` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`product_id`, `product_name`, `price`, `quantity`) VALUES
-(4, 'lux', 12, 3);
-
-
 -- --------------------------------------------------------
 
 --
@@ -206,12 +278,25 @@ CREATE TABLE `promotion` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `purchase`
+--
+
+CREATE TABLE `purchase` (
+  `purchase_id` int(20) NOT NULL,
+  `product_id` int(20) NOT NULL,
+  `Number_received` int(10) NOT NULL,
+  `purchase_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `rank`
 --
 
 CREATE TABLE `rank` (
   `eid` int(11) NOT NULL,
-  `points` int(11) DEFAULT '0'
+  `points` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -230,6 +315,88 @@ INSERT INTO `rank` (`eid`, `points`) VALUES
 (109, 6),
 (110, 15),
 (111, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `register`
+--
+
+CREATE TABLE `register` (
+  `username` varchar(20) NOT NULL,
+  `first_name` varchar(30) NOT NULL,
+  `last_name` varchar(30) NOT NULL,
+  `mobile` int(15) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `password_1` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `register`
+--
+
+INSERT INTO `register` (`username`, `first_name`, `last_name`, `mobile`, `email`, `password_1`) VALUES
+('frpartho', 'Partho', 'Bala', 1686998128, 'parthobala019@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `room`
+--
+
+CREATE TABLE `room` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `type` varchar(15) DEFAULT NULL,
+  `bedding` varchar(10) DEFAULT NULL,
+  `place` varchar(10) DEFAULT NULL,
+  `cusid` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `room`
+--
+
+INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`) VALUES
+(1, 'Superior Room', 'Single', 'Free', NULL),
+(2, 'Superior Room', 'Double', 'Free', NULL),
+(3, 'Superior Room', 'Triple', 'Free', NULL),
+(4, 'Single Room', 'Quad', 'Free', NULL),
+(5, 'Superior Room', 'Quad', 'Free', NULL),
+(6, 'Deluxe Room', 'Single', 'Free', NULL),
+(7, 'Deluxe Room', 'Double', 'Free', NULL),
+(8, 'Deluxe Room', 'Triple', 'Free', NULL),
+(9, 'Deluxe Room', 'Quad', 'Free', NULL),
+(10, 'Guest House', 'Single', 'Free', NULL),
+(11, 'Guest House', 'Double', 'Free', NULL),
+(12, 'Guest House', 'Quad', 'Free', NULL),
+(13, 'Single Room', 'Single', 'Free', NULL),
+(14, 'Single Room', 'Double', 'Free', NULL),
+(15, 'Single Room', 'Triple', 'Free', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `roombook`
+--
+
+CREATE TABLE `roombook` (
+  `id` int(10) UNSIGNED NOT NULL,
+  `Title` varchar(5) DEFAULT NULL,
+  `FName` text DEFAULT NULL,
+  `LName` text DEFAULT NULL,
+  `Email` varchar(50) DEFAULT NULL,
+  `National` varchar(30) DEFAULT NULL,
+  `Country` varchar(30) DEFAULT NULL,
+  `Phone` text DEFAULT NULL,
+  `TRoom` varchar(20) DEFAULT NULL,
+  `Bed` varchar(10) DEFAULT NULL,
+  `NRoom` varchar(2) DEFAULT NULL,
+  `Meal` varchar(15) DEFAULT NULL,
+  `cin` date DEFAULT NULL,
+  `cout` date DEFAULT NULL,
+  `stat` varchar(15) DEFAULT NULL,
+  `nodays` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -260,37 +427,6 @@ INSERT INTO `salary` (`id`, `base`, `bonus`, `total`) VALUES
 (109, 85000, 6, 90100),
 (110, 47000, 15, 54050),
 (111, 45000, 8, 48600);
--- Table structure for table `purchase`
---
-
-CREATE TABLE `purchase` (
-  `purchase_id` int(20) NOT NULL,
-  `product_id` int(20) NOT NULL,
-  `Number_received` int(10) NOT NULL,
-  `purchase_date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `register`
---
-
-CREATE TABLE `register` (
-  `username` varchar(20) NOT NULL,
-  `first_name` varchar(30) NOT NULL,
-  `last_name` varchar(30) NOT NULL,
-  `mobile` int(15) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `password_1` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `register`
---
-
-INSERT INTO `register` (`username`, `first_name`, `last_name`, `mobile`, `email`, `password_1`) VALUES
-('frpartho', 'Partho', 'Bala', 1686998128, 'parthobala019@gmail.com', '827ccb0eea8a706c4c34a16891f84e7b');
 
 -- --------------------------------------------------------
 
@@ -367,6 +503,18 @@ ALTER TABLE `alogin`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `catagory`
+--
+ALTER TABLE `catagory`
+  ADD PRIMARY KEY (`catagory_id`);
+
+--
+-- Indexes for table `contact`
+--
+ALTER TABLE `contact`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `employee`
 --
 ALTER TABLE `employee`
@@ -381,16 +529,16 @@ ALTER TABLE `employee_leave`
   ADD KEY `employee_leave_ibfk_1` (`id`);
 
 --
--- Indexes for table `project`
+-- Indexes for table `login`
 --
-ALTER TABLE `project`
-  ADD PRIMARY KEY (`pid`),
-  ADD KEY `project_ibfk_1` (`eid`);
+ALTER TABLE `login`
+  ADD PRIMARY KEY (`id`);
 
--- Indexes for table `catagory`
 --
-ALTER TABLE `catagory`
-  ADD PRIMARY KEY (`catagory_id`);
+-- Indexes for table `newsletterlog`
+--
+ALTER TABLE `newsletterlog`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `order`
@@ -405,10 +553,23 @@ ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`);
 
 --
+-- Indexes for table `project`
+--
+ALTER TABLE `project`
+  ADD PRIMARY KEY (`pid`),
+  ADD KEY `project_ibfk_1` (`eid`);
+
+--
 -- Indexes for table `promotion`
 --
 ALTER TABLE `promotion`
   ADD PRIMARY KEY (`pid`);
+
+--
+-- Indexes for table `purchase`
+--
+ALTER TABLE `purchase`
+  ADD PRIMARY KEY (`purchase_id`);
 
 --
 -- Indexes for table `rank`
@@ -417,26 +578,35 @@ ALTER TABLE `rank`
   ADD PRIMARY KEY (`eid`);
 
 --
--- Indexes for table `salary`
---
-ALTER TABLE `salary`
-  ADD PRIMARY KEY (`id`);
--- Indexes for table `purchase`
---
-ALTER TABLE `purchase`
-  ADD PRIMARY KEY (`purchase_id`);
-
---
 -- Indexes for table `register`
 --
 ALTER TABLE `register`
   ADD PRIMARY KEY (`username`);
 
 --
+-- Indexes for table `room`
+--
+ALTER TABLE `room`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `roombook`
+--
+ALTER TABLE `roombook`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `salary`
+--
+ALTER TABLE `salary`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `stock`
 --
 ALTER TABLE `stock`
   ADD PRIMARY KEY (`stock_id`);
+
 --
 -- Indexes for table `taxicustomer`
 --
@@ -460,6 +630,18 @@ ALTER TABLE `alogin`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `catagory`
+--
+ALTER TABLE `catagory`
+  MODIFY `catagory_id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `contact`
+--
+ALTER TABLE `contact`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `employee`
 --
 ALTER TABLE `employee`
@@ -472,14 +654,16 @@ ALTER TABLE `employee_leave`
   MODIFY `token` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
 
 --
--- AUTO_INCREMENT for table `project`
+-- AUTO_INCREMENT for table `login`
 --
-ALTER TABLE `project`
-  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=226;
--- AUTO_INCREMENT for table `catagory`
+ALTER TABLE `login`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
 --
-ALTER TABLE `catagory`
-  MODIFY `catagory_id` int(20) NOT NULL AUTO_INCREMENT;
+-- AUTO_INCREMENT for table `newsletterlog`
+--
+ALTER TABLE `newsletterlog`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `order`
@@ -494,6 +678,12 @@ ALTER TABLE `product`
   MODIFY `product_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
+-- AUTO_INCREMENT for table `project`
+--
+ALTER TABLE `project`
+  MODIFY `pid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=226;
+
+--
 -- AUTO_INCREMENT for table `promotion`
 --
 ALTER TABLE `promotion`
@@ -504,6 +694,18 @@ ALTER TABLE `promotion`
 --
 ALTER TABLE `purchase`
   MODIFY `purchase_id` int(20) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `room`
+--
+ALTER TABLE `room`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
+--
+-- AUTO_INCREMENT for table `roombook`
+--
+ALTER TABLE `roombook`
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `stock`
@@ -522,6 +724,7 @@ ALTER TABLE `taxicustomer`
 --
 ALTER TABLE `users`
   MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
 -- Constraints for dumped tables
 --
