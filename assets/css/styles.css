@@ -9,7 +9,7 @@
 }
 
 body{
-    background: #f3f5f9;
+    background: #f3f9f988;
 }
 
 .wrapper{
@@ -101,7 +101,7 @@ body{
 }
 
 .active{
-    background-color: cadetblue;
+    background-color: rgb(56, 225, 231);
 }
 
 .imge{
@@ -111,12 +111,12 @@ body{
 .trow{
     background-position: center;
     text-align: left;
-    background-color: darkkhaki;
+    background-color: rgb(206, 200, 115);
 }
 
 td{
     text-align: left;
-    background-color: floralwhite;
+    background-color: rgba(111, 219, 174, 0.767);
 }
 
 .tab{

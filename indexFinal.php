@@ -13,6 +13,7 @@
 
 <title>Final Report</title>
 
+
 <link rel = "stylesheet" href = "assets/css/styles.css">
 
 </head>
@@ -22,6 +23,7 @@
         <img class = "imge" src = "assets/img/logo/logo-img.png">
         <h6>All Department Finance Details and Final Overview</h6>
         <ul>
+            <!--link all pages here-->
             <li><a href = "indexTaxi.php"><i class="fas fa-taxi"></i>Taxi</a></li>
             <li><a href = "indexRoom.php"><i class="fas fa-bed"></i>Room</a></li>
             <li><a href = "indexLaundry.php"><i class="fas fa-bath"></i>Laundry</a></li>
@@ -31,6 +33,7 @@
             <li class = "active"><a href = "indexFinal.php"><i class="fas fa-chart-line"></i>Final Report</a></li>
         </ul>
 
+        <!--social media link-->
         <div class="social_media">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -53,6 +56,7 @@
             </div>
             <?php endif ?>        
 
+        <!--create table on the application to show inserted data-->
         <div class ="container">
         <?php
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
@@ -89,6 +93,7 @@
                         </div>
             </div>
             
+            <!--Final report form-->
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST">
@@ -108,16 +113,11 @@
                             <input type="number" name = "all_expences" value ="<?php echo $expenses; ?>"
                             class = "form-control" placeholder = "All Expenses" required>
                         </div>
-                        <!-- <div class="form-group">
-                            <lable>Total Profit</lable>
-                            <input type="number" name = "total_profit" value ="<?php echo $profit; ?>"
-                            class = "form-control" placeholder = "Total Profit" required>
-                        </div> -->
-                        <div class="form-group">
+                      <div class="form-group">
                             <?php
                             if($update == true):
                             ?>
-                                <button type = "submit" class = "btn btn-info" name = "update">Update</button>
+                                <button type = "submit" class = "btn btn-info" name = "update">Update</button><!--after click edit button show this update button-->
                             <?php else: ?>
                                 <button type = "submit" name = "add" class = "btn btn-primary">Add</button>
                             <?php endif; ?>

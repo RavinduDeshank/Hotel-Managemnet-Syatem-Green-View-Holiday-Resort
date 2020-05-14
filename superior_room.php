@@ -130,7 +130,7 @@
                                     <br>
                                 </ul>
                                 <div>
-                                    <center><a href="hall_login.php" class = "hall_booking_btn">Book Now</a><center>
+                                    <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
                             </div>
@@ -148,7 +148,7 @@
                 <br>
                 <br>
                 <div class="row">
-					<!--Royal Hall-->
+					
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -157,7 +157,7 @@
                             </div>
 						</div>
 					</div>
-					<!--Regal Hall-->
+					
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">

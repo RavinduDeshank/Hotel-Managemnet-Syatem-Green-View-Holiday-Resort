@@ -1,14 +1,12 @@
-function validate()
+function validate(inputtxt)
 {
-    var name = document.getElementById("employee_name").value;
-    for(i=0;i<name.length;i++)
+    var letter = /^[A-Za-z]+$/;
+    if(inputtxt.value.match(letter))
     {
-        ch = name.charAt(i);
-        if ((ch>='a' && ch<='z') &&  !(ch>='A' && ch<='Z') && !(ch == ' '))
-        {
-            alert("Invalid name type");
-            return false;
-        }
+        return true;
     }
-    return true;
+    else{
+        alert("Please input alphabet characters only");
+        return false;
+    }
 }
