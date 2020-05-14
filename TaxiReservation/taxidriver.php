@@ -154,7 +154,8 @@
 
             <?php echo $reserved_list; ?>
 
-        </table>        
+        </table>  
+       
 	
 </main>
 <footer>

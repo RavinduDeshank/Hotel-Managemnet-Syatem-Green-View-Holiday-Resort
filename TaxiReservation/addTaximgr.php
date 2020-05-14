@@ -107,7 +107,7 @@ include 'Backend/registertaximgr.inc.php';
 
     <div class="register">
         <div class="bar">
-            <h4>Register</h4>
+            <h4>Add Taxi Manager</h4>
         </div>
         <br>
         <div>

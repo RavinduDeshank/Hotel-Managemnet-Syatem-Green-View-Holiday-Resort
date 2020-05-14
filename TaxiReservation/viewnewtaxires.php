@@ -84,7 +84,7 @@ $result = mysqli_query($db, $sql);
                                         <li><a href="contact.php">Contact</a></li>
                                         <li><a href="">Logout</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
@@ -141,7 +141,7 @@ $result = mysqli_query($db, $sql);
                     <td><?php echo $full_name ?></td>
                     <td><?php echo $email ?></td>
                     <td><?php echo $tel_number ?></td>
-                    <td><a href=printtaxi.php?user_id=<?php echo $user_id?> <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></td>
+                    <td><a href=printtaxi.php?user_id=<?php echo $user_id?> <button class='btn btn-primary' target="_blank"> <i class='fa fa-print' ></i> Print</button></td>
                 <?php
             }
                 ?>
