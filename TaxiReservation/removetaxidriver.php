@@ -2,6 +2,7 @@
 <?php
 include 'Backend/dbconnection.php';
 
+/*geeting taxi driver information*/
 $sql = "SELECT * FROM taxidriver WHERE user_type='taxiDriver'";
 $result = mysqli_query($db, $sql);
 

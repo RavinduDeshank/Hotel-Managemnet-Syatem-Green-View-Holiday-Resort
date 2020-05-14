@@ -36,7 +36,7 @@
     
     }
 
-	
+	/*edit taxi reservation process*/
 	if(isset($_POST['submit'])) {
 
         $reservation_id = $_POST['reservation_id'];
@@ -88,6 +88,7 @@
 				//query successfull
 				header('Location: viewtaxi.php?reservation_changed=true');
 			}else{
+				//query unsuccessfull
 				$errors[] = 'Failed to modify the record.';
 				
 			}

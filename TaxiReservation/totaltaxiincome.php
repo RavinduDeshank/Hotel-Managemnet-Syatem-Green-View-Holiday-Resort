@@ -2,6 +2,7 @@
 <?php
 include 'Backend/dbconnection.php';
 
+/*geting the details about number of reservations and total taxi fee of all reservations*/
 $sql = "SELECT *, (SELECT SUM(taxi_fee)) AS Total ,
                   (SELECT COUNT(user_id)) AS Reservations 
         FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=1";
