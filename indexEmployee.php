@@ -101,7 +101,8 @@
                             <lable>Employee Name</lable>
                             <input type="text" name = "employee_name" 
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" 
-                            pattern = "[A-z]{1,15}" required><!--Name with validation-->
+                            maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required><!--can't insert numbers-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
@@ -112,7 +113,7 @@
                         <div class="form-group">
                             <lable>Salary</lable>
                             <input type="number" name = "sal" value ="<?php echo $sal; ?>"
-                            class = "form-control" placeholder = "Salary" required><span id = "prc"></span><!--Salary only can add number-->
+                            class = "form-control" placeholder = "Salary" min = "1" required><span id = "prc"></span><!--Salary only can add number-->
                         </div>
                         <div class="form-group">
                             <?php

@@ -100,18 +100,21 @@
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Year</lable>
+                            <!--year only can enter 4 digits-->
                             <input type="text" name = "year" 
-                            value ="<?php echo $year; ?>" class = "form-control" placeholder = "Year" required>
+                            value ="<?php echo $year; ?>" class = "form-control" placeholder = "Year" maxlength = "4" required>
                         </div>
                         <div class="form-group">
                             <lable>All Incomes</lable>
+                            <!--total incomes can't enter negative values-->
                             <input type="number" name = "all_incomes" value ="<?php echo $income; ?>" 
-                            class = "form-control" placeholder = "All Incomes" required>
+                            class = "form-control" placeholder = "All Incomes" min = "1" required>
                         </div>
                         <div class="form-group">
                             <lable>All Expenses</lable>
+                            <!--total expenses can't enter negative values-->
                             <input type="number" name = "all_expences" value ="<?php echo $expenses; ?>"
-                            class = "form-control" placeholder = "All Expenses" required>
+                            class = "form-control" placeholder = "All Expenses" min = "1" required>
                         </div>
                       <div class="form-group">
                             <?php

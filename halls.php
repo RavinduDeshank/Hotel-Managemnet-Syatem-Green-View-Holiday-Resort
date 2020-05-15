@@ -83,7 +83,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -192,10 +192,10 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/halls/hall_1.jpg" alt=""></a>
+                                <a href=""><img src="assets/img/halls/hall_1.jpg" alt=""></a>
                             </div>
 							<div class="gallery-img">
-                                <a href="#"><img src="assets/img/halls/hall_2.jpg" alt=""></a>
+                                <a href=""><img src="assets/img/halls/hall_2.jpg" alt=""></a>
                             </div>
 							
                         </div>

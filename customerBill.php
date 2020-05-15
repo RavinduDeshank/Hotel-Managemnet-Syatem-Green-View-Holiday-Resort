@@ -106,33 +106,36 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
+                            maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required><!--can't insert numbers-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
                             class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
-                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required><!--email validation part done-->
                         </div>
+                        <!--all price field can only enter positive numbers-->
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
                             <input type="number" name = "taxi_income" value ="<?php echo $tpay; ?>"
-                            class = "form-control" placeholder = "Taxi bill" required>
+                            class = "form-control" placeholder = "Taxi bill" min = "1" required>
                         </div>
                         <div class="form-group">
                             <lable>Room Bill</lable>
                             <input type="number" name = "room_income" value ="<?php echo $rpay; ?>"
-                            class = "form-control" placeholder = "Room bill" required>
+                            class = "form-control" placeholder = "Room bill" min = "1" required>
                         </div>
                         <div class="form-group">
                             <lable>Laundry Bill</lable>
                             <input type="number" name = "laundry_income" value ="<?php echo $lpay; ?>"
-                            class = "form-control" placeholder = "Laundry bill" required>
+                            class = "form-control" placeholder = "Laundry bill" min = "1" required>
                         </div>
                         <div class="form-group">
                             <lable>Hall Bill</lable>
                             <input type="number" name = "hall_outdoor_income" value ="<?php echo $hpay; ?>"
-                            class = "form-control" placeholder = "Hall bill" required>
+                            class = "form-control" placeholder = "Hall bill" min = "1" required>
                         </div>
                         <div class="form-group">
                             <?php

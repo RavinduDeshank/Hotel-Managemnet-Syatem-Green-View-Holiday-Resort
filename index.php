@@ -66,6 +66,8 @@
                                                 <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="taxi.php">Taxi Reservation</a></li>
+                                                <li><a href="InventoryManagement/index.php">Inventory Management</a></li>
                                                 <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
