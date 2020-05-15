@@ -69,7 +69,7 @@
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="../contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
                                                 <li><a href="../login.php">Login</a></li>
@@ -187,7 +187,7 @@
                       <div class="single-footer-caption mb-30">
                          <!-- logo -->
                          <div class="footer-logo">
-                           <a href="index.html"><img src="assets/img/logo/footer-img.png" alt=""></a>
+                           <a href="../index.html"><img src="assets/img/logo/footer-img.png" alt=""></a>
                          </div>
                          <div class="footer-social footer-social2">
                              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
@@ -207,10 +207,10 @@
                            <div class="footer-tittle">
                                <h4>Quick Links</h4>
                                <ul>
-                                   <li><a href="about.php">About Us</a></li>
-                                   <li><a href="rooms.php">Our Best Rooms</a></li>
+                                   <li><a href="../about.php">About Us</a></li>
+                                   <li><a href="../rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
-                                   <li><a href="services.php">Pool Service</a></li>
+                                   <li><a href="../services.php">Pool Service</a></li>
                                    <li><a href="taxi.php">Taxi Service</a></li>
                                </ul>
                            </div>
