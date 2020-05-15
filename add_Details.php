@@ -137,7 +137,7 @@
 
             <form id="a" name="myform" action="" method="POST">
                 <label> Customer Name </label>
-                <input type="text" name="name" id="cusname"><br>
+                <input type="text" name="name" id="cusname" required pattern="^[A-Za-z]+"><br>
                 <br>
 
                 <label> Room No </label>
