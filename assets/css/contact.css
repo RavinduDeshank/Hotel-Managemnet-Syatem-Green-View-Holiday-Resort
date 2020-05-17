@@ -297,7 +297,8 @@ a:hover {
 }
 
 #box {
-    background: rgba(0, 0, 0, 0.6);
+    
+    background: rgba(30, 63, 209, 0.404);
     width: 700px;
     margin: 0px 0px 0px 300px;
     color: white;
@@ -429,6 +430,16 @@ a:hover {
     border-radius: 20px;
     margin-top: -20px;
 }
+#box2 {
+    background: rgba(100, 150, 20, 0.6);
+    width: 950px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
 
 .newbutton img {
     width: 150px;
@@ -503,7 +514,7 @@ a:hover {
 }
 
 */
-/*RemovePromo */
+/*Tables */
 
 #box5 {
     background: rgba(0, 0, 0, 0.6);
@@ -520,8 +531,20 @@ a:hover {
     width: 80%;
     margin-bottom: 100px;
 }
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
 
 #removepromotable th {
+    text-align: left;
+    background-color: gold;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+#taxitable th {
     text-align: left;
     background-color: gold;
     color: black;
@@ -534,7 +557,18 @@ a:hover {
     color: black;
 }
 
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
 #removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
@@ -603,7 +637,21 @@ a:hover {
     margin-bottom: 100px;
 }
 
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
 #removepromotable th {
+    text-align: left;
+    background-color: goldenrod;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+
+#taxitable th {
     text-align: left;
     background-color: goldenrod;
     color: black;
@@ -616,7 +664,18 @@ a:hover {
     color: black;
 }
 
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
 #removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
@@ -681,3 +740,63 @@ a:hover {
     border-radius: 20px;
     margin-top: -20px;
 }
+
+/*User Panel*/
+
+.topic4 {
+    width: 950px;
+    background-color: goldenrod;
+    margin: -22px 0px 0px -20px;
+    padding: 11px 0px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+#box6 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 950px;
+    margin: 0px 0px 0px 220px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+
+.newbutton img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton1 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 245px;
+}
+
+.newbutton2 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton3 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 205px;
+}
+.newbutton4 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton5 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 265px;
+}
+.newbutton6 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 305px;
+}
+
