@@ -1,5 +1,8 @@
 <?php
+/*connect to the database*/
 include 'dbconnection.php';
+
+/*login process of taxi manager and customer*/
 if(isset($_POST['login'])){
     $errors = array();
 
@@ -14,6 +17,8 @@ if(isset($_POST['login'])){
 
             $row = mysqli_fetch_assoc($result);
             $usertype = $row['user_type'];
+
+            /*if usertype is taxi manager navigate to the taxi manager panel*/
             if ($usertype == "taxiManager") {
                 session_start();
                 $_SESSION['user_id'] = $row['user_id'];
@@ -22,6 +27,7 @@ if(isset($_POST['login'])){
                 exit();
             }
 
+            /*if usertype is taxi customer display the reservation done*/
             if ($usertype == "taxiCustomer") {
                 session_start();
                 $_SESSION['user_id'] = $row['user_id'];
@@ -29,10 +35,13 @@ if(isset($_POST['login'])){
                 header("Location: viewtaxi.php");
                 exit();
             } 
-            
+          
+        /*if login credentials does not match: display an error message*/  
         } else {
             $errors[] = 'No User Found';
         }
+
+    /*if there are errors in the sql: display an error message*/
     }else{
         $errors[] = 'SQL Error';
     }

@@ -1,5 +1,8 @@
 <?php
+/*connect to the database*/
 include 'dbconnection.php';
+
+/*taxi driver login process*/
 if(isset($_POST['login'])){
     $errors = array();
 
@@ -14,6 +17,8 @@ if(isset($_POST['login'])){
 
             $row = mysqli_fetch_assoc($result);
             $usertype = $row['user_type'];
+
+            /*if usertype is taxi driver navigate to the taxi driver panel*/
             if ($usertype == "taxiDriver") {
                 session_start();
                 $_SESSION['user_id'] = $row['user_id'];
@@ -23,10 +28,12 @@ if(isset($_POST['login'])){
             }
 
            
-            
+        /*if login credentials does not match: display an error message*/   
         } else {
             $errors[] = 'No User Found';
         }
+    
+    /*if there are errors in the sql: display an error message*/      
     }else{
         $errors[] = 'SQL Error';
     }

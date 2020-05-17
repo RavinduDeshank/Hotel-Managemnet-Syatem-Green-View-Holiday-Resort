@@ -12,8 +12,8 @@
     $taxi_fee = '';
 	$vehicle_type = '';
 
-	
-	if(isset($_POST['submit'])) {
+	/*taxi reservation process*/
+    if(isset($_POST['submit'])) {
         $username = $_POST['username'];
         $password = $_POST['password'];
 		$full_name = $_POST['full_name'];
