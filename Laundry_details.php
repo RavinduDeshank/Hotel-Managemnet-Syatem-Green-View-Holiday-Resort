@@ -238,8 +238,8 @@ $result = mysqli_query($db, $sql);
         </div>
         <!-- Footer End-->
     </footer>
-
-    <!-- JS here -->
+    
+    <s-->
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
