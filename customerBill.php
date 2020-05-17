@@ -109,7 +109,7 @@
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>

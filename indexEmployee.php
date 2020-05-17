@@ -10,11 +10,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src = "https://kit.fontawesome.com/b99e675b6e.js"></script>
-<script src = "js/validate.js"></script>
 
 <title>Employee Salary</title>
 
 <link rel = "stylesheet" href = "assets/css/styles.css">
+<script src = "js/validate.js"></script>
 
 </head>
 <body>
@@ -23,6 +23,7 @@
         <img class = "imge" src = "assets/img/logo/logo-img.png">
         <h6>All Department Finance Details and Final Overview</h6>
         <ul>
+        <!-- link all pages-->
             <li><a href = "indexTaxi.php"><i class="fas fa-taxi"></i>Taxi</a></li>
             <li><a href = "indexRoom.php"><i class="fas fa-bed"></i>Room</a></li>
             <li><a href = "indexLaundry.php"><i class="fas fa-bath"></i>Laundry</a></li>
@@ -32,6 +33,7 @@
             <li><a href = "indexFinal.php"><i class="fas fa-chart-line"></i>Final Report</a></li>
         </ul>
 
+        <!-- link social media-->
         <div class="social_media">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -41,6 +43,7 @@
     <div class="main_content">
         <div class = "header">Employee Salary List</div>
 
+        <!--link sql queries of employee salaries -->
         <?php require_once 'Backend/employeeIndex.php'; ?>
 
         <?php
@@ -87,25 +90,29 @@
                 </table>
                         </div>
             </div>
+
+            <!--create form to employee salary-->
             
             <div class = "row justify-content-center">
                 <div class = "info">
-                    <form action="" method = "POST" name = "myForm" onsubmit = "return validate();">
+                    <form action="" method = "POST" name = "myForm" onsubmit = "retuen validate()">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Employee Name</lable>
                             <input type="text" name = "employee_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" 
+                            pattern = "[^a-z]{1,25}" required><!--Name with validation-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required><!--Email with validation-->
                         </div>
                         <div class="form-group">
                             <lable>Salary</lable>
                             <input type="number" name = "sal" value ="<?php echo $sal; ?>"
-                            class = "form-control" placeholder = "Salary" required><span id = "prc"></span>
+                            class = "form-control" placeholder = "Salary" required><span id = "prc"></span><!--Salary only can add number-->
                         </div>
                         <div class="form-group">
                             <?php
