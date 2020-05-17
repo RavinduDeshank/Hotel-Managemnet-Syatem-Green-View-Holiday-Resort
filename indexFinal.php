@@ -38,7 +38,7 @@
         </div>
     </div>
     <div class="main_content">
-        <div class = "header">Employee Salary List</div>
+        <div class = "header">Final Report</div>
 
         <?php require_once 'Backend/finalIndex.php'; ?>
 

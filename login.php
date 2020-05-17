@@ -3,10 +3,6 @@ include 'Backend/login.inc.php';
 
 
 ?>
-
-
-
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
