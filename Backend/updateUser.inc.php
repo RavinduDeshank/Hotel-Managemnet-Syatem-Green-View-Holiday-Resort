@@ -28,34 +28,34 @@
         }
         
        
-        $sql = "SELECT uname FROM users WHERE uname=? AND uId !={$u_id}";
-        $stmt = mysqli_stmt_init($con);
+        $Sql = "SELECT uname FROM users WHERE uname=? AND uId !={$u_id}";
+        $smt = mysqli_stmt_init($con);
 
-        if(!mysqli_stmt_prepare($stmt,$sql)){
+        if(!mysqli_stmt_prepare($smt,$Sql)){
             header("Location: ../userPanel.php?error=SQLError");
             exit(); 
         }
         else{
-            mysqli_stmt_bind_param($stmt,"s",$username);
-            mysqli_stmt_execute($stmt);
-            mysqli_stmt_store_result($stmt);
-            $resultCheck = mysqli_stmt_num_rows($stmt);
+            mysqli_stmt_bind_param($smt,"s",$username);
+            mysqli_stmt_execute($smt);
+            mysqli_stmt_store_result($smt);
+            $checkResult = mysqli_stmt_num_rows($smt);
             
-            if($resultCheck > 0){
+            if($checkResult > 0){
                 header("Location: ../userPanel.php?error=CustomerTaken&uname=".$username."&mnumber=".$mnumber."&email=".$email."&address=".$address."&uId=".$u_id);
             exit();
             }
             else{
-                $sql = "UPDATE users SET uname=?,fname=?,lname=?,mnumber=?,gender=?,email=?,address=?,nationality=? WHERE uId= {$u_id} ";
-                $stmt = mysqli_stmt_init($con);
+                $Sql = "UPDATE users SET uname=?,fname=?,lname=?,mnumber=?,gender=?,email=?,address=?,nationality=? WHERE uId= {$u_id} ";
+                $smt = mysqli_stmt_init($con);
 
-                if(!mysqli_stmt_prepare($stmt,$sql)){
+                if(!mysqli_stmt_prepare($smt,$Sql)){
                     header("Location: ../Customer/CustomerDetails.php?error=SQLError");
                     exit();
                 }
                 else{
-                    mysqli_stmt_bind_param($stmt,"sssssss",$username,$mnumber,$email,$gender,$nationality,$address,$fname,$lname);
-                    mysqli_stmt_execute($stmt);
+                    mysqli_stmt_bind_param($smt,"sssssss",$username,$mnumber,$email,$gender,$nationality,$address,$fname,$lname);
+                    mysqli_stmt_execute($smt);
                     header("Location: ../userPanel.php?Update=Success");
                     exit();
                 }
@@ -66,7 +66,7 @@
 
         }
 
-        mysqli_stmt_close($stmt);
+        mysqli_stmt_close($smt);
         mysqli_close($con);
 
 
