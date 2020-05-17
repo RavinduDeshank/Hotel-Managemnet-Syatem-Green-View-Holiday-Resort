@@ -1,8 +1,9 @@
 <?php
-
+    //Include database connection
     include('hall_db_connection.php');
     session_start();
 
+    
     if (isset($_POST['update'])) 
     {
         $userID = $_GET['ID'];

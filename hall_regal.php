@@ -119,6 +119,7 @@
                         <div class="column">
                             <div class="feature">
                                 <br>
+                                <!-- Facilities of Regal Hall -->
                                 <h2 class="hedding"><center>WE OFFER</center></h2>
                                 <br>
                                 <ul class="points">
@@ -136,6 +137,7 @@
                                     <br>
                                 </ul>
                                 <div>
+                                    <!-- Button used to login and make reservation -->
                                     <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
@@ -154,7 +156,7 @@
                 <br>
                 <br>
                 <div class="row">
-					<!--Royal Hall-->
+					<!--Platinum Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -162,7 +164,7 @@
                             </div>
 						</div>
 					</div>
-					<!--Regal Hall-->
+					<!--Gold Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -170,7 +172,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Outdoor Area-->
+					<!--Silver Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">

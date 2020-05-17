@@ -1,4 +1,5 @@
 <?php
+  //Hall database connection
   $con=mysqli_connect("localhost","","","greenview");
   if (mysqli_connect_errno())
   {

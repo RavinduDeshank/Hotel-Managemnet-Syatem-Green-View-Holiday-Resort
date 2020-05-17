@@ -1,6 +1,8 @@
 <?php
+    //Include database connection
     include('hall_db_connection.php');
 
+    //Delete the hall booking related to particular customer
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $con->query("DELETE FROM hall_booking WHERE user_id=$id");            

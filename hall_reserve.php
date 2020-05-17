@@ -1,3 +1,4 @@
+<!-- Include database connection -->
 <?php
     include('hall_db_connection.php');
     session_start();
@@ -128,6 +129,7 @@
                                             </div>
                                         </div>
 
+                                        <!-- Lables and input fields in the form -->
                                         <div class="form_row">
                                             <div class="col_label">
                                                 <label for="name_initials"> Name With Sirname: </label>
@@ -142,7 +144,7 @@
                                                 <label for="mobile_no"> Mobile Number: </label>
                                             </div>    
                                             <div class="col_input">
-                                                <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" title="Please enter your mobile number in this format: #### ### ###">
+                                                <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter your mobile number in this format: #### ### ###">
                                             </div>    
                                         </div>
                                     
@@ -239,7 +241,7 @@
                 <br>
                 <br>
                 <div class="row">
-					<!--Royal Hall-->
+					<!--Platinum menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -248,7 +250,7 @@
                             </div>
 						</div>
 					</div>
-					<!--Regal Hall-->
+					<!--Gold menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -256,7 +258,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Outdoor Area-->
+					<!--Silver menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
