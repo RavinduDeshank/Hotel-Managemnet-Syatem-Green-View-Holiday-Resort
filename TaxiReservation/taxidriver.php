@@ -8,6 +8,7 @@
     $users = mysqli_query($db, $query);
 
     if($users) {
+        /*getting taxi reservation details*/
         while ($user = mysqli_fetch_assoc($users)) {
             $reserved_list .= "<tr>";
             $reserved_list .= "<td>{$user['full_name']}</td>";
@@ -21,6 +22,7 @@
         } 
 
     }else{
+        /*error in database caonnection*/
          echo "Database query failed";
          
     }
