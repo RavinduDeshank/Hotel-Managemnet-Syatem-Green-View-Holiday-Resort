@@ -171,15 +171,14 @@ tr:hover .cut { opacity: 1; }
 	/*database connection*/
 	include ('Backend/dbconnection.php');
 	
-	
 	$user_id = $_GET['user_id'];
 	
-	
-	
+	/*getting taxi reservation information*/
 	$sql = "SELECT * FROM taxicustomer WHERE user_id='$user_id'";
     $result = mysqli_query($db, $sql);
     while ($row = mysqli_fetch_array($result))
 	{
+		
 		$user_id = $row['user_id'];
         $uname = $row['username'];
         $full_name = $row['full_name'];

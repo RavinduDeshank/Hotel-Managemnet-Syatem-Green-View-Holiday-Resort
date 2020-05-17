@@ -19,6 +19,7 @@
         } 
 
     }else{
+        /*database query unsuccessful*/
          echo "Database query failed";
          
     }
@@ -127,7 +128,7 @@
 
 <main>
     <h1>All Taxi Reservations <button class="btn"><a href="reservetaxi.php">Make a new Reservation</a></button></h1>
-
+    
         <table class="masterlist">
             <tr>
                 <th>Full Name</th>
