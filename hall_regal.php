@@ -133,7 +133,7 @@
                                     <li>- Band stand and dance floor</li>
                                     <li>- Day-use room and overnight stay for the bridal couple</li>
                                     <br>
-                                    <li>* Maximum guest capacity is 300</li>
+                                    <li>* Maximum guest capacity is 200</li>
                                     <br>
                                 </ul>
                                 <div>
