@@ -159,7 +159,7 @@
                 <br>
 
 
-                <a href="index.html"> <button type="button" id="bbutton">Back</button> </a>
+                <a href="admin.php"> <button type="button" id="bbutton">Back</button> </a>
                 <button type="submit" onclick="myFunction()" id="conf" name="addlaundry"> Confirm </button>
 
             </form>
