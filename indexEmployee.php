@@ -95,13 +95,13 @@
             
             <div class = "row justify-content-center">
                 <div class = "info">
-                    <form action="" method = "POST" name = "myForm" onsubmit = "retuen validate()">
+                    <form action="" method = "POST" name = "myForm" onsubmit = "return validate()">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Employee Name</lable>
                             <input type="text" name = "employee_name" 
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" 
-                            pattern = "[^a-z]{1,25}" required><!--Name with validation-->
+                            pattern = "[A-z]{1,15}" required><!--Name with validation-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>

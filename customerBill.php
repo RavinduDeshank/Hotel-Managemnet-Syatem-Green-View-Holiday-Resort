@@ -60,6 +60,7 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM customer_full_payment") or die($mysqli->error);
         ?>
+        <!-- create table in application to show inserted data-->
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
@@ -76,6 +77,7 @@
                         </tr>
                     </thead>
                     <?php
+                    //add row with data and edit,delete buttons
                         while($row = $result->fetch_assoc()): ?>
                             <tr>
                                 <td><?php echo $row['customer_name']; ?></td>
@@ -96,7 +98,7 @@
                 </table>
                         </div>
             </div>
-            
+            <!--create form for insert date to customer_full_payment table--> 
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST" name = "form1">
@@ -109,7 +111,8 @@
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
