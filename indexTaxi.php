@@ -106,18 +106,20 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" title = "Enter only alphabet for name" 
+                            required><!--name filed can only letters-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
                             class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
-                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required><!--email filed validation-->
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-                            class = "form-control" placeholder = "Payment" required>
+                            class = "form-control" placeholder = "Payment" min = "1" required><!--can't insert negative values-->
                         </div>
                         <div class="form-group">
                             <?php
