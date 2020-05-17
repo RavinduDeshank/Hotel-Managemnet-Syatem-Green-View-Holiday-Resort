@@ -140,15 +140,26 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="####" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
+        <a href="add_Details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
+        <a href="remove_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
         </br>
         </br>
         </br>
         </br>
         </br>
 
+
+
+        <a href="add_Details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
+        <a href="remove_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
+
         <a href="removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
+
+
+        
+        
+        <a href="TaxiReservation/removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
+
 
         </br>
         </br>

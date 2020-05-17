@@ -23,7 +23,7 @@ include('db.php')
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a  href="../room_admin_login.php"><i class="fa fa-home"></i> Homepage</a>
+                        <a  href="../index.php"><i class="fa fa-home"></i> Homepage</a>
                     </li>
                     
 					</ul>
@@ -108,9 +108,9 @@ include('db.php')
 								</div>
 								<div class="form-group">
                                             <label>Phone Number</label>
-                                            <input name="tel" type ="text" class="form-control" pattern="[0-9]{10}" required>
+                                            <input name="phone" type ="text" class="form-control" required>
                                             
-                               </div>
+                                        </div>
 							   
                         </div>
                         
@@ -201,6 +201,8 @@ include('db.php')
 							<input type="hidden" name="code" value="<?php echo $Random_code; ?>" />
 						<input type="submit" name="submit" class="btn btn-primary">
 						<?php
+                            //Determine if a variable is declared and is different than NULL(isset)
+                            //An associative array of variables passed to the current script via the HTTP POST method.
 							if(isset($_POST['submit']))
 							{
 							$code1=$_POST['code1'];
@@ -214,7 +216,8 @@ include('db.php')
 							
 									$con=mysqli_connect("localhost","root","","greenview");
 									$check="SELECT * FROM roombook WHERE email = '$_POST[email]'";
-									$rs = mysqli_query($con,$check);
+                                    $rs = mysqli_query($con,$check);
+                                    // Fetch a result row as a numeric array
 									$data = mysqli_fetch_array($rs, MYSQLI_NUM);
 									if($data[0] > 1) {
 										echo "<script type='text/javascript'> alert('User Already in Exists')</script>";

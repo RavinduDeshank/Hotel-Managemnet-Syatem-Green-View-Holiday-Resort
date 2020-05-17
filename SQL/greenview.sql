@@ -1,14 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 06, 2020 at 06:37 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.5
-
+-- Generation Time: May 16, 2020 at 10:27 PM
+-- Server version: 10.1.39-MariaDB
+-- PHP Version: 7.1.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -63,10 +63,34 @@ CREATE TABLE `contact` (
   `id` int(10) UNSIGNED NOT NULL,
   `fullname` varchar(100) DEFAULT NULL,
   `phoneno` int(10) DEFAULT NULL,
-  `email` text DEFAULT NULL,
+  `email` text,
   `cdate` date DEFAULT NULL,
   `approval` varchar(12) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer_full_payment`
+--
+
+CREATE TABLE `customer_full_payment` (
+  `customer_id` int(4) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `taxi_income` decimal(10,2) NOT NULL,
+  `room_income` decimal(10,2) NOT NULL,
+  `laundry_income` decimal(10,2) NOT NULL,
+  `hall_outdoor_income` decimal(10,2) NOT NULL,
+  `total_bill` decimal(15,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `customer_full_payment`
+--
+
+INSERT INTO `customer_full_payment` (`customer_id`, `customer_name`, `email`, `taxi_income`, `room_income`, `laundry_income`, `hall_outdoor_income`, `total_bill`) VALUES
+(0, 'Nadeel shavinda abesingha', 'nadeelshavinda355@gmail.com', '5000.00', '5500.00', '3500.00', '25000.00', '39000.00');
 
 -- --------------------------------------------------------
 
@@ -138,6 +162,86 @@ INSERT INTO `employee_leave` (`id`, `token`, `start`, `end`, `reason`, `status`)
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `employee_salary`
+--
+
+CREATE TABLE `employee_salary` (
+  `employee_id` int(4) NOT NULL,
+  `employee_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `sal` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `employee_salary`
+--
+
+INSERT INTO `employee_salary` (`employee_id`, `employee_name`, `email`, `sal`) VALUES
+(1, 'Malith Gayashan', 'malithgaya@gmail.com', '70000.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `final_report`
+--
+
+CREATE TABLE `final_report` (
+  `year` year(4) NOT NULL,
+  `all_incomes` decimal(15,2) NOT NULL,
+  `all_expences` decimal(15,2) NOT NULL,
+  `total_profit` decimal(15,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `final_report`
+--
+
+INSERT INTO `final_report` (`year`, `all_incomes`, `all_expences`, `total_profit`) VALUES
+(2020, '25000000.00', '1500000.00', '23500000.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `hall_payment`
+--
+
+CREATE TABLE `hall_payment` (
+  `customer_id` int(4) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `payment` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `hall_payment`
+--
+
+INSERT INTO `hall_payment` (`customer_id`, `customer_name`, `email`, `payment`) VALUES
+(1, 'Nadeel shavinda abesingha', 'nadeelshavinda355@gmail.com', '25000.00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `laundry_payment`
+--
+
+CREATE TABLE `laundry_payment` (
+  `customer_id` int(4) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `payment` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `laundry_payment`
+--
+
+INSERT INTO `laundry_payment` (`customer_id`, `customer_name`, `email`, `payment`) VALUES
+(1, 'Nadeel shavinda abesingha', 'nadeelshavinda355@gmail.com', '3500.00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `login`
 --
 
@@ -165,7 +269,7 @@ CREATE TABLE `newsletterlog` (
   `id` int(10) UNSIGNED NOT NULL,
   `title` varchar(52) DEFAULT NULL,
   `subject` varchar(100) DEFAULT NULL,
-  `news` text DEFAULT NULL
+  `news` text
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -296,7 +400,7 @@ CREATE TABLE `purchase` (
 
 CREATE TABLE `rank` (
   `eid` int(11) NOT NULL,
-  `points` int(11) DEFAULT 0
+  `points` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -382,12 +486,12 @@ INSERT INTO `room` (`id`, `type`, `bedding`, `place`, `cusid`) VALUES
 CREATE TABLE `roombook` (
   `id` int(10) UNSIGNED NOT NULL,
   `Title` varchar(5) DEFAULT NULL,
-  `FName` text DEFAULT NULL,
-  `LName` text DEFAULT NULL,
+  `FName` text,
+  `LName` text,
   `Email` varchar(50) DEFAULT NULL,
   `National` varchar(30) DEFAULT NULL,
   `Country` varchar(30) DEFAULT NULL,
-  `Phone` text DEFAULT NULL,
+  `Phone` text,
   `TRoom` varchar(20) DEFAULT NULL,
   `Bed` varchar(10) DEFAULT NULL,
   `NRoom` varchar(2) DEFAULT NULL,
@@ -397,6 +501,26 @@ CREATE TABLE `roombook` (
   `stat` varchar(15) DEFAULT NULL,
   `nodays` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `room_payment`
+--
+
+CREATE TABLE `room_payment` (
+  `customer_id` int(4) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `payment` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `room_payment`
+--
+
+INSERT INTO `room_payment` (`customer_id`, `customer_name`, `email`, `payment`) VALUES
+(1, 'Nadeel shavinda abesingha', 'nadeelshavinda355@gmail.com', '5500.00');
 
 -- --------------------------------------------------------
 
@@ -466,6 +590,26 @@ CREATE TABLE `taxicustomer` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `taxi_payment`
+--
+
+CREATE TABLE `taxi_payment` (
+  `customer_id` int(4) NOT NULL,
+  `customer_name` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `payment` decimal(10,2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `taxi_payment`
+--
+
+INSERT INTO `taxi_payment` (`customer_id`, `customer_name`, `email`, `payment`) VALUES
+(1, 'Nadeel shavinda abesingha', 'nadeelshavinda355@gmail.com', '6000.00');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -527,6 +671,24 @@ ALTER TABLE `employee`
 ALTER TABLE `employee_leave`
   ADD PRIMARY KEY (`token`),
   ADD KEY `employee_leave_ibfk_1` (`id`);
+
+--
+-- Indexes for table `employee_salary`
+--
+ALTER TABLE `employee_salary`
+  ADD PRIMARY KEY (`employee_id`);
+
+--
+-- Indexes for table `hall_payment`
+--
+ALTER TABLE `hall_payment`
+  ADD PRIMARY KEY (`customer_id`);
+
+--
+-- Indexes for table `laundry_payment`
+--
+ALTER TABLE `laundry_payment`
+  ADD PRIMARY KEY (`customer_id`);
 
 --
 -- Indexes for table `login`
@@ -596,6 +758,12 @@ ALTER TABLE `roombook`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `room_payment`
+--
+ALTER TABLE `room_payment`
+  ADD PRIMARY KEY (`customer_id`);
+
+--
 -- Indexes for table `salary`
 --
 ALTER TABLE `salary`
@@ -612,6 +780,12 @@ ALTER TABLE `stock`
 --
 ALTER TABLE `taxicustomer`
   ADD PRIMARY KEY (`user_id`);
+
+--
+-- Indexes for table `taxi_payment`
+--
+ALTER TABLE `taxi_payment`
+  ADD PRIMARY KEY (`customer_id`);
 
 --
 -- Indexes for table `users`
@@ -652,6 +826,24 @@ ALTER TABLE `employee`
 --
 ALTER TABLE `employee_leave`
   MODIFY `token` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
+
+--
+-- AUTO_INCREMENT for table `employee_salary`
+--
+ALTER TABLE `employee_salary`
+  MODIFY `employee_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `hall_payment`
+--
+ALTER TABLE `hall_payment`
+  MODIFY `customer_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `laundry_payment`
+--
+ALTER TABLE `laundry_payment`
+  MODIFY `customer_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `login`
@@ -708,6 +900,12 @@ ALTER TABLE `roombook`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT for table `room_payment`
+--
+ALTER TABLE `room_payment`
+  MODIFY `customer_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `stock`
 --
 ALTER TABLE `stock`
@@ -718,6 +916,12 @@ ALTER TABLE `stock`
 --
 ALTER TABLE `taxicustomer`
   MODIFY `user_id` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `taxi_payment`
+--
+ALTER TABLE `taxi_payment`
+  MODIFY `customer_id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

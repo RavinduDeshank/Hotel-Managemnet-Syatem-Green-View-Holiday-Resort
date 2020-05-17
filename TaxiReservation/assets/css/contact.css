@@ -1,0 +1,741 @@
+/*login*/
+#empmngLink{
+    border:1px solid black !important; 
+    border-radius:5px;
+}
+#empmngLink:hover{
+    border:1px solid #dca73a !important;
+  }
+
+#contact-form {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#contact-form h2 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#contact-form label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+#contact-form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contact-form input[type=text],
+#contact-form input[type=password] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 35px;
+    color: #fff;
+    font-size: 15px;
+}
+
+#contact-form select {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#sub6 {
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    background: goldenrod;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-top: 15%;
+}
+
+#sub6:hover {
+    background-color: goldenrod;
+    color: black;
+    transition: 0.6s;
+}
+
+#contact-form label input[type=checkbox] {
+    width: 20%;
+}
+
+
+/*Register*/
+
+.bar {
+    background-color: goldenrod;
+    width: 500px;
+    margin: -22px 0px 0px -20px;
+    padding: 11px 0px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+.register h4 {
+    margin: 0;
+    padding: 0 0 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.register {
+    background: rgba(0, 0, 0, 0.6);
+    width: 500px;
+    margin: 0px 0px 0px 430px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+
+label {
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+#usrName {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#fiName {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#laname {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#email2 {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#nation {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#readdress {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#mobinumber {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#pass {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#pass1 {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#gend {
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#birthday {
+    width: 100%;
+    height: 33px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#sub2 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+#sub2:hover {
+    background: goldenrod;
+    color: black;
+    transition: 0.6s;
+}
+
+#reset3 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    cursor: pointer;
+    color: goldenrod;
+}
+
+#reset3:hover {
+    background: goldenrod;
+    color: black;
+    transition: 0.6s;
+}
+
+a {
+    color: goldenrod;
+}
+
+a:hover {
+    color: black;
+    transition: 0.6s;
+}
+
+
+/*Add Promo*/
+
+.retopic {
+    width: 700px;
+    background-color: goldenrod;
+    margin: -22px 0px 0px -20px;
+    padding: 11px 0px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+.retopic h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+#pname {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 50px;
+}
+
+#box {
+    background: rgba(0, 0, 0, 0.6);
+    width: 700px;
+    margin: 0px 0px 0px 300px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+
+#pid {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+#ptitle {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 237px;
+    margin-top: 10px;
+}
+
+#sdate {
+    width: 200px;
+    height: 34px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#edate {
+    width: 200px;
+    height: 34px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+}
+
+#pdes {
+    width: 500px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#bbutton {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 380px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    /*Text middle of the button*/
+    color: #fff;
+    /*color of button text White= #fff */
+    background: goldenrod;
+    height: 39px;
+}
+
+#bbutton:hover {
+    color: black;
+}
+
+#conf {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    /*Text middle of the button*/
+    color: #fff;
+    /*color of button text White= #fff */
+    background: goldenrod;
+    height: 39px;
+}
+
+#conf:hover {
+    color: black;
+}
+
+*/
+/*Admin*/
+
+.topic3 {
+    width: 950px;
+    background-color: goldenrod;
+    margin: -22px 0px 0px -20px;
+    padding: 11px 0px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
+    text-align: center;
+}
+
+#box2 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 950px;
+    margin: 0px 0px 0px 220px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+#box2 {
+    background: rgba(100, 150, 20, 0.6);
+    width: 950px;
+    margin: 0px 0px 0px 0px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}
+
+.newbutton img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton1 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 245px;
+}
+
+.newbutton2 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton3 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 285px;
+}
+
+.newbutton4 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton5 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 300px;
+}
+
+.newbutton6 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton7 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 305px;
+}
+
+.newbutton8 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton9 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 260px;
+}
+
+.newbutton10 img {
+    width: 150px;
+    height: 150px;
+}
+
+.newbutton11 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 270px;
+}
+
+.newbutton12 img {
+    width: 150px;
+    height: 150px;
+    margin-left: 300px;
+}
+
+*/
+/*Tables */
+
+#box5 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#removepromotable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+#removepromotable th {
+    text-align: left;
+    background-color: gold;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+#taxitable th {
+    text-align: left;
+    background-color: gold;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+
+#removepromotable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
+#removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#bbutton2 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 1000px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: goldenrod;
+    height: 39px;
+    border: 1px solid gold;
+}
+
+#bbutton2:hover {
+    background-color: goldenrod;
+    color: #000;
+}
+
+*/ #sub5 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #222222;
+    height: 39px;
+    border: 1px solid gold;
+}
+
+#sub5:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+#box5 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+#removepromotable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+#taxitable {
+    border-collapse: collapse;
+    margin-left: 10%;
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+#removepromotable th {
+    text-align: left;
+    background-color: goldenrod;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+
+#taxitable th {
+    text-align: left;
+    background-color: goldenrod;
+    color: black;
+    padding: 4px 30px 4px 8px;
+}
+
+#removepromotable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
+#taxitable td {
+    border: 1px solid #e3e3e3;
+    padding: 4px 8px;
+    color: black;
+}
+
+#removepromotable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+#taxitable tr:nth-child(odd) td {
+    background-color: rgb(219, 190, 118);
+    color: black;
+}
+
+*/ #bbutton2 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 1000px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #222222;
+    height: 39px;
+    border: 1px solid gold;
+}
+
+#bbutton2:hover {
+    background-color: gold;
+    color: #000;
+}
+
+
+
+*/ #sub5 {
+    width: 100px;
+    padding: 7px;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background: #222222;
+    height: 39px;
+    border: 1px solid gold;
+}
+
+#sub5:hover {
+    background-color: goldenrod;
+    color: #000;
+}
+
+#box3 {
+    background: rgba(0, 0, 0, 0.6);
+    width: 1000px;
+    margin: 0px 0px 0px 160px;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: -20px;
+}

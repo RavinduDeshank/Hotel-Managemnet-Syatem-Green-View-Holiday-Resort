@@ -63,7 +63,7 @@
                                         <li><a href="services.html">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.html">Promotions</a></li>
                                                 <li><a href="blog.html">Blog</a></li>
@@ -83,7 +83,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -130,7 +130,7 @@
                                     <br>
                                 </ul>
                                 <div>
-                                    <center><a href="hall_login.php" class = "hall_booking_btn">Book Now</a><center>
+                                    <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
                             </div>
@@ -148,7 +148,7 @@
                 <br>
                 <br>
                 <div class="row">
-					<!--Royal Hall-->
+					
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -157,7 +157,7 @@
                             </div>
 						</div>
 					</div>
-					<!--Regal Hall-->
+					
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
