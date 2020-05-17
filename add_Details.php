@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="assets/css/contact.css">
+    <link rel="stylesheet" href="assets/css/details.css">
 </head>
 
 <body>
@@ -71,6 +71,7 @@
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.html">Promotions</a></li>
                                                 <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -202,6 +203,7 @@
                                     <li><a href="rooms.html">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.html">Pool Service</a></li>
+                                    <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                 </ul>
                             </div>
                         </div>

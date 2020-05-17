@@ -3,7 +3,7 @@
     $reserved_list = ''; 
 
     //getting the list of reservations
-    $query = "SELECT * FROM taxicustomer WHERE user_id='{$_SESSION['user_id']}' AND is_deleted=0 ORDER BY full_name";
+    $query = "SELECT * FROM taxicustomer WHERE user_id='{$_SESSION['user_id']}' AND is_deleted=0 AND is_complete=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
     if($users) {
@@ -83,23 +83,22 @@
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.php">Home</a></li>
-                                        <li><a href="about.php">About</a></li>
-                                        <li><a href="services.php">Service</a></li>
+                                        <li><a href="../index.php">Home</a></li>
+                                        <li><a href="../about.php">About</a></li>
+                                        <li><a href="../services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.php">Rooms</a></li>
+                                                <li><a href="../rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.php">Promotions</a></li>
-                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="../Promotion.php">Promotions</a></li>
+                                                <li><a href="../blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="../contact.php">Contact</a></li>
                                         <li><a href="">Logout</a>
                                             <ul class="submenu">
                                                 <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
-                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -172,10 +171,10 @@
                            <div class="footer-tittle">
                                <h4>Quick Links</h4>
                                <ul>
-                                   <li><a href="about.php">About Us</a></li>
-                                   <li><a href="rooms.php">Our Best Rooms</a></li>
+                                   <li><a href="../about.php">About Us</a></li>
+                                   <li><a href="../rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
-                                   <li><a href="services.php">Pool Service</a></li>
+                                   <li><a href="../services.php">Pool Service</a></li>
                                    <li><a href="taxi.php">Taxi Service</a></li>
                                </ul>
                            </div>

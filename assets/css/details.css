@@ -1,22 +1,40 @@
 /*login*/
-#empmngLink{
-    border:1px solid black !important; 
-    border-radius:5px;
-}
-#empmngLink:hover{
-    border:1px solid #dca73a !important;
-  }
 
+body {
+  
+      
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgb(45, 36, 218) 0%, rgba(101, 225, 231, 0.883) 35%, rgb(154, 221, 235) 100%);
+  
+  
+  }
+      
+
+    
 #contact-form {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 430px;
+    height: 200px;
+    padding: 80px 40px;
     background: rgba(0, 0, 0, 0.6);
-    border-radius: 20px;
 }
 
 .avatar {
+  
+    position: absolute;
     width: 80px;
     height: 80px;
     border-radius: 50%;
     overflow: hidden;
+    top: calc(-80px/2);
+    left: calc(50% - 40px);
 }
 
 #contact-form h2 {
@@ -41,10 +59,10 @@
 
 #contact-form input[type=text],
 #contact-form input[type=password] {
-    border: none;
+    border: solid;
     border-bottom: 1px solid #fff;
     background: transparent;
-    outline: none;
+    outline:none;
     height: 35px;
     color: #fff;
     font-size: 15px;
@@ -62,14 +80,14 @@
 
 #sub6 {
     height: 30px;
-    color: #fff;
+    color: rgb(228, 198, 198);
     font-size: 15px;
-    background: goldenrod;
+    background: rgb(212, 81, 195);
     cursor: pointer;
     border-radius: 5px;
-    border: none;
-    outline: none;
-    margin-top: 15%;
+    border: #0d3580;
+    outline:none;
+    margin-top: 5%;
 }
 
 #sub6:hover {
@@ -79,7 +97,7 @@
 }
 
 #contact-form label input[type=checkbox] {
-    width: 20%;
+    width: 40%;
 }
 
 
@@ -270,11 +288,16 @@ a:hover {
 }
 
 
-/*Add Promo*/
+/*Add Details*/
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(45, 36, 218) 0%, rgba(101, 225, 231, 0.883) 35%, rgb(154, 221, 235) 100%);
+}
 
 .retopic {
     width: 700px;
-    background-color: goldenrod;
+    background-color: rgb(201, 98, 201);
     margin: -22px 0px 0px -20px;
     padding: 11px 0px 0px 0px;
     border-radius: 20px 20px 0px 0px;
@@ -292,13 +315,12 @@ a:hover {
     border: none;
     border-radius: 3px;
     outline: 0;
-    padding: 7px;
+    padding: 8px;
     margin-left: 50px;
 }
 
 #box {
-    
-    background: rgba(30, 63, 209, 0.404);
+    background: rgba(15, 14, 73, 0.6);
     width: 700px;
     margin: 0px 0px 0px 300px;
     color: white;
@@ -314,7 +336,7 @@ a:hover {
     border: none;
     border-radius: 3px;
     outline: 0;
-    padding: 7px;
+    padding: 8px;
     margin-left: 80px;
     margin-top: 10px;
 }
@@ -326,7 +348,29 @@ a:hover {
     border-radius: 3px;
     outline: 0;
     padding: 7px;
-    margin-left: 237px;
+    margin-left: 115px;
+    margin-top: 10px;
+}
+
+#Weight {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+#cusname {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+    margin-left: 60px;
     margin-top: 10px;
 }
 
@@ -376,7 +420,7 @@ a:hover {
     /*Text middle of the button*/
     color: #fff;
     /*color of button text White= #fff */
-    background: goldenrod;
+    background: rgb(209, 17, 43);
     height: 39px;
 }
 
@@ -408,12 +452,12 @@ a:hover {
     color: black;
 }
 
-*/
+
 /*Admin*/
 
 .topic3 {
     width: 950px;
-    background-color: goldenrod;
+    background-color: rgb(32, 218, 110);
     margin: -22px 0px 0px -20px;
     padding: 11px 0px 0px 0px;
     border-radius: 20px 20px 0px 0px;
@@ -424,16 +468,6 @@ a:hover {
     background: rgba(0, 0, 0, 0.6);
     width: 950px;
     margin: 0px 0px 0px 220px;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: -20px;
-}
-#box2 {
-    background: rgba(100, 150, 20, 0.6);
-    width: 950px;
-    margin: 0px 0px 0px 0px;
     color: white;
     font-size: 18px;
     padding: 20px;
@@ -513,8 +547,13 @@ a:hover {
     margin-left: 300px;
 }
 
-*/
-/*Tables */
+
+/*RemovePromo */
+
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgb(45, 36, 218) 0%, rgba(101, 225, 231, 0.883) 35%, rgb(154, 221, 235) 100%);
+}
 
 #box5 {
     background: rgba(0, 0, 0, 0.6);
@@ -531,22 +570,10 @@ a:hover {
     width: 80%;
     margin-bottom: 100px;
 }
-#taxitable {
-    border-collapse: collapse;
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: 100px;
-}
 
 #removepromotable th {
     text-align: left;
-    background-color: gold;
-    color: black;
-    padding: 4px 30px 4px 8px;
-}
-#taxitable th {
-    text-align: left;
-    background-color: gold;
+    background-color: rgb(0, 255, 0);
     color: black;
     padding: 4px 30px 4px 8px;
 }
@@ -557,18 +584,7 @@ a:hover {
     color: black;
 }
 
-#taxitable td {
-    border: 1px solid #e3e3e3;
-    padding: 4px 8px;
-    color: black;
-}
-
 #removepromotable tr:nth-child(odd) td {
-    background-color: rgb(219, 190, 118);
-    color: black;
-}
-
-#taxitable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
@@ -586,8 +602,10 @@ a:hover {
     outline: 0;
     cursor: pointer;
     text-align: center;
+    /*Text middle of the button*/
     color: #fff;
-    background: goldenrod;
+    /*color of button text White= #fff */
+    background: rgb(106, 219, 195);
     height: 39px;
     border: 1px solid gold;
 }
@@ -597,7 +615,7 @@ a:hover {
     color: #000;
 }
 
-*/ #sub5 {
+#sub5 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -610,7 +628,9 @@ a:hover {
     outline: 0;
     cursor: pointer;
     text-align: center;
+    /*Text middle of the button*/
     color: #fff;
+    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -637,21 +657,7 @@ a:hover {
     margin-bottom: 100px;
 }
 
-#taxitable {
-    border-collapse: collapse;
-    margin-left: 10%;
-    width: 80%;
-    margin-bottom: 100px;
-}
-
 #removepromotable th {
-    text-align: left;
-    background-color: goldenrod;
-    color: black;
-    padding: 4px 30px 4px 8px;
-}
-
-#taxitable th {
     text-align: left;
     background-color: goldenrod;
     color: black;
@@ -664,23 +670,12 @@ a:hover {
     color: black;
 }
 
-#taxitable td {
-    border: 1px solid #e3e3e3;
-    padding: 4px 8px;
-    color: black;
-}
-
 #removepromotable tr:nth-child(odd) td {
     background-color: rgb(219, 190, 118);
     color: black;
 }
 
-#taxitable tr:nth-child(odd) td {
-    background-color: rgb(219, 190, 118);
-    color: black;
-}
-
-*/ #bbutton2 {
+#bbutton2 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -693,7 +688,9 @@ a:hover {
     outline: 0;
     cursor: pointer;
     text-align: center;
+    /*Text middle of the button*/
     color: #fff;
+    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -704,9 +701,7 @@ a:hover {
     color: #000;
 }
 
-
-
-*/ #sub5 {
+#sub5 {
     width: 100px;
     padding: 7px;
     margin-top: 10px;
@@ -719,7 +714,9 @@ a:hover {
     outline: 0;
     cursor: pointer;
     text-align: center;
+    /*Text middle of the button*/
     color: #fff;
+    /*color of button text White= #fff */
     background: #222222;
     height: 39px;
     border: 1px solid gold;
@@ -729,74 +726,3 @@ a:hover {
     background-color: goldenrod;
     color: #000;
 }
-
-#box3 {
-    background: rgba(0, 0, 0, 0.6);
-    width: 1000px;
-    margin: 0px 0px 0px 160px;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: -20px;
-}
-
-/*User Panel*/
-
-.topic4 {
-    width: 950px;
-    background-color: goldenrod;
-    margin: -22px 0px 0px -20px;
-    padding: 11px 0px 0px 0px;
-    border-radius: 20px 20px 0px 0px;
-    text-align: center;
-}
-
-#box6 {
-    background: rgba(0, 0, 0, 0.6);
-    width: 950px;
-    margin: 0px 0px 0px 220px;
-    color: white;
-    font-size: 18px;
-    padding: 20px;
-    border-radius: 20px;
-    margin-top: -20px;
-}
-
-.newbutton img {
-    width: 150px;
-    height: 150px;
-}
-
-.newbutton1 img {
-    width: 150px;
-    height: 150px;
-    margin-left: 245px;
-}
-
-.newbutton2 img {
-    width: 150px;
-    height: 150px;
-}
-
-.newbutton3 img {
-    width: 150px;
-    height: 150px;
-    margin-left: 205px;
-}
-.newbutton4 img {
-    width: 150px;
-    height: 150px;
-}
-
-.newbutton5 img {
-    width: 150px;
-    height: 150px;
-    margin-left: 265px;
-}
-.newbutton6 img {
-    width: 150px;
-    height: 150px;
-    margin-left: 305px;
-}
-

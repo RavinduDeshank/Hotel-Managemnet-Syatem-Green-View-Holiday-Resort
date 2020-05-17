@@ -104,7 +104,7 @@
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-                            class = "form-control" placeholder = "Payment" required>
+                            class = "form-control" placeholder = "Payment" pattern = "[^ @]*@[^ @]*" required>
                         </div>
                         <div class="form-group">
                             <?php
