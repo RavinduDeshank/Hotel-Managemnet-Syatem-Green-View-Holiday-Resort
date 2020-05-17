@@ -235,6 +235,7 @@
 
             <br>
                 <br>
+                <!--Menu Types-->
                 <div>
                     <h2><i><b>Menus</b></i></h2>
                 </div>
