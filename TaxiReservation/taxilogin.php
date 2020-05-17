@@ -85,7 +85,7 @@ include 'Backend/taxidriverlogin.inc.php';
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="../contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
                                                 <li><a href="../login.php">Login</a></li>
@@ -207,10 +207,10 @@ include 'Backend/taxidriverlogin.inc.php';
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="about.php">About Us</a></li>
-                                    <li><a href="rooms.php">Our Best Rooms</a></li>
+                                    <li><a href="../about.php">About Us</a></li>
+                                    <li><a href="../rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="../services.php">Pool Service</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -548,7 +548,7 @@
                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
                                    <li><a href="services.php">Pool Service</a></li>
-                                   <li><a href="taxi.php">Taxi Service</a></li>
+                                   <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                </ul>
                            </div>
                        </div>
