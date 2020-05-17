@@ -61,11 +61,13 @@
  <div class="header-area header-sticky">
             <div class="main-header ">
                 <div class="container">
-                    <div class="row align-items-center">
+                
+                 <div class="row align-items-center">
                         <!-- logo -->
-                        <div class="col-xl-2 col-lg-2">
-                            <div class="logo">
+                        <div class="col-xl-2 col-lg-2"> 
+                           <div class="logo">
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                
                             </div>
                         </div>
                         <div class="col-xl-8 col-lg-8">
@@ -79,10 +81,12 @@
                                         <li>
                                             <a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="../rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="../Promotion.php">Promotions</a></li>
+                                                <li><a href="../blog.php">Blog</a></li>
+                                                <li><a href="../taxi.php">Taxi Reservation</a></li>
+                                                <li><a href="index.php">Inventory Management</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -124,6 +128,10 @@
 
 </head>
 <body>
+
+
+
+
 
 <div class="content">
   	<!-- notification message -->
