@@ -129,7 +129,7 @@
                                     <br>
                                 </ul>
                                 <div>
-                                    <center><a href="hall_login.php" class = "hall_booking_btn">Book Now</a><center>
+                                    <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
                             </div>

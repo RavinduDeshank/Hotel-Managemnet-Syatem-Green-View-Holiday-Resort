@@ -128,6 +128,7 @@ if(!isset($_SESSION["user"]))
 							 include('db.php');
 							 if(isset($_POST['add']))
 							 {
+                                 //An associative array of variables passed to the current script via the HTTP POST method.
 										$room = $_POST['troom'];
 										$bed = $_POST['bed'];
 										$place = 'Free';
