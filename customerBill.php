@@ -14,6 +14,7 @@
 <title>Customer Final Bill</title>
 
 <link rel = "stylesheet" href = "assets/css/styles.css">
+<!-- <script src="validate.js"></script> -->
 
 </head>
 <body>
@@ -98,7 +99,7 @@
             
             <div class = "row justify-content-center">
                 <div class = "info">
-                    <form action="" method = "POST">
+                    <form action="" method = "POST" name = "form1">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Customer Name</lable>
@@ -108,7 +109,7 @@
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
