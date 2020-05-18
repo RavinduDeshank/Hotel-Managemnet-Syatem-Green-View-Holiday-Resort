@@ -1,0 +1,144 @@
+
+input[type=text]{
+	width: 300px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+select {
+	width: 300px;
+	padding: 12px;
+	color: #000;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=tel]{
+    width: 300pxpx;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=date]{
+    width: 300px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=number]{
+    width: 300px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+input[type=password]{
+	width: 300px;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+
+label {
+	padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: rgb(10, 10, 10);
+}
+  
+input[type=submit] {
+	background-color: rgb(196, 144, 13);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+input[type=submit]:hover {
+	background-color: #cfb20c;
+}
+
+input[type=reset] {
+	background-color: rgb(196, 144, 13);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+  }
+  
+input[type=reset]:hover {
+	background-color: #cfb20c;
+}
+
+.container_form{
+	border-radius: 5px;
+	background-color: rgb(226, 206, 154);
+  	padding: 20px;
+}
+
+.form_row:after{
+	content: "";
+  	display: table;
+  	clear: both;
+}
+
+.col_label{
+	float: left;
+  	width: 25%;
+  	margin-top: 6px;
+}
+
+
+
+.col_input{
+	float: left;
+  	width: 150px;
+  	margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+	.col-25, .col-75, input[type=submit] {
+	  width: 100%;
+	  margin-top: 0;
+	}
+  }
+
+  .container_login{
+	border-radius: 5px;
+	background-color: rgb(226, 206, 154);
+	padding: 20px;
+	
+}
+
+.login_right{
+	margin-top: 5%;
+	margin-bottom: 50px;
+	margin-right: 20px;
+	float: right;
+	height:95%;
+	width:35%;
+	background-color: rgb(226, 206, 154);
+	
+}
+
+.login_left{
+	margin-top: 5%;
+	margin-bottom: 50px;
+	margin-left:20px;
+	float: left;
+	width: 60%;
+	background-color: rgb(226, 206, 154);
+
+}

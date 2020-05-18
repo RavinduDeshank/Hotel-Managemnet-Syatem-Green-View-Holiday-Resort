@@ -9,10 +9,10 @@
 		//while($row = $query->fetch_assoc()){
 		//	$contents .= "
 		//	<tr>
-		//		<td>".$row['id']."</td>
-		//		<td>".$row['firstname']."</td>
-		//		<td>".$row['lastname']."</td>
-		//		<td>".$row['address']."</td>
+		//		<td>".$row['ID']."</td>
+		//		<td>".$row['NAME']."</td>
+		//		<td>".$row['PRICE']."</td>
+		//		<td>".$row['QUANTITY']."</td>
 		//	</tr>
 		//	";
 	//	}

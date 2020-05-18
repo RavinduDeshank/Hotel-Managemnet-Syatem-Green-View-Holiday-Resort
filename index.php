@@ -63,11 +63,12 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                                 <li><a href="InventoryManagement/index.php">Inventory Management</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -75,6 +76,7 @@
                                             <ul class="submenu">
                                                 <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
+                                                
                                             </ul>
                                         </li>
                                     </ul>
@@ -84,7 +86,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -204,7 +206,7 @@
                    </div>
                     <!-- Single Select Box -->
                     <div class="single-select-box pt-45 mb-30">
-                        <a href="#" class="btn select-btn">Book Now</a>
+                        <a href="login.php" class="btn select-btn">Book Now</a>
                    </div>
                
 
@@ -264,12 +266,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/101080a_hb_ro_030.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">SUPERIOR ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                    <span><u>LKR</u>8000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -278,12 +280,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/Deluxe-Sea-View-With-Private-Balcony_03-1000x667.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">DELUXE ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>100 <span>/ par night</span></span>
+                                    <span><u>LKR</u>5000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -292,12 +294,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
+                               <a href="rooms.php"> <img src="assets/img/rooms/Budget_Non_Sea_View_03.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">GUEST ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>50 <span>/ per-night</span></span>
+                                    <span><u>LKR</u>3000<span>/ per-night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -500,13 +502,13 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/delux-garden-5.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/GettyImages-200375642-001.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/rooms/delux-balcony1.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -548,7 +550,7 @@
                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
                                    <li><a href="services.php">Pool Service</a></li>
-                                   <li><a href="taxi.php">Taxi Service</a></li>
+                                   <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                </ul>
                            </div>
                        </div>
