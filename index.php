@@ -63,10 +63,10 @@
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
                                                 <li><a href="rooms.php">Rooms</a></li>
-                                                <li><a href="###">Halls</a></li>
+                                                <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservation</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -234,9 +234,9 @@
                             <span>About our company</span>
                             <h2>Make the customer the hero of your story</h2>
                             <div class="caption-details">
-                                <p class="pera-dtails">We are the leading hotel company in our area </p>
+                                <p class="pera-dtails">We are the leading hotel in our area </p>
                                 <p>Green View Holiday Resort is a newly situated hotel in homagama area it have luxsary rooms facing a iconic paddy field. Since its launch in 2010, it has grown from strength to strength gaining international acclaim </p>
-                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="about.php" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -264,12 +264,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/101080a_hb_ro_030.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">SUPERIOR ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>150 <span>/ par night</span></span>
+                                    <span><u>LKR</u> 8000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -278,12 +278,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
+                               <a href="rooms.php"><img src="assets/img/rooms/Deluxe-Sea-View-With-Private-Balcony_03-1000x667.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">DELUXE ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>100 <span>/ par night</span></span>
+                                    <span><u>LKR </u> 5000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -292,12 +292,12 @@
                         <!-- Single Room -->
                         <div class="single-room mb-50">
                             <div class="room-img">
-                               <a href="rooms.php"> <img src="assets/img/rooms/room3.jpg" alt=""></a>
+                               <a href="rooms.php"> <img src="assets/img/rooms/Budget_Non_Sea_View_03.jpg" alt=""></a>
                             </div>
                             <div class="room-caption">
-                                <h3><a href="rooms.php">Classic Double Bed</a></h3>
+                                <h3><a href="rooms.php">GUEST ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>$</u>50 <span>/ per-night</span></span>
+                                    <span><u>LKR </u> 3000<span>/ per-night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -319,7 +319,7 @@
                                 <span>Our resturent</span>
                                 <h3>Dining & Drinks</h3>
                                 <p>Find just what you’re craving across our seven dining options. We have fresh seafood and outdoor dining, global cuisine from open kitchens, and the relaxed yet sophisticated Queens lounge. The pool bar serves casual cuisine, Stella Karaoke Bar offers light bites, and room service is available.<br></p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="about.php" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -334,7 +334,7 @@
                                 <span>Our Pool</span>
                                 <h3>Swimming Pool</h3>
                                 <p>Ideally situated in a tranquil environment, our spacious swimming pool is the best place to enjoy a dip after a day of sightseeing, or unwind with friends and family.</p>
-                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                                <a href="about.php" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -360,8 +360,7 @@
                                 </div>
                                  <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
-                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                    </p>
+                                    <p>Best Place for stay relax, iconic paddy field and best customer service </p>
                                     <!-- Rattion -->
                                     <div class="testimonial-ratting">
                                         <i class="fas fa-star"></i>
@@ -371,7 +370,7 @@
                                         <i class="fas fa-star"></i>
                                     </div>
                                     <div class="rattiong-caption">
-                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
+                                        <span>Clifford Frazier, <span> Canada </span><br> <span> Regular Client </span> </span>
                                     </div>
                                 </div>
                             </div>
@@ -380,14 +379,13 @@
                                 <!-- Testimonial tittle -->
                                 <div class="font-back-tittle mb-105">
                                     <div class="archivment-front">
-                                        <img src="assets/img/logo/testimonial.png" alt="">
+                                        <!--<img src="assets/img/logo/testimonial.png" alt="">-->
                                     </div>
                                     <h3 class="archivment-back">Testimonial</h3>
                                 </div>
                                 <!-- Testimonial Content -->
                                 <div class="testimonial-caption text-center">
-                                    <p>Yorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
-                                    </p>
+                                    <p>Good Service, Value for money, best environment, Friendly staff and highly recommended</p>
                                     <div class="testimonial-ratting">
                                         <a href="#"><i class="fas fa-star"></i></a>
                                         <a href="#"><i class="fas fa-star"></i></a>
@@ -396,7 +394,7 @@
                                         <a href="#"><i class="fas fa-star"></i></a>
                                     </div>
                                     <div class="rattiong-caption">
-                                        <span>Clifford Frazier, <span>Regular Client</span> </span>
+                                        <span>Amali Karunarathne,<span> Sri Lanka </span><br> <span>Regular Client</span> </span>
                                     </div>
                                 </div>
                             </div>
@@ -500,13 +498,13 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                                <a href="rooms.php"><img src="assets/img/rooms/delux-garden-5.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                                <a href="services.php"><img src="assets/img/rooms/GettyImages-200375642-001.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                                <a href="rooms.php"><img src="assets/img/rooms/delux-balcony1.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -548,7 +546,7 @@
                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                    <li><a href="#">Our Photo Gellary</a></li>
                                    <li><a href="services.php">Pool Service</a></li>
-                                   <li><a href="taxi.php">Taxi Service</a></li>
+                                   <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                </ul>
                            </div>
                        </div>

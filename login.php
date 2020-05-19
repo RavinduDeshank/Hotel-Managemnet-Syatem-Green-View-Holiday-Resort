@@ -1,13 +1,8 @@
 <?php
 include 'Backend/login.inc.php';
 
-?>
-<?php
-include 'Backend/taxilogin.inc.php';
 
 ?>
-
-
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -78,6 +73,7 @@ include 'Backend/taxilogin.inc.php';
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -165,12 +161,17 @@ include 'Backend/taxilogin.inc.php';
                             <div>
                                 <p style="color:black;">Create an Account &nbsp;<a href="register.php" class="a2">Sign Up </a></p>
                             </div>
-                            
-                            <div>
-                                <p style="color:black;">Employee &nbsp;<a href="elogin.html" class="a2"> login</a></p>
+                            <div class="row col-12 pl-5 justify-content-center">
+                            <div style="border:1px solid #dca73a; border-radius:5px;" class="pt-2 pl-4 mt-5 row col-12" id="empmngLink">
+                                <p style="color:black; text-align:center;"><a href="elogin.html" class="a2">Employee management login</a></p>
                             </div>
                             </div>
 
+                            <div class="row col-12 pl-5 justify-content-center">
+                            <div style="border:1px solid #dca73a; border-radius:5px;" class="pt-2 pl-4 mt-5 row col-12" id="empmngLink">
+                                <p style="color:black; text-align:center;"><a href="TaxiReservation/taxilogin.php" class="a2">Taxi login</a></p>
+                            </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -216,6 +217,7 @@ include 'Backend/taxilogin.inc.php';
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                 </ul>
                             </div>
                         </div>

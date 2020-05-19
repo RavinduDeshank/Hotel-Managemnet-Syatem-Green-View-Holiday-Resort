@@ -2,7 +2,7 @@
 session_start();  
 if(!isset($_SESSION["user"]))
 {
- header("location:index.php");
+ header("location:room_admin_login.php");
 }
 ?> 
 
@@ -70,9 +70,6 @@ if(!isset($_SESSION["user"]))
 
                     <li>
                         <a href="home.php"><i class="fa fa-dashboard"></i> Status</a>
-                    </li>
-                    <li>
-                        <a  href="messages.php"><i class="fa fa-desktop"></i> News Letters</a>
                     </li>
 					<li>
                         <a href="roombook.php"><i class="fa fa-bar-chart-o"></i>Room Booking</a>

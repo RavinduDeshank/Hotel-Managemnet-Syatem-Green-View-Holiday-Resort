@@ -2,7 +2,7 @@
   SESSION_START();
 
   if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: userPanel.php");
+    header("Location: login.php");
   }
   
 include '../SQL/dbconnection.php';
@@ -107,6 +107,7 @@ if (isset($_GET['uId'])) {
                                                 <li><a href="###">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.php">Contact</a></li>
@@ -342,7 +343,7 @@ if (isset($_GET['uId'])) {
                       echo '<input type="hidden" name="customerid" value="' . $u_id . '">';
                     }
                     ?>
-                    <button type="submit" id="addCustomer" name="addCustomer" class="btn btn-success">Update </button>
+                    <button type="submit" id="addCustomer" name="addCustomer" class="btn btn-success">Update Customer</button>
                     <a href="userPanel.php"><button type="button" class="btn btn-warning" value="Back"><i class="fas fa-arrow-left"></i> Back To User</button></a>
                   </form>
                 </div>
@@ -392,6 +393,7 @@ if (isset($_GET['uId'])) {
                                     <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
                                     <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                 </ul>
                             </div>
                         </div>
