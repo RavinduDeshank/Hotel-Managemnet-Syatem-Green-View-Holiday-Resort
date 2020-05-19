@@ -144,6 +144,7 @@
 
 		<hr>
 		<?php
+        /*total taxi fee calculation*/
 		if(isset($_POST['distance']))
 		{
 			$total = 0;
@@ -223,6 +224,7 @@
 				$total += $rep[1];
             }
             
+            /*assign values with variables*/
             $meter = $_POST['meter'];
             $newTotal = $total * $meter;
             $drivertip = ($newTotal * 5)/100;

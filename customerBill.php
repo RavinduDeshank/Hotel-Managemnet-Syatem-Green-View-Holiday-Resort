@@ -60,6 +60,10 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM customer_full_payment") or die($mysqli->error);
         ?>
+<<<<<<< HEAD
+=======
+        <!-- create table in application to show inserted data-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
@@ -76,6 +80,10 @@
                         </tr>
                     </thead>
                     <?php
+<<<<<<< HEAD
+=======
+                    //add row with data and edit,delete buttons
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         while($row = $result->fetch_assoc()): ?>
                             <tr>
                                 <td><?php echo $row['customer_name']; ?></td>
@@ -96,7 +104,11 @@
                 </table>
                         </div>
             </div>
+<<<<<<< HEAD
             
+=======
+            <!--create form for insert date to customer_full_payment table--> 
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST" name = "form1">
@@ -104,32 +116,61 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
+<<<<<<< HEAD
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+=======
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
+                            maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required><!--can't insert numbers-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
+<<<<<<< HEAD
                             class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
                             <input type="number" name = "taxi_income" value ="<?php echo $tpay; ?>"
                             class = "form-control" placeholder = "Taxi bill" required>
+=======
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required><!--email validation part done-->
+                        </div>
+                        <!--all price field can only enter positive numbers-->
+                        <div class="form-group">
+                            <lable>Taxi Bill</lable>
+                            <input type="number" name = "taxi_income" value ="<?php echo $tpay; ?>"
+                            class = "form-control" placeholder = "Taxi bill" min = "1" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Room Bill</lable>
                             <input type="number" name = "room_income" value ="<?php echo $rpay; ?>"
+<<<<<<< HEAD
                             class = "form-control" placeholder = "Room bill" required>
+=======
+                            class = "form-control" placeholder = "Room bill" min = "1" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Laundry Bill</lable>
                             <input type="number" name = "laundry_income" value ="<?php echo $lpay; ?>"
+<<<<<<< HEAD
                             class = "form-control" placeholder = "Laundry bill" required>
+=======
+                            class = "form-control" placeholder = "Laundry bill" min = "1" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Hall Bill</lable>
                             <input type="number" name = "hall_outdoor_income" value ="<?php echo $hpay; ?>"
+<<<<<<< HEAD
                             class = "form-control" placeholder = "Hall bill" required>
+=======
+                            class = "form-control" placeholder = "Hall bill" min = "1" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <?php

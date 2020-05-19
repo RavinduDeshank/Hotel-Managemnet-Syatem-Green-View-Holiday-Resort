@@ -83,7 +83,11 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
+<<<<<<< HEAD
                                 <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+=======
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             </div>
                         </div>
                         
@@ -117,6 +121,10 @@
                         <div class="column">
                             <div class="feature">
                                 <br>
+<<<<<<< HEAD
+=======
+                                <!-- Facilities of Royal Hall -->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 <h2 class="hedding"><center>WE OFFER</center></h2>
                                 <br>
                                 <ul class="points">
@@ -134,6 +142,10 @@
                                     <br>
                                 </ul>
                                 <div>
+<<<<<<< HEAD
+=======
+                                    <!-- Button used to login and make reservation -->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                     <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
@@ -146,13 +158,21 @@
                     </div>
                 <br>
                 <br>
+<<<<<<< HEAD
+=======
+                <!--Menu Types-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                 <div>
                     <h2><i><b>Menus</b></i></h2>
                 </div>
                 <br>
                 <br>
                 <div class="row">
+<<<<<<< HEAD
 					<!--Royal Hall-->
+=======
+					<!--Platinum Menu-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -161,7 +181,11 @@
                             </div>
 						</div>
 					</div>
+<<<<<<< HEAD
 					<!--Regal Hall-->
+=======
+					<!--Gold Menu-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -169,7 +193,11 @@
 							</div>
 						</div>
 					</div>
+<<<<<<< HEAD
 					<!--Outdoor Area-->
+=======
+					<!--Silver Menu-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">

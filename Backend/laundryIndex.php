@@ -2,6 +2,10 @@
 
     session_start();
 
+<<<<<<< HEAD
+=======
+    //connect database to the system
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -10,6 +14,11 @@
     $email = '';
     $pay = '';
 
+<<<<<<< HEAD
+=======
+
+    //insert data to laundry_payment table
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -24,6 +33,10 @@
         header("location: indexLaundry.php");
     }
 
+<<<<<<< HEAD
+=======
+    //delete data from laundry_payment table
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM laundry_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -34,6 +47,10 @@
         header("location: indexLaundry.php");
     }
 
+<<<<<<< HEAD
+=======
+    //edit inserted data and get it form to update
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -46,6 +63,10 @@
         }
     }
 
+<<<<<<< HEAD
+=======
+    //update data from laundry_payment table
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

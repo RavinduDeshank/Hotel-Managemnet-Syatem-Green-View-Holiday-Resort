@@ -163,9 +163,11 @@ tr:hover .cut { opacity: 1; }
 	
 	
 	<?php
+	//Turn on output buffering
 	ob_start();	
 	include ('db.php');
 
+	//An associative array of variables passed to the current script via the URL parameters
 	$pid = $_GET['pid'];
 	
 	

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 function validate()
 {
     var name = document.getElementById("employee_name").value;
@@ -11,4 +12,17 @@ function validate()
         }
     }
     return true;
+=======
+function validate(inputtxt)
+{
+    var letter = /^[A-Za-z]+$/;
+    if(inputtxt.value.match(letter))
+    {
+        return true;
+    }
+    else{
+        alert("Please input alphabet characters only");
+        return false;
+    }
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }

@@ -151,7 +151,11 @@ $result = mysqli_query($db, $sql);
         </br>
         </br>
 
+<<<<<<< HEAD
         <a href="admin.html"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+=======
+        <a href="admin.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 
         <button type="submit" onclick="myFunction()" id="sub5"> Confirm </button>
     </div>

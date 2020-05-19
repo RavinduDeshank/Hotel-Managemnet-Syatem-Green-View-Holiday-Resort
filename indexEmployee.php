@@ -95,13 +95,22 @@
             
             <div class = "row justify-content-center">
                 <div class = "info">
+<<<<<<< HEAD
                     <form action="" method = "POST" name = "myForm" onsubmit = "retuen validate()">
+=======
+                    <form action="" method = "POST" name = "myForm" onsubmit = "return validate()">
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Employee Name</lable>
                             <input type="text" name = "employee_name" 
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Employee Name" 
+<<<<<<< HEAD
                             pattern = "[^a-z]{1,25}" required><!--Name with validation-->
+=======
+                            maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required><!--can't insert numbers-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
@@ -112,7 +121,11 @@
                         <div class="form-group">
                             <lable>Salary</lable>
                             <input type="number" name = "sal" value ="<?php echo $sal; ?>"
+<<<<<<< HEAD
                             class = "form-control" placeholder = "Salary" required><span id = "prc"></span><!--Salary only can add number-->
+=======
+                            class = "form-control" placeholder = "Salary" min = "1" required><span id = "prc"></span><!--Salary only can add number-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <?php
