@@ -58,10 +58,7 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM hall_payment") or die($mysqli->error);
         ?>
-<<<<<<< HEAD
-=======
         <!--create table to pplication for show the inserted data-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
@@ -91,10 +88,7 @@
                         </div>
             </div>
             
-<<<<<<< HEAD
-=======
             <!--create form for insert data to the hall_payment-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST">
@@ -102,41 +96,25 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-<<<<<<< HEAD
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
-=======
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
                             maxlength = "40"
                             pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-<<<<<<< HEAD
-                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
-=======
                             class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
                             title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-<<<<<<< HEAD
-                            class = "form-control" placeholder = "Payment" required>
-=======
                             class = "form-control" placeholder = "Payment" min = "1" required>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <?php
                             if($update == true):
-<<<<<<< HEAD
-                            ?>
-=======
                             ?><!--after click edit button show this update button-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 <button type = "submit" class = "btn btn-info" name = "update">Update</button>
                             <?php else: ?>
                                 <button type = "submit" name = "add" class = "btn btn-primary">Add</button>

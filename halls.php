@@ -83,11 +83,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-<<<<<<< HEAD
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
-=======
                                 <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             </div>
                         </div>
                         
@@ -196,17 +192,10 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-<<<<<<< HEAD
                                 <a href="#"><img src="assets/img/halls/hall_1.jpg" alt=""></a>
                             </div>
 							<div class="gallery-img">
                                 <a href="#"><img src="assets/img/halls/hall_2.jpg" alt=""></a>
-=======
-                                <a href=""><img src="assets/img/halls/hall_1.jpg" alt=""></a>
-                            </div>
-							<div class="gallery-img">
-                                <a href=""><img src="assets/img/halls/hall_2.jpg" alt=""></a>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             </div>
 							
                         </div>
