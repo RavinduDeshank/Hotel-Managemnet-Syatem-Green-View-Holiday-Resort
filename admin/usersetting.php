@@ -79,7 +79,7 @@ ob_start();
 			 <div class="row">
                     <div class="col-md-12">
                         <h1 class="page-header">
-                           ADMINISTRATOR<small> accounts </small>
+                           ROOM_MANAGER<small> accounts </small>
                         </h1>
                     </div>
                 </div> 
