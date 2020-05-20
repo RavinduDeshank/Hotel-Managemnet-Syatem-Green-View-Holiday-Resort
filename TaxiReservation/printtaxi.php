@@ -171,15 +171,25 @@ tr:hover .cut { opacity: 1; }
 	/*database connection*/
 	include ('Backend/dbconnection.php');
 	
+<<<<<<< HEAD
 	
 	$user_id = $_GET['user_id'];
 	
 	
 	
+=======
+	$user_id = $_GET['user_id'];
+	
+	/*getting taxi reservation information*/
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 	$sql = "SELECT * FROM taxicustomer WHERE user_id='$user_id'";
     $result = mysqli_query($db, $sql);
     while ($row = mysqli_fetch_array($result))
 	{
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 		$user_id = $row['user_id'];
         $uname = $row['username'];
         $full_name = $row['full_name'];

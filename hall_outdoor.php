@@ -83,7 +83,7 @@
                         <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
+                                <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
                             </div>
                         </div>
                         
@@ -123,6 +123,7 @@
                         <div class="column">
                             <div class="feature">
                                 <br>
+                                <!-- Facilities of Outdoor Party Area -->
                                 <h2 class="hedding"><center>WE OFFER</center></h2>
                                 <br>
                                 <ul class="points">
@@ -137,6 +138,7 @@
                                     <br>
                                 </ul>
                                 <div>
+                                    <!-- Button used to login and make reservation -->
                                     <center><a href="login.php" class = "hall_booking_btn">Book Now</a><center>
                                 </div>
                                 <br>
@@ -149,13 +151,14 @@
                 </div>
                 <br>
                 <br>
+                <!--Menu Types-->
                 <div>
                     <h2><i><b>Menus</b></i></h2>
                 </div>
                 <br>
                 <br>
                 <div class="row">
-					<!--Royal Hall-->
+					<!--Platinum Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -163,7 +166,7 @@
                             </div>
 						</div>
 					</div>
-					<!--Regal Hall-->
+					<!--Gold Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -171,7 +174,7 @@
 							</div>
 						</div>
 					</div>
-					<!--Outdoor Area-->
+					<!--Silver Menu-->
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">

@@ -1,7 +1,12 @@
 <?php
 
     session_start();
+<<<<<<< HEAD
 
+=======
+    
+    // connect greenview database 
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -11,6 +16,10 @@
     $expenses = '';
     $profit = '';
 
+<<<<<<< HEAD
+=======
+    //insert salaries to the table
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['add'])){
         $year = $_POST['year'];
         $income = $_POST['all_incomes'];
@@ -27,6 +36,10 @@
         header("location: indexFinal.php");
     }
 
+<<<<<<< HEAD
+=======
+    //we can delete row using this statement
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM final_report WHERE year = $id") or die($mysqli->error);
@@ -37,6 +50,10 @@
         header("location: indexFinal.php");
     }
 
+<<<<<<< HEAD
+=======
+    //if we need we canget data to edit form table
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -49,6 +66,10 @@
         }
     }
 
+<<<<<<< HEAD
+=======
+    //using this method we can update selected row
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $year = $_POST['year'];

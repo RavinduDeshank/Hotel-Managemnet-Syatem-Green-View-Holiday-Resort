@@ -22,6 +22,7 @@
         <img class = "imge" src = "assets/img/logo/logo-img.png">
         <h6>All Department Finance Details and Final Overview</h6>
         <ul>
+        <!-- link all pages-->
             <li class = "active"><a href = "indexTaxi.php"><i class="fas fa-taxi"></i>Taxi</a></li>
             <li><a href = "indexRoom.php"><i class="fas fa-bed"></i>Room</a></li>
             <li><a href = "indexLaundry.php"><i class="fas fa-bath"></i>Laundry</a></li>
@@ -31,6 +32,7 @@
             <li><a href = "indexFinal.php"><i class="fas fa-chart-line"></i>Final Report</a></li>
         </ul>
 
+        <!-- link social media-->
         <div class="social_media">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -58,6 +60,7 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM taxi_payment") or die($mysqli->error);
         ?>
+        <!--create table in application to show inerted date-->
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
@@ -70,6 +73,7 @@
                         </tr>
                     </thead>
                     <?php
+                    //add row with data and edit,delete buttons
                         while($row = $result->fetch_assoc()): ?>
                             <tr>
                                 <td><?php echo $row['customer_name']; ?></td>
@@ -96,23 +100,26 @@
                         echo 'There were errors on your form';
                     }
                 ?>
-
+                    <!--create form to insert data-->
                     <form action="" method = "POST">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" title = "Enter only alphabet for name" 
+                            required><!--name filed can only letters-->
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required><!--email filed validation-->
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-                            class = "form-control" placeholder = "Payment" required>
+                            class = "form-control" placeholder = "Payment" min = "1" required><!--can't insert negative values-->
                         </div>
                         <div class="form-group">
                             <?php

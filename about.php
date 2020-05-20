@@ -139,7 +139,7 @@
                             <div class="caption-details">
                                 <p class="pera-dtails">We are the leading hotel company in our area </p>
                                 <p>Green View Holiday Resort is a newly situated hotel in homagama area it have luxsary rooms facing a iconic paddy field. Since its launch in 2010, it has grown from strength to strength gaining international acclaim </p>
-                                <a href="#" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="about.php" class="btn more-btn1">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -156,13 +156,22 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                                <a href="rooms.php"><img src="assets/img/rooms/room1.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                                <a href="rooms.php"><img src="assets/img/rooms/room2.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                                <a href="rooms.php"><img src="assets/img/rooms/room4.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="rooms.php"><img src="assets/img/rooms/room3.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="rooms.php"><img src="assets/img/rooms/room5.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="rooms.php"><img src="assets/img/rooms/room6.jpg" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -182,7 +191,7 @@
                                 <span>Our resturent</span>
                                 <h3>Dining & Drinks</h3>
                                 <p>Find just what you’re craving across our seven dining options. We have fresh seafood and outdoor dining, global cuisine from open kitchens, and the relaxed yet sophisticated Queens lounge. The pool bar serves casual cuisine, Stella Karaoke Bar offers light bites, and room service is available.</p>
-                                <a href="#" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
+                                <a href="about.php" class="btn border-btn">Learn More <i class="ti-angle-right"></i> </a>
                             </div>
                         </div>
                     </div>
@@ -197,7 +206,7 @@
                                 <span>Our Pool</span>
                                 <h3>Swimming Pool</h3>
                                 <p>Ideally situated in a tranquil environment, our spacious swimming pool is the best place to enjoy a dip after a day of sightseeing, or unwind with friends and family.</p>
-                                <a href="#" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
+                                <a href="about.php" class="btn border-btn">Learn More  <i class="ti-angle-right"></i></a>
                             </div>
                         </div>
                     </div>
@@ -209,12 +218,7 @@
     </main>
     <br>
     <br>
-<<<<<<< HEAD
-    </br>
-    
-=======
     <br>
->>>>>>> c40e5e125e9f504514724e005f90d44158104467
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">

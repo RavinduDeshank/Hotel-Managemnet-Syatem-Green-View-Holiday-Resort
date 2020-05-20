@@ -143,15 +143,11 @@
         <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
         <a href="hall_reserve.php" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
         
-        <br>
-        <br>
+       
         </br>
         </br>
         </br>
-        <a href="###" class="newbutton6"> <img src="assets/img/taxi.png"> Taxi Booking</a>
-        <br>
-        <br>
-        
+       
     </div>
 
     <br>

@@ -147,6 +147,7 @@
     <!-- preloader area end -->
     
     <!-- page container area start -->
+  
     <div class="page-container">
         <!-- sidebar menu area start -->
         <div class="sidebar-menu">
@@ -206,16 +207,21 @@
                             <div class="dropdown-menu">
                                 
                                <a class="dropdown-item" href="index.php?logout='1'">Log Out</a>
+
+                              
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+  
             <!-- page title area end -->
             <div>
             <br><br><br>
 
      <h1 style="text-align:center">INVENTORY</h1>
+    
      <br><br>
             <body>
 <form method="POST" class="form-inline" action="additem.php">
@@ -229,7 +235,7 @@
   <div class="form-group">
   
     <label for="name">Price</label>
-    <input type="text" class="form-control" name="price">
+    <input type="number" class="form-control" name="price" id="price">
   </div>
   <div class="form-group">
 
@@ -237,15 +243,33 @@
         <input type="number" name="quant" id="quant" min="1" max="">
     </div>
   <button type="submit" class="btn btn-default" name="add">Add item</button>
+  
+  
  
 </form> 
 </body>
+</br></br>
+
+
+<center><a href="print_pdf.php"><button type="submit" class="btn btn-default" name="add" >download pdf</button></a></center>
+
+
+
+
+
+
+
+
+
+
+
+
             
             <div class="main-content-inner">
                 <div class="row">
                    
                     <!-- Contextual Classes start -->
-                    
+                   
                     <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
@@ -266,9 +290,12 @@
                                                     
                                                 </tr>
                                             </thead>
-                                        
+                                            
                                             </body>
-			<?php 
+
+
+
+            <?php 
                $conn = new mysqli("localhost","root","","inventorymanagement");
                $sql = "SELECT * FROM product";
                $result = $conn->query($sql);
@@ -288,7 +315,11 @@
                       <th><?php echo $row["quantity"]  ?></th>
 					  
 					  <th> <a href="up"Edit</a><a href="edit.php?id=<?php echo $row["product_id"] ?>">Edit</a> <a href="up"Edit</a><a href="delete.php?id=<?php echo $row["product_id"] ?>">Delete</a></th>
-                    
+                      
+             
+
+
+                     
                       
                     </tr>
             <?php

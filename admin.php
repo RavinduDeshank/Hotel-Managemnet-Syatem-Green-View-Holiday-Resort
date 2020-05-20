@@ -148,27 +148,21 @@
         </br>
         </br>
 
-
-
-        <a href="add_Details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="remove_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Remove Laundry</a>
-
-        <a href="removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
-
-
-        
-        
         <a href="TaxiReservation/removetaximanager.php" class="newbutton7"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
-
-
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="indexTaxi.php" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
+        
+        <a href="indexTaxi.php" class="newbutton10"> <img src="assets/img/finance.jpg"> Finance</a>
+        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/officer.png">Add New Admin</a>
+        
+        <br>
+        <br>
+        <br>
+        <br>
 
     </div>
 
@@ -176,6 +170,7 @@
     <br>
     <br>
     <br>
+
 
     <footer>
         <!-- Footer Start-->

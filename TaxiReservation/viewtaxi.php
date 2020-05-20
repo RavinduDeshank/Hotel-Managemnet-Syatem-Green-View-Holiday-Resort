@@ -2,10 +2,15 @@
 <?php
     $reserved_list = ''; 
 
+<<<<<<< HEAD:TaxiReservation/viewtaxi.php
     //getting the list of reservations
+=======
+    /*getting the reservation which is done by current cutomer*/
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212:TaxiReservation/viewtaxi.php
     $query = "SELECT * FROM taxicustomer WHERE user_id='{$_SESSION['user_id']}' AND is_deleted=0 AND is_complete=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 
+    /*getting the details of reservation*/
     if($users) {
         while ($user = mysqli_fetch_assoc($users)) {
             $reserved_list .= "<tr>";
@@ -19,6 +24,7 @@
         } 
 
     }else{
+        /*database connection error*/
          echo "Database query failed";
     }
 

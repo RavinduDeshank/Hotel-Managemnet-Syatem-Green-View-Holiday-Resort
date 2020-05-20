@@ -3,8 +3,12 @@
 session_start();  
 if(!isset($_SESSION["user"]))
 {
+<<<<<<< HEAD
+ header("location:room_admin_login.php");
+=======
     //Send a raw HTTP header
     header("location:room_admin_login.php");
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }
 ?> 
 <!DOCTYPE html>
