@@ -1,9 +1,16 @@
 <?php
+<<<<<<< HEAD
+
+    include('hall_db_connection.php');
+    session_start();
+
+=======
     //Include database connection
     include('hall_db_connection.php');
     session_start();
 
     //Get the hall booking details related to particular customer and update
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if (isset($_POST['update'])) 
     {
         $userID = $_GET['ID'];

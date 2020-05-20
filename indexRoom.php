@@ -22,7 +22,10 @@
     <img class = "imge" src = "assets/img/logo/logo-img.png">
         <h6>All Department Finance Details and Final Overview</h6>
         <ul>
+<<<<<<< HEAD
+=======
         <!--link all pages-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <li><a href = "indexTaxi.php"><i class="fas fa-taxi"></i>Taxi</a></li>
             <li class = "active"><a href = "indexRoom.php"><i class="fas fa-bed"></i>Room</a></li>
             <li><a href = "indexLaundry.php"><i class="fas fa-bath"></i>Laundry</a></li>
@@ -32,7 +35,10 @@
             <li><a href = "indexFinal.php"><i class="fas fa-chart-line"></i>Final Report</a></li>
         </ul>
 
+<<<<<<< HEAD
+=======
         <!--link social media-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
         <div class="social_media">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -60,7 +66,10 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM room_payment") or die($mysqli->error);
         ?>
+<<<<<<< HEAD
+=======
         <!--create table in application to show inserted data-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
             <div class = "tab">
                 <table class="table">
@@ -73,7 +82,10 @@
                         </tr>
                     </thead>
                     <?php
+<<<<<<< HEAD
+=======
                     //add row with edit and delete button
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         while($row = $result->fetch_assoc()): ?>
                             <tr>
                                 <td><?php echo $row['customer_name']; ?></td>
@@ -91,7 +103,10 @@
             </div>
             </div>
             
+<<<<<<< HEAD
+=======
             <!--create form to insert data to room_payment table-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST">
@@ -99,27 +114,42 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
+<<<<<<< HEAD
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+=======
                             value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
                             maxlength = "40"
                             pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
+<<<<<<< HEAD
+                            class = "form-control" placeholder = "Email" required>
+=======
                             class = "form-control" placeholder = "Email" 
                             pattern = "[^ @]*@[^ @]*" 
                             title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
+<<<<<<< HEAD
+                            class = "form-control" placeholder = "Payment" pattern = "[^ @]*@[^ @]*" required>
+=======
                             class = "form-control" placeholder = "Payment" min = "1" required>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                         </div>
                         <div class="form-group">
                             <?php
                             if($update == true):
                             ?>
+<<<<<<< HEAD
+=======
                             <!--if click the edit button show this update button-->
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 <button type = "submit" class = "btn btn-info" name = "update">Update</button>
                             <?php else: ?>
                                 <button type = "submit" name = "add" class = "btn btn-primary">Add</button>
