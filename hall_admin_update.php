@@ -1,9 +1,6 @@
 <?php
-<<<<<<< HEAD
-=======
     // Include database connection 
 
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     include('hall_db_connection.php');
     $id = $_GET['update'];
     $getdata = "SELECT * FROM hall_booking WHERE user_id='".$id."'";
@@ -21,16 +18,6 @@
         $Menu = $row['menu'];
     }
 
-<<<<<<< HEAD
-    /*if(isset($_GET['update'])){
-        $id = $_GET['user_id'];
-        $getdata = "SELECT * FROM hall_booking WHERE user_id='".$id."'";            
-        header("location: hall_admin_update.php");
-        $check = mysqli_query($con,$getdata);
-        $array1 = mysqli_fetch_array($check, MYSQLI_ASSOC);
-    } */
-=======
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 ?>
 <!doctype HTML> 
 <html class="no-js" lang="zxx">
@@ -85,11 +72,8 @@
 					            </div>
                             </div>
 
-<<<<<<< HEAD
-=======
                             <!-- Get hall booking details related to a particular customer-->
 
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             <div class="form_row">
                                 <div class="col_label">
                                     <label for="name_initials"> Name With Sirname: </label>

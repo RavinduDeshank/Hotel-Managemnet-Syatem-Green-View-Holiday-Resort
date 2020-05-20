@@ -1,9 +1,6 @@
 <?php
-<<<<<<< HEAD
-=======
     //Include database connection
 
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     include('hall_db_connection.php');
     $sql = "SELECT * FROM hall_booking";
     $row = mysqli_query($con, $sql);
@@ -90,10 +87,7 @@
                         {
                     ?>
 
-<<<<<<< HEAD
-=======
                     <!-- Get all the hall bookings from the database -->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                     <tr>
                         <td><?php echo $data['user_id']; ?></td>
                         <td><?php echo $data['name_initials']; ?></td>

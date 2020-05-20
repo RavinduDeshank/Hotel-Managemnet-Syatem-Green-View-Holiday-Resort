@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 <!-- Include database connection -->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 <?php
     include('hall_db_connection.php');
     session_start();
@@ -93,11 +90,7 @@
                          <div class="col-xl-2 col-lg-2">
                             <!-- header-btn -->
                             <div class="header-btn">
-<<<<<<< HEAD
-                                <a href="#" class="btn btn1 d-none d-lg-block ">Book Online</a>
-=======
                                 <a href="login.php" class="btn btn1 d-none d-lg-block ">Book Online</a>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             </div>
                          </div>
                         
@@ -136,10 +129,7 @@
                                             </div>
                                         </div>
 
-<<<<<<< HEAD
-=======
                                         <!-- Lables and input fields in the form -->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                         <div class="form_row">
                                             <div class="col_label">
                                                 <label for="name_initials"> Name With Sirname: </label>
@@ -154,11 +144,7 @@
                                                 <label for="mobile_no"> Mobile Number: </label>
                                             </div>    
                                             <div class="col_input">
-<<<<<<< HEAD
-                                                <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" title="Please enter your mobile number in this format: #### ### ###">
-=======
                                                 <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter your mobile number in this format: #### ### ###">
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                             </div>    
                                         </div>
                                     
@@ -249,21 +235,14 @@
 
             <br>
                 <br>
-<<<<<<< HEAD
-=======
                 <!--Menu Types-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                 <div>
                     <h2><i><b>Menus</b></i></h2>
                 </div>
                 <br>
                 <br>
                 <div class="row">
-<<<<<<< HEAD
-					<!--Royal Hall-->
-=======
 					<!--Platinum menu-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -272,11 +251,7 @@
                             </div>
 						</div>
 					</div>
-<<<<<<< HEAD
-					<!--Regal Hall-->
-=======
 					<!--Gold menu-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
@@ -284,11 +259,7 @@
 							</div>
 						</div>
 					</div>
-<<<<<<< HEAD
-					<!--Outdoor Area-->
-=======
 					<!--Silver menu-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
