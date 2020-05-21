@@ -111,11 +111,6 @@ include 'Backend/addtaxidriver.inc.php';
         <br>
         <div>
             <?php
-<<<<<<< HEAD
-=======
-
-            /*if there are errors in the form display errors*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             if (!empty($errors)) {
                 echo '<div class="alert alert-danger" role="alert">';
                 foreach ($errors as $error) {
@@ -125,10 +120,6 @@ include 'Backend/addtaxidriver.inc.php';
                 echo '</div>';
             }
 
-<<<<<<< HEAD
-=======
-            /*if there are no any errors display success message*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             if (!empty($success)) {
                 echo '<div class="alert alert-success" role="alert">';
                 foreach ($success as $succ) {
@@ -139,11 +130,6 @@ include 'Backend/addtaxidriver.inc.php';
             ?>
         </div>
         <form action="" method="POST" id="form">
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <label>User Name</label><br>
             <input type="text" name="uname" id="usrName" placeholder="Enter User Name"><br><br>
 

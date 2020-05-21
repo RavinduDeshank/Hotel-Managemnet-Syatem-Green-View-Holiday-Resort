@@ -2,10 +2,6 @@
 
     session_start();
 
-<<<<<<< HEAD
-=======
-    //connect database to te system
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -14,10 +10,6 @@
     $email = '';
     $pay = '';
 
-<<<<<<< HEAD
-=======
-    //insert date to the hall_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -32,10 +24,6 @@
         header("location: indexHall.php");
     }
 
-<<<<<<< HEAD
-=======
-    //delete data from hall_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM hall_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -46,10 +34,6 @@
         header("location: indexHall.php");
     }
 
-<<<<<<< HEAD
-=======
-    //get data to the form for update hall_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -62,10 +46,6 @@
         }
     }
 
-<<<<<<< HEAD
-=======
-    //update data from hall_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

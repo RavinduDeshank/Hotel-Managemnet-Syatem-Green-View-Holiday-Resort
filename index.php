@@ -66,8 +66,6 @@
                                                 <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservation</a></li>
-                                                <li><a href="InventoryManagement/index.php">Inventory Management</a></li>
                                                 <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
@@ -271,7 +269,7 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">SUPERIOR ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>LKR</u>8000 <span>/ per night</span></span>
+                                    <span><u>LKR</u> 8000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -285,7 +283,7 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">DELUXE ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>LKR</u>5000 <span>/ per night</span></span>
+                                    <span><u>LKR </u> 5000 <span>/ per night</span></span>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +297,7 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">GUEST ROOM</a></h3>
                                 <div class="per-night">
-                                    <span><u>LKR</u>3000<span>/ per-night</span></span>
+                                    <span><u>LKR </u> 3000<span>/ per-night</span></span>
                                 </div>
                             </div>
                         </div>
