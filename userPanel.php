@@ -125,7 +125,6 @@
         <a href="###" class="newbutton2"><img src="assets/img/Booking Cancel.png"> Booking Cancellation</a>
         <a href="###" class="newbutton3"> <img src="assets/img/refund.png"> Refund Details</a>
 
-<<<<<<< HEAD
         </br>
         </br>
         </br>
@@ -135,27 +134,17 @@
         <a href="add_details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
         <a href="Laundry_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
 
-=======
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
         </br>
         </br>
         </br>
         </br>
         </br>
 
-<<<<<<< HEAD
         <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
         <a href="hall_reserve.php" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
         
         <br>
         <br>
-=======
-        <a href="add_details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="Laundry_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
-
-        </br>
-        </br>
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
         </br>
         </br>
         </br>
