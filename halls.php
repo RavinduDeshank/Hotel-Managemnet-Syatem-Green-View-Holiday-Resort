@@ -192,10 +192,10 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/halls/hall_1.jpg" alt=""></a>
+                                <a href=""><img src="assets/img/halls/hall_1.jpg" alt=""></a>
                             </div>
 							<div class="gallery-img">
-                                <a href="#"><img src="assets/img/halls/hall_2.jpg" alt=""></a>
+                                <a href=""><img src="assets/img/halls/hall_2.jpg" alt=""></a>
                             </div>
 							
                         </div>

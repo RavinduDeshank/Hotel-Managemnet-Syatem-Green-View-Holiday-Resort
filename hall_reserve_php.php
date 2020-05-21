@@ -27,7 +27,7 @@
                             echo "<h1><center> Hall booking confirmation </center></h1>";
                             echo "<br/>";
                             echo "<div style= 'padding-left:280px';>";
-                            echo " Name with initials : " .$name_initials. "<br/>";
+                            echo " Name               : " .$name_initials. "<br/>";
                             echo "<br/>";
                             echo " Mobile number      : " .$mobile_no. "<br/>";
                             echo "<br/>";

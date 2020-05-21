@@ -66,8 +66,11 @@
                                                 <li><a href="halls.php">Halls</a></li>
                                                 <li><a href="Promotion.php">Promotions</a></li>
                                                 <li><a href="blog.php">Blog</a></li>
+<<<<<<< HEAD
+=======
                                                 <li><a href="taxi.php">Taxi Reservation</a></li>
                                                 <li><a href="InventoryManagement/index.php">Inventory Management</a></li>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                                 <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
@@ -271,7 +274,11 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">SUPERIOR ROOM</a></h3>
                                 <div class="per-night">
+<<<<<<< HEAD
+                                    <span><u>LKR</u> 8000 <span>/ per night</span></span>
+=======
                                     <span><u>LKR</u>8000 <span>/ per night</span></span>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 </div>
                             </div>
                         </div>
@@ -285,7 +292,11 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">DELUXE ROOM</a></h3>
                                 <div class="per-night">
+<<<<<<< HEAD
+                                    <span><u>LKR </u> 5000 <span>/ per night</span></span>
+=======
                                     <span><u>LKR</u>5000 <span>/ per night</span></span>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 </div>
                             </div>
                         </div>
@@ -299,7 +310,11 @@
                             <div class="room-caption">
                                 <h3><a href="rooms.php">GUEST ROOM</a></h3>
                                 <div class="per-night">
+<<<<<<< HEAD
+                                    <span><u>LKR </u> 3000<span>/ per-night</span></span>
+=======
                                     <span><u>LKR</u>3000<span>/ per-night</span></span>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                                 </div>
                             </div>
                         </div>
@@ -500,6 +515,7 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
+<<<<<<< HEAD
                                 <a href="rooms.php"><img src="assets/img/rooms/delux-garden-5.jpg" alt=""></a>
                             </div>
                             <div class="gallery-img">
@@ -507,6 +523,15 @@
                             </div>
                             <div class="gallery-img">
                                 <a href="rooms.php"><img src="assets/img/rooms/delux-balcony1.jpg" alt=""></a>
+=======
+                                <a href="#"><img src="assets/img/rooms/delux-garden-5.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/rooms/GettyImages-200375642-001.jpg" alt=""></a>
+                            </div>
+                            <div class="gallery-img">
+                                <a href="#"><img src="assets/img/rooms/delux-balcony1.jpg" alt=""></a>
+>>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             </div>
                         </div>
                     </div>
