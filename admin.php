@@ -116,9 +116,9 @@
         </br>
         </br>
 
-        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Manage Rooms </a>
+        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png">Manage Rooms</a>
         <a href="hall_adminpanal.php" class="newbutton4"> <img src="assets/img/hall.jpg"> View Hall Bookings</a>
-        <!--<a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>-->
+       
         </br>
         </br>
         </br>
