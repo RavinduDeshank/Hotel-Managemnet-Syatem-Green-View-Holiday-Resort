@@ -7,17 +7,28 @@ $sql = "SELECT employee.id,employee.firstName,employee.lastName,salary.base,sala
 $result = mysqli_query($conn, $sql);
 
 ?>
-
-
-
+<!doctype html>
 <html>
 <head>
-	<title>Salary Table</title>
-	<link rel="stylesheet" type="text/css" href="styleview.css">
+
+    <!-- Title Page-->
+    <title>Add Employee | Admin Panel</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
 </head>
 <body>
-	
-	<header>
+<header>
 		<nav>
 		<h1><img src="./assets/logo-img.png" alt="logo" srcset=""></h1>
 			<ul id="navli">
@@ -33,11 +44,18 @@ $result = mysqli_query($conn, $sql);
 			</ul>
 		</nav>
 	</header>
-	 
-	<div class="divider"></div>
-	<div id="divimg">
-		
-	</div>
+
+
+
+
+<a href="#" onclick="HTMLtoPDF()">download</a>
+
+<script src="js/jspdf.js"></script>
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/pdfFromHTML.js"></script>
+
+<div id="HTMLtoPDF">
+<div class="col-lg-6 mt-5">
 	
 	<table>
 			<tr>
@@ -51,7 +69,11 @@ $result = mysqli_query($conn, $sql);
 				
 				
 			</tr>
+
+	
 			
+	
+	
 			<?php
 				while ($employee = mysqli_fetch_assoc($result)) {
 					echo "<tr>";
@@ -70,6 +92,27 @@ $result = mysqli_query($conn, $sql);
 			?>
 			
 			</table>
-			<center><a href="ViewDownload.php"><button type="submit" class="btn btn-default" name="add"> download pdf</button></a></center>
+
+			</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
+

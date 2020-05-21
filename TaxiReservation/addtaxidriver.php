@@ -1,9 +1,4 @@
 <?php
-<<<<<<< HEAD
-=======
-
-/*make database connections and validations through addtaxidriver.inc*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 include 'Backend/addtaxidriver.inc.php';
 ?>
 <!doctype html>
