@@ -114,22 +114,22 @@
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
                             <input type="number" name = "taxi_income" value ="<?php echo $tpay; ?>"
-                            class = "form-control" placeholder = "Taxi bill" required>
+                            class = "form-control" placeholder = "Taxi bill" min = "1">
                         </div>
                         <div class="form-group">
                             <lable>Room Bill</lable>
                             <input type="number" name = "room_income" value ="<?php echo $rpay; ?>"
-                            class = "form-control" placeholder = "Room bill" required>
+                            class = "form-control" placeholder = "Room bill" min = "1">
                         </div>
                         <div class="form-group">
                             <lable>Laundry Bill</lable>
                             <input type="number" name = "laundry_income" value ="<?php echo $lpay; ?>"
-                            class = "form-control" placeholder = "Laundry bill" required>
+                            class = "form-control" placeholder = "Laundry bill" min = "1">
                         </div>
                         <div class="form-group">
                             <lable>Hall Bill</lable>
                             <input type="number" name = "hall_outdoor_income" value ="<?php echo $hpay; ?>"
-                            class = "form-control" placeholder = "Hall bill" required>
+                            class = "form-control" placeholder = "Hall bill" min = "1">
                         </div>
                         <div class="form-group">
                             <?php
