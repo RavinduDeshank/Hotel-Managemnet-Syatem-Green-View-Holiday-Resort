@@ -259,9 +259,9 @@ $result = mysqli_query($db, $sql);
                                 }
                                 ?>
                             </tbody>
-
                         </table>
                     </div>
+                    <a href="index.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
                 </div>
             </div>
         </div>
