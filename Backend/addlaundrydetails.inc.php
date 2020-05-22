@@ -1,8 +1,12 @@
 <?php
 
+session_start();
+
 include 'dbconnection.php';
 $errors = array();
 $success = array();
+$row = array();
+$update = false;
 
     if(isset($_POST['addlaundry'])){
 
@@ -31,10 +35,6 @@ $success = array();
 
     }
 
+    
 
 
-
-
-
-
-?>
