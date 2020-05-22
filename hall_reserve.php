@@ -64,23 +64,24 @@
                             <!-- main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
-                                    <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
+                                <ul id="navigation">                                                                                                                                     
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="halls.php">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="contact.php">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">SignUp</a></li>
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -144,7 +145,7 @@
                                                 <label for="mobile_no"> Mobile Number: </label>
                                             </div>    
                                             <div class="col_input">
-                                                <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter your mobile number in this format: #### ### ###">
+                                                <input type="tel" name="mobile_no" id="mobile_no" required placeholder="Mobile number" pattern="[0-9]{10}" maxlength="10" title="Please enter your mobile number in this format: ##########">
                                             </div>    
                                         </div>
                                     
@@ -246,7 +247,7 @@
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
-                                <a href="hall_menu_platinum.html"><img src="assets/img/halls/menu_platinum_art1.jpg" alt="platinum" style="width:100%"></a>
+                                <a href="hall_menu_platinum.php"><img src="assets/img/halls/menu_platinum_art1.jpg" alt="platinum" style="width:100%"></a>
                                 
                             </div>
 						</div>
@@ -255,7 +256,7 @@
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
-								<a href="hall_menu_gold.html"><img src="assets/img/halls/menu_gold_art.jpg" alt="gold" style="width:100%"></a>
+								<a href="hall_menu_gold.php"><img src="assets/img/halls/menu_gold_art.jpg" alt="gold" style="width:100%"></a>
 							</div>
 						</div>
 					</div>
@@ -263,7 +264,7 @@
 					<div class="col-xl-4 col-lg-6 col-md-6">
 						<div class="single-blog mb-50">
 							<div class="blog-img">
-								<a href="hall_menu_silver.html"><img src="assets/img/halls/menu_silver_art.jpg" alt="silver" style="width:100%"></a>
+								<a href="hall_menu_silver.php"><img src="assets/img/halls/menu_silver_art.jpg" alt="silver" style="width:100%"></a>
 							</div>
 						</div>
 					</div>

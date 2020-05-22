@@ -57,20 +57,21 @@
                             <!-- main-menu -->
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
-                                    <ul id="navigation">                                                                                                                                     
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
+                                <ul id="navigation">                                                                                                                                     
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="halls.php">Halls</a></li>
-                                                <li><a href="Promotion.html">Promotions</a></li>
-                                                <li><a href="blog.html">Blog</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="login.php">Login</a>
+                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
                                                 <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
