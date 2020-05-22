@@ -273,10 +273,8 @@
       
 		}
 		?>
-         <div><center>
-				<button class="btn"> <a href="reservetaxi.php">Make the Reservation</a></button>
-                </center>
-		</div>
+      </br>
+      </br>
     </main>
     <footer>
        <!-- Footer Start-->
