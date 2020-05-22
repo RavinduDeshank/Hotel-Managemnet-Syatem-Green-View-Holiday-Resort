@@ -35,19 +35,16 @@
 
 
 
-<div id="HTMLtoPDF">
 
 
 
 
 
-</div>
+
+
 </br></br></br>
 
  <a href="#" onclick="HTMLtoPDF()">>>>>Download PDF</a> 
-
-
-
 
 
 
@@ -59,7 +56,7 @@
 
 
 
-
+<div id="HTMLtoPDF">
 <div class="col-lg-6 mt-5">
                         <div class="card">
                             <div class="card-body">
@@ -74,7 +71,7 @@
                                                     <th scope="col">Name</th>
                                                     <th scope="col">Price</th>
                                                     <th scope="col">Quantity</th>
-													 <th scope="col">Action</th>
+													 <!-- <th scope="col">Action</th> -->
 
 
                               
@@ -114,7 +111,7 @@
                       <th><?php echo $row["price"]  ?></th>
                       <th><?php echo $row["quantity"]  ?></th>
 					  
-					  <th> <a href="up"Edit</a><a href="edit.php?id=<?php echo $row["product_id"] ?>">Edit</a> <a href="up"Edit</a><a href="delete.php?id=<?php echo $row["product_id"] ?>">Delete</a></th>
+					 
                       
                      
 
@@ -146,7 +143,7 @@
 
 
 
-					
+					</div>	
 
 
 
