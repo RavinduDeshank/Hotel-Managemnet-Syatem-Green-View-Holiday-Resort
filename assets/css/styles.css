@@ -9,11 +9,7 @@
 }
 
 body{
-<<<<<<< HEAD
     background: #f3f5f9;
-=======
-    background: #f3f9f988;
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }
 
 .wrapper{
@@ -105,11 +101,7 @@ body{
 }
 
 .active{
-<<<<<<< HEAD
     background-color: cadetblue;
-=======
-    background-color: rgb(56, 225, 231);
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }
 
 .imge{
@@ -119,20 +111,12 @@ body{
 .trow{
     background-position: center;
     text-align: left;
-<<<<<<< HEAD
     background-color: darkkhaki;
-=======
-    background-color: rgb(206, 200, 115);
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }
 
 td{
     text-align: left;
-<<<<<<< HEAD
     background-color: floralwhite;
-=======
-    background-color: rgba(111, 219, 174, 0.767);
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 }
 
 .tab{
