@@ -243,10 +243,10 @@ if(!isset($_SESSION["user"]))
                         <div class="panel-footer">
                             <form method="post">
 										<div class="form-group">
-														<label>Select the Conformation</label>
+														<label>Select the Confirmation</label>
 														<select name="conf"class="form-control">
 															<option value selected>	</option>
-															<option value="Conform">Conform</option>
+															<option value="Conform">Confirm</option>
 															
 															
 														</select>

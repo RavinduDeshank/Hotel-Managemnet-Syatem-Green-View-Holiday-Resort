@@ -116,7 +116,10 @@ $result = mysqli_query($db, $sql);
                 <th>Laundary_ID </th>
                 <th> Customer Name </th>
                 <th> Room No </th>
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 1c5e5f214a2b999360068f6e798646c3756fe897
                 <th>Clothes weight (KG)</th>
                 <th>Date In</th>
                 <th>Date Out</th>
@@ -130,7 +133,6 @@ $result = mysqli_query($db, $sql);
                 $cname = $row['Customer_Name'];
                 $roomnum = $row['Room_No'];
                 $weight = $row['Clothes_Weight'];
-                $laundary = $row ['Laundry_ID'];
                 $start = $row['Start_Date'];
                 $end = $row['End_Date'];
                 $description = $row['Description'];
@@ -139,17 +141,27 @@ $result = mysqli_query($db, $sql);
                 <tr>
                     <td><?php echo $laundary?></td>
                     <td><?php echo $cname ?></td>
+<<<<<<< HEAD
                     <td><?php echo $roomnum?></td>
+=======
+                    <td><?php echo $roomnum ?></td>
+>>>>>>> 1c5e5f214a2b999360068f6e798646c3756fe897
                     <td><?php echo $weight ?></td>
                     <td><?php echo $start ?></td>
                     <td><?php echo $end ?></td>
                     <td><?php echo $description ?></td>
+<<<<<<< HEAD
                     <td><a href = "EditLaundaryDetails.php?edit=<?php echo $row['Laundry_ID']; ?>"
                                     class = "btn btn-info">Edit</a>
                   
                 </tr>
 
  
+=======
+                  
+                </tr>
+
+>>>>>>> 1c5e5f214a2b999360068f6e798646c3756fe897
             <?php
             }
             ?>
@@ -157,7 +169,6 @@ $result = mysqli_query($db, $sql);
 
         </br>
         </br>
-        <a href="userPanel.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
     </div>
 
 

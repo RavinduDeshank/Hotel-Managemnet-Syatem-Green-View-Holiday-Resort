@@ -58,7 +58,6 @@
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
             $result = $mysqli->query("SELECT * FROM hall_payment") or die($mysqli->error);
         ?>
-        <!--create table to pplication for show the inserted data-->
             <div class = "row justify-content-center">
                 <div class = "tab">
                 <table class="table">
@@ -88,7 +87,6 @@
                         </div>
             </div>
             
-            <!--create form for insert data to the hall_payment-->
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST">
@@ -96,25 +94,22 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
-                            maxlength = "40"
-                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
-                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
                         </div>
                         <div class="form-group">
                             <lable>Payment</lable>
                             <input type="number" name = "payment" value ="<?php echo $pay; ?>"
-                            class = "form-control" placeholder = "Payment" min = "1" required>
+                            class = "form-control" placeholder = "Payment" required>
                         </div>
                         <div class="form-group">
                             <?php
                             if($update == true):
-                            ?><!--after click edit button show this update button-->
+                            ?>
                                 <button type = "submit" class = "btn btn-info" name = "update">Update</button>
                             <?php else: ?>
                                 <button type = "submit" name = "add" class = "btn btn-primary">Add</button>

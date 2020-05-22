@@ -132,10 +132,10 @@
                                         <!-- Lables and input fields in the form -->
                                         <div class="form_row">
                                             <div class="col_label">
-                                                <label for="name_initials"> Name With Sirname: </label>
+                                                <label for="name_initials"> Name With Surname: </label>
                                             </div>    
                                             <div class="col_input">
-                                                <input type="text" name="name_initials" id="name_initials" required autoforcus placeholder="Name with sirname" pattern="[a-zA-Z]{3,}[' ']{1}[a-zA-Z]{3,}" title="Please enter both name and sirname">
+                                                <input type="text" name="name_initials" id="name_initials" required autoforcus placeholder="Name with surname" pattern="[a-zA-Z]{3,}[' ']{1}[a-zA-Z]{3,}" title="Please enter both name and surname">
                                             </div>    
                                         </div>
 

@@ -2,7 +2,6 @@
 
     session_start();
 
-    //connect databas to the system
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -15,7 +14,6 @@
     $hpay = '';
     $tot = '';
 
-    //insert data to the customer_full_paymnet table
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -37,7 +35,6 @@
         header("location: customerBill.php");
     }
 
-    //delete data from customer_full_paymnet table
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM customer_full_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -48,7 +45,6 @@
         header("location: customerBill.php");
     }
 
-    //edit data from customer_full_paymnet table
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -64,7 +60,6 @@
         }
     }
 
-    //update data from customer_full_paymnet table
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

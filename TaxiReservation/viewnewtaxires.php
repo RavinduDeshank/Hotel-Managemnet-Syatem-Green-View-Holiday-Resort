@@ -2,7 +2,6 @@
 <?php
 include 'Backend/dbconnection.php';
 
-/*getting the details about new taxi reservations which are not deleted or completed*/
 $sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=0";
 $result = mysqli_query($db, $sql);
 

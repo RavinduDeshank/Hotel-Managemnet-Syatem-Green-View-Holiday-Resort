@@ -2,7 +2,7 @@
 <?php
     $reserved_list = ''; 
 
-    /*getting the reservation which is done by current cutomer*/
+    //getting the list of reservations
     $query = "SELECT * FROM taxicustomer WHERE user_id='{$_SESSION['user_id']}' AND is_deleted=0 AND is_complete=0 ORDER BY full_name";
     $users = mysqli_query($db, $query);
 

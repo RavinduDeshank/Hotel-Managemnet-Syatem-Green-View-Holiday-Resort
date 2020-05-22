@@ -228,7 +228,7 @@
                                     <li><a href="#">221/3,Ranala Road,Hoabarakada,</a></li>
                                     <li><a href="#">Homagama,Sri Lanka SL 10204</a></li>
                                 </ul>
-                                <!-- Form f-->
+                                <!-- Form -->
                                 <div class="footer-form">
                                     <div id="mc_embed_signup">
                                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative mail_part">
@@ -249,7 +249,7 @@
         <!-- Footer End-->
     </footer>
 
-    <!-- JS  -->
+    <!-- JS here -->
 
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>

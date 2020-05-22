@@ -5,7 +5,6 @@
     $dbpass = '';
     $dbname = 'greenview';
 
-    /*database connection*/
     $db = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
 
     if (mysqli_connect_errno()) {

@@ -1,71 +1,152 @@
-<?php
-	function generateRow(){
-		$contents = '';
-		include_once('connection.php');
-		$sql = "SELECT * FROM members";
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Green View Holiday Resort | About</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		//use for MySQLi OOP
-		//$query = $conn->query($sql);
-		//while($row = $query->fetch_assoc()){
-		//	$contents .= "
-		//	<tr>
-		//		<td>".$row['ID']."</td>
-		//		<td>".$row['NAME']."</td>
-		//		<td>".$row['PRICE']."</td>
-		//		<td>".$row['QUANTITY']."</td>
-		//	</tr>
-		//	";
-	//	}
-		
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
 
-		
-		 $query = mysqli_query($conn, $sql);
-		 while($row = mysqli_fetch_assoc($query)){
-		 	$contents .= "
-		 	<tr>
-		 		<td>".$row['ID']."</td>
-		 		<td>".$row['NAME']."</td>
-		 		<td>".$row['PRICE']."</td>
-		 		<td>".$row['QUANTITY']."</td>
-		 	</tr>
-		 	";
-		 }
-		
-		
-		return $contents;
-	}
 
-	require_once('tcpdf/tcpdf.php');  
-    $pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);  
-    $pdf->SetCreator(PDF_CREATOR);  
-    $pdf->SetTitle("Generated PDF using TCPDF");  
-    $pdf->SetHeaderData('', '', PDF_HEADER_TITLE, PDF_HEADER_STRING);  
-    $pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));  
-    $pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));  
-    $pdf->SetDefaultMonospacedFont('helvetica');  
-    $pdf->SetFooterMargin(PDF_MARGIN_FOOTER);  
-    $pdf->SetMargins(PDF_MARGIN_LEFT, '10', PDF_MARGIN_RIGHT);  
-    $pdf->setPrintHeader(false);  
-    $pdf->setPrintFooter(false);  
-    $pdf->SetAutoPageBreak(TRUE, 10);  
-    $pdf->SetFont('helvetica', '', 11);  
-    $pdf->AddPage();  
-    $content = '';  
-    $content .= '
-      	<h2 align="center">Generated PDF using TCPDF</h2>
-      	<h4>Members Table</h4>
-      	<table border="1" cellspacing="0" cellpadding="3">  
-           <tr>  
-                <th width="5%">ID</th>
-				<th width="20%">Firstname</th>
-				<th width="20%">Lastname</th>
-				<th width="55%">Address</th> 
-           </tr>  
-      ';  
-    $content .= generateRow();  
-    $content .= '</table>';  
-    $pdf->writeHTML($content);  
-    $pdf->Output('inventory.pdf', 'I');
-	
 
-?>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+</br></br></br>
+
+ <a href="#" onclick="HTMLtoPDF()">>>>>Download PDF</a> 
+
+
+
+
+
+<script src="js/jspdf.js"></script>
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/pdfFromHTML.js"></script>
+
+
+
+<div id="HTMLtoPDF">
+<div class="col-lg-6 mt-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="header-title">Inventory Items</h4>
+                                <div class="single-table">
+                                    <div class="table-responsive">
+                                       
+                                        <table id="example" class="table text-dark text-center">
+                                            <thead class="text-uppercase">
+                                                <tr class="table-active">
+                                                    <th scope="col">ID</th>
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">Price</th>
+                                                    <th scope="col">Quantity</th>
+													 <!-- <th scope="col">Action</th> -->
+
+
+                              
+
+                                
+
+                                                     </tr>
+                                            </thead>
+                                            
+                                            </body>
+                                    				 
+                                                  
+
+                                              
+                                              
+
+  
+
+                                    
+
+            <?php 
+               $conn = new mysqli("localhost","root","","inventorymanagement");
+               $sql = "SELECT * FROM product";
+               $result = $conn->query($sql);
+					$count=0;
+               if ($result -> num_rows >  0) {
+				  
+                 while ($row = $result->fetch_assoc()) 
+				 {
+					  $count=$count+1;
+                   ?>
+                  
+                   
+                   <tr>
+                    <th><?php echo $count ?></th>
+                      <th><?php echo $row["product_name"] ?></th>
+                      <th><?php echo $row["price"]  ?></th>
+                      <th><?php echo $row["quantity"]  ?></th>
+					  
+					 
+                      
+                     
+
+
+                     
+                      
+                    </tr>
+            <?php
+                 
+                 }
+               }
+
+            ?>
+
+                                            </tbody>
+                                        </table>
+           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+
+</div>   
+                    </div>
+
+
+
+
+
+					</div>	
+
+
+
+</body>
+</html>
+

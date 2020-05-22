@@ -116,15 +116,8 @@
         </br>
         </br>
 
-        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="admin/room_admin_login.php" class="newbutton3"> <img src="assets/img/rooms.png"> Remove Rooms</a>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <center><a href="hall_adminpanal.php" class="newbutton4"> <img src="assets/img/hall.jpg"> View Hall Bookings</a></center>
+        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Manage Rooms </a>
+        <a href="hall_adminpanal.php" class="newbutton5"> <img src="assets/img/hall.jpg"> View Hall Bookings</a>
         <!--<a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>-->
         </br>
         </br>
@@ -132,7 +125,7 @@
         </br>
         </br>
 
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
+        <a href="InventoryManagement/login.php" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
         <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
         </br>
         </br>
@@ -155,14 +148,8 @@
         </br>
         </br>
 
-        
-        <a href="indexTaxi.php" class="newbutton10"> <img src="assets/img/finance.jpg"> Finance</a>
-        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/officer.png">Add New Admin</a>
-        
-        <br>
-        <br>
-        <br>
-        <br>
+        <a href="indexTaxi.php" class="newbutton12"> <img src="assets/img/finance.jpg"> Finace</a>
+        <a href="addAdmin.php" class="newbutton11"> <img src="assets/img/laundry.jpg">Add New Admin</a>
 
     </div>
 
