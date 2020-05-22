@@ -154,7 +154,7 @@ include 'Backend/addpromotion.inc.php';
                 </br>
 
 
-                <a href="index.php"> <button type="button" id="bbutton">Back</button> </a>
+                <a href="admin.php"> <button type="button" id="bbutton">Back</button> </a>
                 <button type="submit" id="conf" name="addpromo"> Confirm </button>
 
             </form>
