@@ -5876,7 +5876,7 @@ $Id: ChangeLog,v 1.257 2010/09/19 13:15:07 Stevan_White Exp $
 	* sfd/FreeSans.sfd - Added Devanagari and Gujarati glyphs from the
 	Akruti Indic fonts.
 
-	* www/index.html - Added information on Rogier van Dalen's tools.
+	* www/index.php - Added information on Rogier van Dalen's tools.
 
 	* AUTHORS - Added M.S. Sridhar.
 
@@ -5892,7 +5892,7 @@ $Id: ChangeLog,v 1.257 2010/09/19 13:15:07 Stevan_White Exp $
 
 2002-10-11  Primoz Peterlin  <primoz.peterlin@biofiz.mf.uni-lj.si>
 
-	* www/index.html - Added information on the availability of the
+	* www/index.php - Added information on the availability of the
 	Debian GNU/Linux package.
 
 	* sfd/FreeSerif.sfd, sfd/FreeSans.sfd - added some kern pairs
@@ -5946,7 +5946,7 @@ $Id: ChangeLog,v 1.257 2010/09/19 13:15:07 Stevan_White Exp $
 
 2002-08-28  Primoz Peterlin  <primoz.peterlin@biofiz.mf.uni-lj.si>
 
-	* www/index.html - Added information of Microsoft's withdrawal of
+	* www/index.php - Added information of Microsoft's withdrawal of
 	freely available Unicode TrueType fonts
 
 	* www/resources.html - Added link to Maxim Iorsh's Culmus project.
@@ -6199,7 +6199,7 @@ $Id: ChangeLog,v 1.257 2010/09/19 13:15:07 Stevan_White Exp $
 
 2002-03-20  Primoz Peterlin  <primoz.peterlin@biofiz.mf.uni-lj.si>
 
-	* www/index.html - finally linked the resources and design notes
+	* www/index.php - finally linked the resources and design notes
 	pages.
 
 	* www/design-notes.html - added scaling information for super- and

@@ -127,7 +127,7 @@
                       <div class="single-footer-caption mb-30">
                          <!-- logo -->
                          <div class="footer-logo">
-                           <a href="index.html"><img src="assets/img/logo/footer-img.png" alt=""></a>
+                           <a href="index.php"><img src="assets/img/logo/footer-img.png" alt=""></a>
                          </div>
                          <div class="footer-social footer-social2">
                              <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>

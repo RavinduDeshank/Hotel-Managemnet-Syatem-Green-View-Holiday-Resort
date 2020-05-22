@@ -100,7 +100,7 @@ if(isset($_POST['update']))
         <li><a class="homered" href="assignproject.php">Project Status</a></li>
         <li><a class="homeblack" href="salaryemp.php">Salary Table</a></li>
         <li><a class="homeblack" href="empleave.php">Employee Leave</a></li>
-        <li><a class="homeblack" href="alogin.html">Log Out</a></li>
+        <li><a class="homeblack" href="alogin.php">Log Out</a></li>
       </ul>
     </nav>
   </header>

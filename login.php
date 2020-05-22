@@ -81,7 +81,7 @@ include 'Backend/login.inc.php';
                                             <ul class="submenu">
                                                 <li><a href="login.php">Login</a></li>
                                                 <li><a href="register.php">SignUp</a></li>
-                                                <!-- <li><a href="elogin.html">Employ management</a></li> -->
+                                                <!-- <li><a href="elogin.php">Employ management</a></li> -->
                                             </ul>
                                         </li>
                                     </ul>
@@ -163,7 +163,7 @@ include 'Backend/login.inc.php';
                             </div>
                             <div class="row col-12 pl-5 justify-content-center">
                             <div style="border:1px solid #dca73a; border-radius:5px;" class="pt-2 pl-4 mt-5 row col-12" id="empmngLink">
-                                <p style="color:black; text-align:center;"><a href="elogin.html" class="a2">Employee management login</a></p>
+                                <p style="color:black; text-align:center;"><a href="elogin.php" class="a2">Employee management login</a></p>
                             </div>
                             </div>
 
