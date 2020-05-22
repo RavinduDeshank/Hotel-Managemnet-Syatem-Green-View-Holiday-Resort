@@ -13,10 +13,6 @@
 
 <title>Final Report</title>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 <link rel = "stylesheet" href = "assets/css/styles.css">
 
 </head>
@@ -26,10 +22,7 @@
         <img class = "imge" src = "assets/img/logo/logo-img.png">
         <h6>All Department Finance Details and Final Overview</h6>
         <ul>
-<<<<<<< HEAD
-=======
             <!--link all pages here-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <li><a href = "indexTaxi.php"><i class="fas fa-taxi"></i>Taxi</a></li>
             <li><a href = "indexRoom.php"><i class="fas fa-bed"></i>Room</a></li>
             <li><a href = "indexLaundry.php"><i class="fas fa-bath"></i>Laundry</a></li>
@@ -39,10 +32,7 @@
             <li class = "active"><a href = "indexFinal.php"><i class="fas fa-chart-line"></i>Final Report</a></li>
         </ul>
 
-<<<<<<< HEAD
-=======
         <!--social media link-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
         <div class="social_media">
             <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
@@ -65,10 +55,7 @@
             </div>
             <?php endif ?>        
 
-<<<<<<< HEAD
-=======
         <!--create table on the application to show inserted data-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
         <div class ="container">
         <?php
             $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
@@ -105,41 +92,13 @@
                         </div>
             </div>
             
-<<<<<<< HEAD
-=======
             <!--Final report form-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
             <div class = "row justify-content-center">
                 <div class = "info">
                     <form action="" method = "POST">
                         <input type = "hidden" name = "id" value = <?php echo $id; ?>>
                         <div class="form-group">
                             <lable>Year</lable>
-<<<<<<< HEAD
-                            <input type="text" name = "year" 
-                            value ="<?php echo $year; ?>" class = "form-control" placeholder = "Year" required>
-                        </div>
-                        <div class="form-group">
-                            <lable>All Incomes</lable>
-                            <input type="number" name = "all_incomes" value ="<?php echo $income; ?>" 
-                            class = "form-control" placeholder = "All Incomes" required>
-                        </div>
-                        <div class="form-group">
-                            <lable>All Expenses</lable>
-                            <input type="number" name = "all_expences" value ="<?php echo $expenses; ?>"
-                            class = "form-control" placeholder = "All Expenses" required>
-                        </div>
-                        <!-- <div class="form-group">
-                            <lable>Total Profit</lable>
-                            <input type="number" name = "total_profit" value ="<?php echo $profit; ?>"
-                            class = "form-control" placeholder = "Total Profit" required>
-                        </div> -->
-                        <div class="form-group">
-                            <?php
-                            if($update == true):
-                            ?>
-                                <button type = "submit" class = "btn btn-info" name = "update">Update</button>
-=======
                             <!--year only can enter 4 digits-->
                             <input type="text" name = "year" 
                             value ="<?php echo $year; ?>" class = "form-control" placeholder = "Year" maxlength = "4" required>
@@ -161,7 +120,6 @@
                             if($update == true):
                             ?>
                                 <button type = "submit" class = "btn btn-info" name = "update">Update</button><!--after click edit button show this update button-->
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
                             <?php else: ?>
                                 <button type = "submit" name = "add" class = "btn btn-primary">Add</button>
                             <?php endif; ?>

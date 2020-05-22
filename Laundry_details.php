@@ -113,6 +113,7 @@ $result = mysqli_query($db, $sql);
         <table id="removepromotable" style="margin-top: 50px;">
             <tr>
 
+                <th>Laundary_ID </th>
                 <th> Customer Name </th>
                 <th> Room No </th>
                 <th>Clothes weight (KG)</th>
@@ -134,6 +135,7 @@ $result = mysqli_query($db, $sql);
 
             ?>
                 <tr>
+                    <td><?php echo $laundary?></td>
                     <td><?php echo $cname ?></td>
                     <td><?php echo $roomnum ?></td>
                     <td><?php echo $weight ?></td>

@@ -26,7 +26,7 @@
 		$vehicle_type = $_POST['vehicle_type'];
         
 		//checking required fields
-		$req_fields = array('username','password','full_name','email','tel_number','time','date','location', 'taxi_fee','vehicle_type');
+		$req_fields = array('username','password','full_name','email','tel_number','time','date','location','vehicle_type');
 
 		foreach ($req_fields as $field) {
 			if (empty(trim($_POST[$field]))) {

@@ -106,7 +106,7 @@
                     <div class="row ">
                         <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
                             <div class="hero-caption">
-                           <h1><a href="taxi.php"><span>Your Reservation is Successfull</span><h2>
+                           <h1><a href="Backend/taxilogout.inc.php"><span>Your Reservation is Successfull</span><h2>
                                 <h2>Thank you for connect with us.</h2>
                                 
                         </div>

@@ -1,36 +1,35 @@
 <?php
-  SESSION_START();
+include 'Backend/dbconnection.php';
+SESSION_START();
 
-  if(!isset($_SESSION['uId']) && !isset($_SESSION['uname'])){
-    header("Location: login.php");
-  }
-  
-include '../SQL/dbconnection.php';
+if(!isset($_SESSION['userid']) && !isset($_SESSION['username'])){
+  header("Location: login.php");
+}
 
 $u_id = "";
-if (isset($_GET['uId'])) {
-  $u_id = mysqli_real_escape_string($con, $_GET['uId']);
+if (isset($_GET['uid'])) {
+  $u_id = mysqli_real_escape_string($db, $_GET['uid']);
   $query = "SELECT * FROM users WHERE uId = {$u_id}";
 
-  $resultset = mysqli_query($con, $query);
+  $resultset = mysqli_query($db, $query);
 
   if ($resultset) {
     if (mysqli_num_rows($resultset) == 1) {
-      $username = mysqli_fetch_assoc($resultset);
-      $customerName = $result['uname'];
-      $fname = $result['fname'];
-      $lname = $result['lname'];
-      $gender = $result['gender'];
-      $email = $result['email'];
-      $nationality = $result['nationality'];
-      $address = $result['address'];
-      $mnumber = $result['mnumber'];
+      $row = mysqli_fetch_assoc($resultset);
+      $userName = $row['uname'];
+      $fname = $row['fname'];
+      $lname = $row['lname'];
+      $gender = $row['ugender'];
+      $email = $row['umail'];
+      $nationality = $row['unation'];
+      $address = $row['uaddress'];
+      $mnumber = $row['unumber'];
 
     } else {
-      header('Location: login.php?UserNotFound');
+      header('Location: userPanel.php?UserNotFound');
     }
   } else {
-    header('Location: login.php?SQLError');
+    header('Location: userdetails.php?SQLError');
   }
 }
 
@@ -177,7 +176,7 @@ if (isset($_GET['uId'])) {
                     <div class="taken" data-customername="<?= $_GET['CustomerTaken']; ?>"></div>
                   <?php endif;  ?>
 
-                  <form action="../Backend/updateUser.php" method="POST">
+                  <form action="Backend/updateUser.inc.php" method="POST">
 
                   <div id="box6">
                         <div class="topic4">
@@ -193,12 +192,11 @@ if (isset($_GET['uId'])) {
                         <?php
                         if (isset($_GET['uname'])) {
                           $uname = $_GET['uname'];
-                          echo '<input type="text" class="form-control" data-validation=" length required" data-validation-length="min4" data-validation-error-msg="Please Enter Minimum 4 Characters" name="cname" value="' . $uname . '">';
+                          echo '<input type="text" class="form-control" data-validation=" length required" data-validation-length="min4" data-validation-error-msg="Please Enter Minimum 4 Characters" name="uname" value="' . $uname . '">';
                         } else {
-                          echo '<input type="text" class="form-control" data-validation=" length required" data-validation-length="min4" data-validation-error-msg="Please Enter Minimum 4 Characters" name="cname"  value="' . $uName . '"; >';
+                          echo '<input type="text" class="form-control" data-validation=" length required" data-validation-length="min4" data-validation-error-msg="Please Enter Minimum 4 Characters" name="uname"  value="' . $userName . '"; >';
                         }
                         ?>
-
                       </div>
                     </div>
 
@@ -212,10 +210,10 @@ if (isset($_GET['uId'])) {
                         </div>
                         <?php
                         if (isset($_GET['fname'])) {
-                          $fname = $_GET['fname'];
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the First Name of Customer" name="fname" value="' . $fname . '">';
+                          $fnamere = $_GET['fname'];
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the First Name of Customer" name="fname" value="' . $fnamere . '">';
                         } else {
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the First Name of Customer" name="fname"  value="' . $fName . '"; >';
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the First Name of Customer" name="fname"  value="' . $fname . '"; >';
                         }
                         ?>
 
@@ -231,10 +229,10 @@ if (isset($_GET['uId'])) {
                         </div>
                         <?php
                         if (isset($_GET['lname'])) {
-                          $lname = $_GET['lname'];
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Last Name of Customer" name="lname" value="' . $lname . '">';
+                          $lnamere = $_GET['lname'];
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Last Name of Customer" name="lname" value="' . $lnamere . '">';
                         } else {
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Last Name of Customer" name="lname"  value="' . $lName . '"; >';
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Last Name of Customer" name="lname"  value="' . $lname . '"; >';
                         }
                         ?>
 
@@ -244,13 +242,13 @@ if (isset($_GET['uId'])) {
                     
                     <div class="form-group col-md-4">
                         <label>Gender<span class="requiredIcon" style="color:red;">*</span></label><br>
-                        <select name="gender" class="form-control select2bs4" data-validation="required" data-validation-error-msg="Please Select Gender of Customer">
+                        <select name="ugender" class="form-control select2bs4" data-validation="required" data-validation-error-msg="Please Select Gender of Customer">
                           <?php
-                          if (isset($_GET['gender'])) {
-                            $gender = ($_GET['gender']); ?>
-                            <option value="<?php echo $gender; ?>" selected><?php echo $gender; ?></option>
+                          if (isset($_GET['ugender'])) {
+                            $genderre = ($_GET['ugender']); ?>
+                            <option value="<?php echo $genderre; ?>" selected><?php echo $genderre; ?></option>
                           <?php } else { ?>
-                            <option value="<?php echo $CustomerGender; ?>" selected><?php echo $CustomerGender; ?></option>
+                            <option value="<?php echo $gender; ?>" selected><?php echo $gender; ?></option>
                           <?php } ?>
                           <option value="Male">Male</option>
                           <option value="Female">Female</option>
@@ -269,10 +267,10 @@ if (isset($_GET['uId'])) {
                           </div>
                           <?php
                           if (isset($_GET['email'])) {
-                            $email = $_GET['email'];
-                            echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="email" name="email" value="' . $email . '">';
+                            $emailre = $_GET['email'];
+                            echo '<input type="email" class="form-control" data-validation-optional="true"  data-validation="email" name="email" value="' . $emailre . '">';
                           } else {
-                            echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="email" name="email" value="' . $CustomerEmail . '">';
+                            echo '<input type="email" class="form-control" data-validation-optional="true" data-validation="email" name="email" value="' . $email . '">';
                           }
                           ?>
 
@@ -286,11 +284,11 @@ if (isset($_GET['uId'])) {
                             <span class="input-group-text"><i class="fas fa-phone"></i></span>
                           </div>
                           <?php
-                          if (isset($_GET['mnumber'])) {
-                            $mnumber = $_GET['mnumber'];
-                            echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="number length" data-validation-length="10-10" data-validation-error-msg="The Mobile Number Must Be 10 Digits" name="lnumber" value="' . $mnumber . '">';
+                          if (isset($_GET['unumber'])) {
+                            $mnumberre = $_GET['unumber'];
+                            echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="number length" data-validation-length="10-10" data-validation-error-msg="The Mobile Number Must Be 10 Digits" name="unumber" value="' . $mnumberre . '">';
                         } else {
-                          echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="number length" data-validation-length="10-10" data-validation-error-msg="The Mobile Number Must Be 10 Digits" name="lnumber" value="' . $CustomerMNumber . '">';
+                          echo '<input type="text" class="form-control" data-validation-optional="true" data-validation="number length" data-validation-length="10-10" data-validation-error-msg="The Mobile Number Must Be 10 Digits" name="unumber" value="' . $mnumber . '">';
                         }
                           ?>
 
@@ -306,10 +304,10 @@ if (isset($_GET['uId'])) {
                           </div>
                           <?php
                           if (isset($_GET['nationality'])) {
-                            $nationality = $_GET['nationality'];
-                            echo '<input type="email" class="form-control" data-validation-optional="true" data-validation="email" name="nationality" value="' . $nationality . '">';
+                            $nationalityre = $_GET['nationality'];
+                            echo '<input type="text" class="form-control" data-validation="required name="nationli" value="' . $nationalityre . '">';
                           } else {
-                            echo '<input type="email" class="form-control" data-validation-optional="true" data-validation="email" name="nationality" value="' . $CustomerNationality . '">';
+                            echo '<input type="text" class="form-control" data-validation="required" name="nationli" value="' . $nationality . '">';
                           }
                           ?>
 
@@ -324,10 +322,10 @@ if (isset($_GET['uId'])) {
                         </div>
                         <?php
                         if (isset($_GET['address'])) {
-                          $address = $_GET['address'];
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Address of Customer" name="address" value="' . $address . '">';
+                          $addressre = $_GET['address'];
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Address of Customer" name="address" value="' . $addressre . '">';
                         } else {
-                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Address of Customer" name="address" value="' . $CustomerAddress . '">';
+                          echo '<input type="text" class="form-control" data-validation="required" data-validation-error-msg="Please Fill the Address of Customer" name="address" value="' . $address . '">';
                         }
                         ?>
 
@@ -338,13 +336,13 @@ if (isset($_GET['uId'])) {
                     <?php
                     if (isset($_GET['uId'])) {
                       $UID = $_GET['uId'];
-                      echo '<input type="hidden" name="customerid" value="' . $UID . '">';
+                      echo '<input type="hidden" name="userid" value="' . $UID . '">';
                     } else {
-                      echo '<input type="hidden" name="customerid" value="' . $u_id . '">';
+                      echo '<input type="hidden" name="userid" value="' . $u_id . '">';
                     }
                     ?>
                     <button type="submit" id="addCustomer" name="addCustomer" class="btn btn-success">Update Customer</button>
-                    <a href="userPanel.php"><button type="button" class="btn btn-warning" value="Back"><i class="fas fa-arrow-left"></i> Back To User</button></a>
+                    <a href="userPanel.php"><button type="button" class="btn btn-warning" value="Back"><i class="fas fa-arrow-left"></i> Back To User Panel</button></a>
                   </form>
                 </div>
                 </div>
