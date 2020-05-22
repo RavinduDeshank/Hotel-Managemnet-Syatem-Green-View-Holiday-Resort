@@ -1,10 +1,17 @@
-<?php require_once('Backend/taxisession.php'); ?>
 <?php
-include 'Backend/dbconnection.php';
 
-/*getting the details about new taxi reservations which are not deleted or completed*/
-$sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer' AND is_deleted=0 AND is_complete=0";
-$result = mysqli_query($db, $sql);
+include 'Backend/dbconnection.php';
+SESSION_START();
+
+if(!isset($_SESSION['userid']) && !isset($_SESSION['username'])){
+  header("Location: login.php");
+}
+
+//getting the list of users
+//$u_type = mysqli_real_escape_string($db, $_GET['utype']);
+$query = "SELECT * FROM users /*WHERE utype != {'Admin'}*/";
+$users = mysqli_query($db, $query);
+
 
 ?>
 
@@ -14,7 +21,7 @@ $result = mysqli_query($db, $sql);
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Green View Holiday Resort | Remove Taxi Reservation</title>
+    <title>Green View Holiday Resort | My Details</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +42,6 @@ $result = mysqli_query($db, $sql);
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/contact.css">
-    
 </head>
 
 <body>
@@ -70,22 +76,23 @@ $result = mysqli_query($db, $sql);
                             <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="../index.php">Home</a></li>
-                                        <li><a href="../about.php">About</a></li>
-                                        <li><a href="../services.php">Service</a></li>
+                                        <li><a href="index.php">Home</a></li>
+                                        <li><a href="about.php">About</a></li>
+                                        <li><a href="services.php">Service</a></li>
                                         <li><a href="#">Pages</a>
                                             <ul class="submenu">
-                                                <li><a href="../rooms.php">Rooms</a></li>
+                                                <li><a href="rooms.php">Rooms</a></li>
                                                 <li><a href="###">Halls</a></li>
-                                                <li><a href="../Promotion.php">Promotions</a></li>
-                                                <li><a href="../blog.php">Blog</a></li>
-                                                <li><a href="taxi.php">Taxi Reservation</a></li>
+                                                <li><a href="Promotion.php">Promotions</a></li>
+                                                <li><a href="blog.php">Blog</a></li>
+                                                <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="../contact.php">Contact</a></li>
-                                        <li><a href="">Logout</a>
+                                        <li><a href="contact.php">Contact</a></li>
+                                        <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="Backend/taxilogout.inc.php">Logout</a></li>
+                                                <li><a href="Backend/logout.inc.php">Logout</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -111,56 +118,85 @@ $result = mysqli_query($db, $sql);
     </header>
     <br>
     <br>
-    <div id="box5">
-        
-        <h3 class="title1 mt-2"> <center><u>NEW TAXI RESERVATIONS</u></center> </h3>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+    <div class="blog-area blog-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <!-- Seciton Tittle  -->
+                    <div class="font-back-tittle mb-5">
+                        <div class="archivment-front">
+                            <h3>User Details</h3>
+                        </div>
+                        <h3 class="archivment-back">User Details</h3>
+                    </div>
+                </div>
+            </div>
+          
+              <div class="table-responsive">
+                <div class="dataTables_wrapper container-fluid dt-bootstrap4">
+                  <table id="example1" class="table table-bordered table-hover">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th>User Name</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th style="width: 10%">Gender</th>
+                        <th>Email</th>
+                        <th style="width: 13%">Nationality</th>
+                        <th>Address</th>
+                        <th style="width: 13%">Phone</th>
+                        
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <?php
+                       // if ($users) {
+                        //if (mysqli_num_rows($users) == 1) {
+                        while($row = mysqli_fetch_assoc($users)){
+                        
+                        $userName = $row['uname'];
+                        $fname = $row['fname'];
+                        $lname = $row['lname'];
+                        $gender = $row['ugender'];
+                        $email = $row['umail'];
+                        $nationality = $row['unation'];
+                        $address = $row['uaddress'];
+                        $mnumber = $row['unumber'];
+                      ?>
 
-        <table id="removepromotable" class="mt-4">
-            <tr>
-                
-                <th>Full Name</th>
-                <th>Email</th>
-                <th>Telephone Number</th>
-                <th> Print </th>
-            </tr>
-           
-            <?php
-           
-            while($row = mysqli_fetch_array($result))
-            {
-            
-                
-                $user_id = $row['user_id'];
-                $full_name = $row['full_name'];
-                $email = $row['email'];
-                $tel_number = $row['tel_number'];
-               
-                ?>
-                <tr>
-                    
-                    <td><?php echo $full_name ?></td>
-                    <td><?php echo $email ?></td>
-                    <td><?php echo $tel_number ?></td>
-                    <td><a href=printtaxi.php?user_id=<?php echo $user_id?> <button class='btn btn-primary' target="_blank"> <i class='fa fa-print' ></i> Print</button></td>
-                <?php
-            }
-                ?>
-        </table>
+                        <tr>
+                          <td><?php echo $userName ?></td>
+                          <td><?php echo $fname ?></td>
+                          <td><?php echo $lname ?></td>
+                          <td><?php echo $gender ?></td>
+                          <td><?php echo $email ?></td>
+                          <td><?php echo $nationality ?></td>
+                          <td><?php echo $address ?></td>
+                          <td><?php echo $mnumber ?></td>
+                        </tr>
 
-       
-      
-
-        <a href="taximanager.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
-
-        
+                      <?php
+                        }
+                      ?>
+                    </tbody>
+                  </table>
+                  <br>
+                  <a href=Backend/detailsPrint.inc.php <button class='btn btn-primary'> <i class='fa fa-print' ></i> Print</button></a>
+						
+                </div>
+            </div>
+          <br>
+        </div>      
     </div>
-
-
-
     
-    <br>
-    <br>
-
     <footer>
         <!-- Footer Start-->
         <div class="footer-area black-bg footer-padding">
@@ -192,11 +228,11 @@ $result = mysqli_query($db, $sql);
                             <div class="footer-tittle">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="../about.php">About Us</a></li>
-                                    <li><a href="../rooms.php">Our Best Rooms</a></li>
+                                    <li><a href="about.php">About Us</a></li>
+                                    <li><a href="rooms.php">Our Best Rooms</a></li>
                                     <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="../services.php">Pool Service</a></li>
-                                    <li><a href="taxi.php">Taxi Service</a></li>
+                                    <li><a href="services.php">Pool Service</a></li>
+                                    <li><a href="TaxiReservation/taxi.php">Taxi Reservation</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -280,7 +316,46 @@ $result = mysqli_query($db, $sql);
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
 
+  <!-- page script -->
+  <script>
+        function myfunction() {
+            var txt;
+            if (confirm("Do you want to print this user details?")) {
+                txt = "print";
+            } else {
+                txt = "";
+            }
+            document.getElementById("demo").innerHTML = txt;
+        }
+
+        function myFunction() {
+            alert("Details Print successfully");
+            //window.location.href = "detailsPrint.inc.php";
+        }
+    </script>
+    <
+  <script>
+    /*$(function() {
+      $('[data-toggle="tooltip"]').tooltip();
+    })
+
+
+    $(document).ready(function() {
+      $('#example1').DataTable({
+
+        dom: 'Bfrtip',
+        buttons: [{
+          {
+            extend: 'print',
+            className: 'btn btn-info'
+          },
+        ],
+        overflow: scroll,
+
+      });
+
+    });*/
+  </script>
 </body>
 
 </html>
-<?php mysqli_close($db); ?>

@@ -2,10 +2,7 @@
 
     session_start();
 
-<<<<<<< HEAD
-=======
     //connect database to he system
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -14,10 +11,7 @@
     $email = '';
     $pay = '';
 
-<<<<<<< HEAD
-=======
     //insert data to room_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -32,10 +26,7 @@
         header("location: indexRoom.php");
     }
 
-<<<<<<< HEAD
-=======
     //delete data from room_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM room_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -46,10 +37,7 @@
         header("location: indexRoom.php");
     }
 
-<<<<<<< HEAD
-=======
     //get data from room_payment table to update
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -62,10 +50,7 @@
         }
     }
 
-<<<<<<< HEAD
-=======
     //update data in room_payment table
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

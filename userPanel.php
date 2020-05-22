@@ -4,6 +4,8 @@
   if(!isset($_SESSION['userid']) && !isset($_SESSION['username'])){
     header("Location: login.php");
   }
+
+  $userid = $_SESSION['userid'];
 ?>
 <!doctype html>
 <html class="no-js" lang="zxx">
@@ -114,7 +116,7 @@
             <h2>User Panel</h2>
         </div>
 
-        <a href="userdetails.php" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
+        <a href="userdetails.php?uid=<?php echo $userid ?>" class="newbutton"> <img src="assets/img/user.png"> Edit Your Details</a>
         <a href="##" class="newbutton1"> <img src="assets/img/history.png"> Booking History</a>
         </br>
         </br>
@@ -131,8 +133,8 @@
         </br>
         </br>
 
-        <a href="add_details.php" class="newbutton10"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
-        <a href="Laundry_details.php" class="newbutton11"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
+        <a href="add_details.php" class="newbutton2"> <img src="assets/img/laundry.jpg"> Add Laundry</a>
+        <a href="Laundry_details.php" class="newbutton3"> <img src="assets/img/laundry.jpg"> Laundry Details</a>
 
         </br>
         </br>
@@ -143,11 +145,9 @@
         <a href="admin/reservation.php" class="newbutton4"><img src="assets/img/rooms.png"> Rooms Booking</a>
         <a href="hall_reserve.php" class="newbutton5"> <img src="assets/img/hall.jpg"> Halls Booking</a>
         
-       
         </br>
         </br>
-        </br>
-       
+        
     </div>
 
     <br>

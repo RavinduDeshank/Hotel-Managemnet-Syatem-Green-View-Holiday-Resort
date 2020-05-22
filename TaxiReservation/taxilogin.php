@@ -1,17 +1,11 @@
 <?php
-<<<<<<< HEAD
-=======
 /*getting login details of cutomers and taxi managers*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 include 'Backend/taxilogin.inc.php';
 
 
 ?>
 <?php
-<<<<<<< HEAD
-=======
 /*getting login details of taxi managers*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212
 include 'Backend/taxidriverlogin.inc.php';
 
 
