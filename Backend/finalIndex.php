@@ -1,8 +1,6 @@
 <?php
 
     session_start();
-    
-    // connect greenview database 
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -12,7 +10,6 @@
     $expenses = '';
     $profit = '';
 
-    //insert salaries to the table
     if(isset($_POST['add'])){
         $year = $_POST['year'];
         $income = $_POST['all_incomes'];
@@ -29,7 +26,6 @@
         header("location: indexFinal.php");
     }
 
-    //we can delete row using this statement
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM final_report WHERE year = $id") or die($mysqli->error);
@@ -40,7 +36,6 @@
         header("location: indexFinal.php");
     }
 
-    //if we need we canget data to edit form table
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -53,7 +48,6 @@
         }
     }
 
-    //using this method we can update selected row
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $year = $_POST['year'];

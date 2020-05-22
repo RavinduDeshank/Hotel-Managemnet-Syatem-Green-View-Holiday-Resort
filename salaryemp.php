@@ -70,5 +70,6 @@ $result = mysqli_query($conn, $sql);
 			?>
 			
 			</table>
+			<center><a href="ViewDownload.php"><button type="submit" class="btn btn-default" name="add"> download pdf</button></a></center>
 </body>
 </html>

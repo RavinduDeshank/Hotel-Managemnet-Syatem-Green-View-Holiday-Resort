@@ -116,24 +116,16 @@
         </br>
         </br>
 
-        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Add Rooms </a>
-        <a href="admin/room_admin_login.php" class="newbutton5"> <img src="assets/img/rooms.png"> Remove Rooms</a>
+        <a href="admin/room_admin_login.php" class="newbutton2"><img src="assets/img/rooms.png"> Manage Rooms </a>
+        <a href="hall_adminpanal.php" class="newbutton5"> <img src="assets/img/hall.jpg"> View Hall Bookings</a>
+        <!--<a href="####" class="newbutton5"> <img src="assets/img/hall.jpg"> Remove Halls</a>-->
         </br>
         </br>
         </br>
         </br>
         </br>
 
-        <a href="hall_adminpanal.php" class="newbutton4"> <img src="assets/img/hall.jpg"> View Hall Bookings</a>
-        <a href="TaxiReservation/removetaximanager.php" class="newbutton5"> <img src="assets/img/taxi.png"> Remove Taxi Managers</a>
-        
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-
-        <a href="####" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
+        <a href="InventoryManagement/login.php" class="newbutton8"> <img src="assets/img/inventory.jpg"> Add Inventory</a>
         <a href="####" class="newbutton9"> <img src="assets/img/inventory.jpg"> Remove Inventory</a>
         </br>
         </br>

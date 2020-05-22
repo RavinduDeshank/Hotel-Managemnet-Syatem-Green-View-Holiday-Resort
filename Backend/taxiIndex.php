@@ -2,7 +2,6 @@
 
     session_start();
 
-    //connect data to the system
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -11,7 +10,6 @@
     $email = '';
     $pay = '';
 
-    //insert data to the taxi_payment table
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -27,7 +25,6 @@
         header("location: indexTaxi.php");
     }
 
-    //delete data from taxi_payment table
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM taxi_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -38,7 +35,6 @@
         header("location: indexTaxi.php");
     }
 
-    //get data to the form for update
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -51,7 +47,6 @@
         }
     }
 
-    //update date in taxi_payment table
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

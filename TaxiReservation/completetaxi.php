@@ -9,7 +9,7 @@
             $result = mysqli_query($db, $query);
 
             if ($result) {
-                //remeve reservation when completed
+                //reservation did
                header('Location: taxidriver.php?msg=reservation_did');
                //echo mysqli_error($db);
             } else {

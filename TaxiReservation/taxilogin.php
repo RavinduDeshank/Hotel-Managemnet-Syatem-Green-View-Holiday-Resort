@@ -1,11 +1,9 @@
 <?php
-/*getting login details of cutomers and taxi managers*/
 include 'Backend/taxilogin.inc.php';
 
 
 ?>
 <?php
-/*getting login details of taxi managers*/
 include 'Backend/taxidriverlogin.inc.php';
 
 

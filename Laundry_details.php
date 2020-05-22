@@ -113,9 +113,9 @@ $result = mysqli_query($db, $sql);
         <table id="removepromotable" style="margin-top: 50px;">
             <tr>
 
+                <th>Laundary_ID </th>
                 <th> Customer Name </th>
                 <th> Room No </th>
-                <th>Laundary</th>
                 <th>Clothes weight (KG)</th>
                 <th>Date In</th>
                 <th>Date Out</th>
@@ -129,40 +129,22 @@ $result = mysqli_query($db, $sql);
                 $cname = $row['Customer_Name'];
                 $roomnum = $row['Room_No'];
                 $weight = $row['Clothes_Weight'];
-                $laundary = $row ['Laundry_ID'];
                 $start = $row['Start_Date'];
                 $end = $row['End_Date'];
                 $description = $row['Description'];
 
             ?>
                 <tr>
-                    <td><?php echo $cname ?></td>
-                    <td><?php echo $roomnum?></td>
                     <td><?php echo $laundary?></td>
+                    <td><?php echo $cname ?></td>
+                    <td><?php echo $roomnum ?></td>
                     <td><?php echo $weight ?></td>
                     <td><?php echo $start ?></td>
                     <td><?php echo $end ?></td>
                     <td><?php echo $description ?></td>
-                    <td><a href="add_Details.php?id=<?php echo $laundary?>"><button type = submit onclick="myfunc()"> EDIT </button></td></a>
                   
                 </tr>
 
-    <script>
-        function myfunc() {
-            var txt;
-            if (confirm("Do you want to Edit this Details?")) {
-                txt = "removed";
-            } else {
-                txt = "";
-            }
-            //document.getElementById("demo").innerHTML = txt;
-        }
-
-        function myFunction() {
-            alert("Details removed successfully");
-        }
-    </script>
- 
             <?php
             }
             ?>
@@ -170,7 +152,6 @@ $result = mysqli_query($db, $sql);
 
         </br>
         </br>
-        <a href="userPanel.php"><button type="button" value="Back" id="bbutton2"> Back</button></a>
     </div>
 
 

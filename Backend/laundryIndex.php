@@ -2,7 +2,6 @@
 
     session_start();
 
-    //connect database to the system
     $mysqli = new mysqli('localhost','root','','greenview') or die(mysqli_error($mysqli));
 
     $id = 0;
@@ -11,8 +10,6 @@
     $email = '';
     $pay = '';
 
-
-    //insert data to laundry_payment table
     if(isset($_POST['add'])){
         $name = $_POST['customer_name'];
         $email = $_POST['email'];
@@ -27,7 +24,6 @@
         header("location: indexLaundry.php");
     }
 
-    //delete data from laundry_payment table
     if(isset($_GET['delete'])){
         $id = $_GET['delete'];
         $mysqli->query("DELETE FROM laundry_payment WHERE customer_id = $id") or die($mysqli->error);
@@ -38,7 +34,6 @@
         header("location: indexLaundry.php");
     }
 
-    //edit inserted data and get it form to update
     if(isset($_GET['edit'])){
         $id = $_GET['edit'];
         $update = true;
@@ -51,7 +46,6 @@
         }
     }
 
-    //update data from laundry_payment table
     if(isset($_POST['update'])){
         $id = $_POST['id'];
         $name = $_POST['customer_name'];

@@ -72,8 +72,8 @@
                                         <li><a href="contact.html">Contact</a></li>
                                         <li><a href="###">Login</a>
                                             <ul class="submenu">
-                                                <li><a href="login.html">Login</a></li>
-                                                <li><a href="register.html">SignUp</a></li>
+                                                <li><a href="login.php">Login</a></li>
+                                                <li><a href="register.php">SignUp</a></li>
                                             </ul>
                                         </li>
                                     </ul>
