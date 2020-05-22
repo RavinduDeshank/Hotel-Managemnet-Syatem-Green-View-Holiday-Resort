@@ -1,10 +1,6 @@
 <?php
 include 'Backend/dbconnection.php';
 
-<<<<<<< HEAD:TaxiReservation/removetaxires.php
-=======
-/*getting taxi reservation information*/
->>>>>>> 77b7c97d6aa58937a901cee9a1114492dbbe1212:TaxiReservation/removetaxires.php
 $sql = "SELECT * FROM taxicustomer WHERE user_type='taxiCustomer'";
 $result = mysqli_query($db, $sql);
 
