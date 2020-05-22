@@ -104,12 +104,15 @@
                         <div class="form-group">
                             <lable>Customer Name</lable>
                             <input type="text" name = "customer_name" 
-                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" required>
+                            value ="<?php echo $name; ?>" class = "form-control" placeholder = "Enter Customer Name" 
+                            maxlength = "40"
+                            pattern="[A-Za-z]{1,255}" value = "'.$_SESSION['customer_name'].'" required>
                         </div>
                         <div class="form-group">
                             <lable>Email</lable>
                             <input type="text" name = "email" value ="<?php echo $email; ?>" 
-                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" required>
+                            class = "form-control" placeholder = "Email" pattern = "[^ @]*@[^ @]*" 
+                            title = "Please include an '@' in the email address. 'email_address' is missing an '@'" required>
                         </div>
                         <div class="form-group">
                             <lable>Taxi Bill</lable>
